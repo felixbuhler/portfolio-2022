@@ -1,0 +1,60 @@
+/* FB 2022 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+
+:root {
+  --color-black-raw: #212121;
+  --color-black: var(--color-black-raw);
+
+  --color-white-raw: #fcfcfc;
+  --color-white: var(--color-white-raw);
+
+  --box-background: rgb(234, 234, 234);
+  --color-accent: #00ff00;
+  --color-accent-2: #818181;
+
+  --font-size-base: 12px;
+  --font-size-medium: calc(2.5 * var(--font-size-base));
+
+  --padding: 5px;
+
+  --border-radius: 10px;
+
+  --font-sans: "Inter", sans-serif;
+  --font-serif: quincy-cf, serif;
+  --font-extended: nimbus-sans-extended, sans-serif;
+
+  --switch-height: 20px;
+}
+
+/* Selection */
+
+::-moz-selection {
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+/* Main */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: var(--padding);
+  column-gap: var(--padding);
+}
+
+main-column {
+  background: red;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+}
