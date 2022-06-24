@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
-  {{- partial "head.html" . -}}
-  <body>
-    <main>{{- partial "intro.html" . -}} {{- partial "clients.html" . -}}</main>
-  </body>
+{{- partial "head.html" . -}}
+
+<body>
+  <main>{{- partial "intro.html" . -}} {{- partial "clients.html" . -}}</main>
+  <projects>{{- block "projects" . }}{{- end }}
+  </projects>
+</body>
+
 </html>
