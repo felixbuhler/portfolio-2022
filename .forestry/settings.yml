@@ -14,6 +14,10 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+- type: document
+  path: content/posts/intro.md
+  label: Intro Text
+  read_only: false
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
