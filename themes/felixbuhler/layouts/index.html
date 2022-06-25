@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html>
-{{- partial "head.html" . -}}
+{{ define "main" }}
+<projects>
+    {{ range ( where .Site.RegularPages "Type" "posts" ) }}
+    <project>
+        <project-column></project-column>
+        <project-column>
+            <project-image></project-image>
+        </project-column>
+        <project-column>
 
-<body>
-  <main>{{- partial "intro.html" . -}} {{- partial "clients.html" . -}}</main>
-  <projects>{{- block "projects" . }}{{- end }}
-  </projects>
-</body>
+            <project-info>
+                <h2>{{ .Title }}</h2>
+                {{ .Description }}
+                
+            </project-info>
+        </project-column>
 
-</html>
+
+    </project>
+    {{end}}
+</projects>
+{{ end }}
