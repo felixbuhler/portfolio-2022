@@ -1,4 +1,14 @@
 ---
 label: Project per Client
 hide_body: true
-fields: []
+fields:
+- name: project_client_title
+  type: text
+  config:
+    required: false
+  label: Project Client Title
+- name: project_client_url
+  type: text
+  config:
+    required: false
+  label: Project Client URL
