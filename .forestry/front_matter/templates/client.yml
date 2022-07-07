@@ -15,3 +15,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/clients/alina-kossan.md
