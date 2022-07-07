@@ -36,5 +36,4 @@ fields:
   default: []
   label: Tags
 pages:
-- content/posts/die-tur.md
 - content/posts/spektrum-werkschau.md
