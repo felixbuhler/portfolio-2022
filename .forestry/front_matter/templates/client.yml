@@ -10,7 +10,8 @@ fields:
 - name: client_projects
   type: blocks
   label: Client Projects
-  template_types: []
+  template_types:
+  - project-per-client
   config:
     min: 
     max: 
