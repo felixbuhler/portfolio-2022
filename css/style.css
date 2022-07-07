@@ -61,9 +61,16 @@ main {
 }
 
 main-column {
-    background: red;
     padding: var(--padding);
     border-radius: var(--border-radius);
+}
+
+main-column[intro] {
+    background: var(--color-accent);
+}
+
+main-column[clients] {
+    background: var(--color-accent);
 }
 
 /* Projects */
