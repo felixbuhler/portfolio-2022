@@ -1,4 +1,9 @@
 ---
 label: Client
 hide_body: true
-fields: []
+fields:
+- name: client
+  type: text
+  config:
+    required: false
+  label: Client
