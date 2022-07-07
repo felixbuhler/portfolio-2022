@@ -2,24 +2,17 @@
 label: Client
 hide_body: true
 fields:
-- name: client
+- name: clienttitle
   type: text
   config:
     required: false
-  label: Client
-- name: lorem
+  label: Client Title
+- name: projects
   type: blocks
-  label: Lorem
+  label: Projects
   template_types: []
   config:
     min: 
     max: 
-- name: ipsum
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Ipsum
 pages:
 - content/clients/alina-kossan.md
