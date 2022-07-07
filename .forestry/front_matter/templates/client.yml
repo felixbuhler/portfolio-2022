@@ -2,14 +2,14 @@
 label: Client
 hide_body: true
 fields:
-- name: clienttitle
+- name: client_title
   type: text
   config:
     required: false
   label: Client Title
-- name: projects
+- name: client_projects
   type: blocks
-  label: Projects
+  label: Client Projects
   template_types: []
   config:
     min: 
