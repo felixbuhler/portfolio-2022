@@ -2,7 +2,7 @@
 <projects>
     {{ range ( where .Site.RegularPages "Type" "posts" ) }}
     <project>
-        <project-column></project-column>
+        <project-column>Fig. </project-column>
         <project-column>
             <project-image></project-image>
         </project-column>
@@ -10,8 +10,10 @@
 
             <project-info>
                 <h2>{{ .Title }}</h2>
-                {{ .Description }}
+                <project-description>{{ .Description }}</project-description>
+                <project-meta><year>{{ .Params.Year }}</year></project-meta>
                 
+                {{ .Params.Tags }}
             </project-info>
         </project-column>
 
