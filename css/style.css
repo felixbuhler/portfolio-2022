@@ -81,3 +81,10 @@ project {
 project-column {
     outline: 1px solid green;
 }
+
+project-image project-image-item {
+    width: 500px;
+    height: 500px;
+    display: block;
+    position: relative;
+}
