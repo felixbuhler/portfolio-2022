@@ -1,8 +1,8 @@
 +++
 description = "Spektrum"
-image = ""
+image = "/uploads/ef3-placeholder-image.jpg"
 tags = []
 title = "SPEKTRUM Werkschau"
-year = 0
+year = nil
 
 +++
