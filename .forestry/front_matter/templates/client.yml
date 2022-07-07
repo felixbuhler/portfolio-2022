@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Client
+pages:
+- content/clients/alina-kossan.md
