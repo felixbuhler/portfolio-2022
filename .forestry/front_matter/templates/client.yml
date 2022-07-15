@@ -3,7 +3,7 @@ label: Client
 hide_body: true
 display_field: client_title
 fields:
-- name: client_title
+- name: clientTitle
   type: text
   config:
     required: false
