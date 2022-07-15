@@ -1,6 +1,7 @@
 ---
 label: Client
 hide_body: true
+display_field: client_title
 fields:
 - name: client_title
   type: text
