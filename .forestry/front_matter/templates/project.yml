@@ -42,7 +42,7 @@ fields:
     required: false
     options: []
     source:
-      type: documents
+      type: pages
       section: clients
       file: content/clients/cosmiccompositions.md
       path: 
