@@ -47,6 +47,19 @@ fields:
       file: content/clients/cosmiccompositions.md
       path: 
   label: Client
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: type
+  description: MDRV, Personal Project or Client Project
 pages:
 - content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
