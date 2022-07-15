@@ -36,5 +36,6 @@ fields:
   default: []
   label: Tags
 pages:
+- content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
 - content/posts/spektrum-werkschau.md
