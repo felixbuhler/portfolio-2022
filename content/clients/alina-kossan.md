@@ -1,4 +1,5 @@
 +++
+clientTitle = "Alina Kossan"
 client_title = "Alina Kossan"
 [[client_projects]]
 project_client_title = "YouTube Intro"
