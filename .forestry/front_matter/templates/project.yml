@@ -36,4 +36,5 @@ fields:
   default: []
   label: Tags
 pages:
+- content/posts/die-tur-die-wichtigkeit-des-banalen.md
 - content/posts/spektrum-werkschau.md
