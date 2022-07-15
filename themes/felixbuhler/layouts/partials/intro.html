@@ -1,3 +1,6 @@
 {{ with .Site.GetPage "/intro.md" }}{{ .Content }}{{ end }}
+
+I worked for {{ range ( where .Site.RegularPages "Type" "client" ) }} {{ .Title }} {{end}}.
+
 <a href="">Instagram</a>
 <a href="">Shop</a>

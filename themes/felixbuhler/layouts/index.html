@@ -2,10 +2,31 @@
 <projects>
     {{ range ( where .Site.RegularPages "Type" "posts" ) }}
     <project>
-        <h2>{{ .Title }}</h2>
+        <h2>{{ .Title }}
+
+
+
+
+
+
+            
+
+
+            {{ if in .Params.projectType "MDRV" }}
+                 Is MDRV Work
+            {{ else if in .Params.projectType "Client" }}
+             Is Client Work
+            {{ else if in .Params.projectType "Personal" }}
+             Personal Work
+            {{ end }}
+
+
+
+
+        </h2>
         {{ with .Params.image }}<project-image><img src="{{ . }}">
         </project-image>{{ end }}
-        <project-info>{{ .Description }}</project-info>
+        <project-info>{{ .Description | markdownify }}</project-info>
     </project>
     {{end}}
 </projects>
