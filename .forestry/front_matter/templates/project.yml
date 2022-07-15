@@ -35,6 +35,18 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: client
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: clients
+      file: 
+      path: 
+  label: Client
 pages:
 - content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
