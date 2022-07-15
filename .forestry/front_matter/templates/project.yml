@@ -47,7 +47,7 @@ fields:
       file: content/clients/cosmiccompositions.md
       path: 
   label: Client
-- name: type
+- name: projectType
   type: select
   default: []
   config:
@@ -61,7 +61,7 @@ fields:
       section: 
       file: 
       path: 
-  label: type
+  label: Type
   description: MDRV, Personal Project or Client Project
 pages:
 - content/posts/chromegan.md
