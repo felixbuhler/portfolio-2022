@@ -1,6 +1,6 @@
 {{ with .Site.GetPage "/intro.md" }}{{ .Content }}{{ end }}
 
-I worked for {{ range ( where .Site.Pages "Type" "Client" ) }}<client>{{ .Params.clientTitle }}</client>{{end}}.
+I worked for&nbsp;{{- partial "clients.html" . -}}.
 
 <a href="">Instagram</a>
 <a href="">Shop</a>

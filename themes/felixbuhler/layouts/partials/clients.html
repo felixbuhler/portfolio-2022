@@ -1,3 +1,1 @@
-{{ range where .Site.RegularPages "Section" "clients" }}
-{{ .Title }}
-{{ end }}
+{{ range ( where .Site.Pages "Type" "clients" ) }}<client>{{ .Params.clientTitle }}</client>{{end}}

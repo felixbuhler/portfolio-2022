@@ -10,7 +10,7 @@
         {{ if in .Params.projectType "MDRV" }}
         <mdrv>MDRV</mdrv>
         {{ else if in .Params.projectType "Client" }}
-        {{ $client := print .Params.client }} {{ with .GetPage $client }}<client>{{.Params.client_title}}</client>
+        {{ $client := print .Params.client }} {{ with .GetPage $client }}<client>{{.Params.clientTitle}}</client>
         {{end}}
         {{ else if in .Params.projectType "Personal" }}
         Personal Work
