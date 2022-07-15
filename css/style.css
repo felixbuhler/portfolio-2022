@@ -5,16 +5,22 @@
 
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
 
+    --font-size-base: 10px;
+
     --projects-gap: 10px;
+    --projects-columns: 5;
 
     --border-radius: 15px;
+    --border: 1px solid var(--color-black);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: var(--font-size-base);
     font-family: var(--font-sans);
+    box-sizing: border-box;
+
 }
 
 body,
@@ -34,8 +40,7 @@ intro {
 /* Projects */
 
 projects {
-    column-count: 5;
-    box-sizing: border-box;
+    column-count: var(--projects-columns);
     column-gap: 0px;
     display: block;
     width: 100vw;
@@ -44,6 +49,10 @@ projects {
     scroll-snap-type: x mandatory;
     scroll-snap-points-x: repeat(20vw);
     outline: 1px solid red;
+    padding: var(--projects-gap) 0px;
+    counter-reset: section;
+
+
 
 }
 
@@ -54,6 +63,13 @@ project {
     display: block;
     scroll-snap-align: start;
     margin-bottom: 50px;
+}
+
+/* Projects › Single Project › Fig. */
+
+fig:after {
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero);
 }
 
 /* Projects › Single Project › Headline */
@@ -76,7 +92,7 @@ h2 mdrv:before {
 
 project-image {
     border-radius: var(--border-radius);
-    margin: 20px 0px;
+    margin: var(--projects-gap) 0;
     width: 100%;
     height: auto;
     display: block;
@@ -98,6 +114,10 @@ year {
 
 /* Projects › Single Project › Tags */
 
+tags {
+    display: block;
+}
+
 tag {
     border: 1px solid var(--color-black);
     border-radius: var(--border-radius);
@@ -117,9 +137,17 @@ project a[project-link] {
     width: 100%;
     background: var(--color-accent);
     display: block;
-    padding: 10px 0px;
+    padding: 7px 0px;
     border-radius: var(--border-radius);
     color: inherit;
     text-align: center;
     text-decoration: none;
+    overflow: hidden;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+    border: var(--border);
+}
+
+project a[project-link] link-content:after {
+    content: "→";
+    margin: 0 10px;
 }
