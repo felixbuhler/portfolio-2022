@@ -4,6 +4,7 @@ description = "In the tragicomedy „Good Die My Friend“ a supposedly trivial 
 image = ""
 tags = []
 title = "Good Die My Friend"
+type = "MDRV"
 year = 2016
 
 +++
