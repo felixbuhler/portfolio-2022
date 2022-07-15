@@ -52,7 +52,10 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - MDRV
+    - Client
+    - Personal
     source:
       type: simple
       section: 
