@@ -7,11 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: image
-  type: file
-  config:
-    maxSize: 64
-  label: Image
 - name: projectType
   type: select
   default: []
@@ -27,6 +22,26 @@ fields:
       file: 
       path: 
   label: Project Type
+- name: client
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: clients
+      file: content/clients/cosmiccompositions.md
+      path: 
+  label: Client
+  showOnly:
+    field: projectType
+    value: Client
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
 - name: description
   type: textarea
   default: ''
@@ -50,18 +65,6 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: client
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: clients
-      file: content/clients/cosmiccompositions.md
-      path: 
-  label: Client
 pages:
 - content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
