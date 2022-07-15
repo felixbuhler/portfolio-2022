@@ -7,11 +7,6 @@ fields:
   config:
     required: false
   label: Client Title
-- name: test
-  type: text
-  config:
-    required: false
-  label: Test
 pages:
 - content/clients/alina-kossan.md
 - content/clients/cosmiccompositions.md
