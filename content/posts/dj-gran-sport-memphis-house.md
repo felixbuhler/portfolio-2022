@@ -4,6 +4,7 @@ description = "DJ GRAN SPORT is an artist who spent most of his life transient b
 image = "/uploads/8b6d5b105406853-612a80da12eca.jpg"
 tags = []
 title = " DJ Gran Sport — Memphis House"
+type = "Client"
 year = 2021
 
 +++
