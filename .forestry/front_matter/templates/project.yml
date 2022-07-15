@@ -65,13 +65,6 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: category
-  type: field_group_list
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Category
 pages:
 - content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
