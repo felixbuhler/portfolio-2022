@@ -37,6 +37,14 @@ intro {
     display: block;
 }
 
+intro client:after {
+    content: ", ";
+}
+
+intro client:last-of-type:after {
+    content: " and many more";
+}
+
 /* Projects */
 
 projects {
@@ -74,17 +82,17 @@ fig:after {
 
 /* Projects › Single Project › Headline */
 
-h2 client:before,
-h2 mdrv:before {
+project h2 client:before,
+project h2 mdrv:before {
 
     font-family: serif;
 }
 
-h2 client:before {
+project h2 client:before {
     content: "for";
 }
 
-h2 mdrv:before {
+project h2 mdrv:before {
     content: "at";
 }
 
