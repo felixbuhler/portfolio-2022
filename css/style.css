@@ -1,11 +1,13 @@
 :root {
     --color-black: #1d1d1d;
-    --color-black: #ededed;
+    --color-white: #ededed;
     --color-accent: #00ff00;
 
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
 
-    --projects-gap: 20px;
+    --projects-gap: 10px;
+
+    --border-radius: 15px;
 }
 
 * {
@@ -15,6 +17,13 @@
     font-family: var(--font-sans);
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
+/* Intro */
+
 intro {
     width: 100vw;
     height: 300px;
@@ -22,43 +31,95 @@ intro {
     display: block;
 }
 
+/* Projects */
+
 projects {
     column-count: 5;
     box-sizing: border-box;
-    column-gap: var(--projects-gap);
+    column-gap: 0px;
     display: block;
     width: 100vw;
     overflow-x: auto;
     height: 100vh;
     scroll-snap-type: x mandatory;
     scroll-snap-points-x: repeat(20vw);
-    scroll-padding: 5px;
     outline: 1px solid red;
 
 }
 
+/* Projects › Single Project */
+
 project {
+    padding: 0 var(--projects-gap);
     display: block;
     scroll-snap-align: start;
-    border-bottom: 1px solid black;
     margin-bottom: 50px;
+}
+
+/* Projects › Single Project › Headline */
+
+h2 client:before,
+h2 mdrv:before {
+
+    font-family: serif;
 }
 
 h2 client:before {
     content: "for";
-    font-family: serif;
 }
 
+h2 mdrv:before {
+    content: "at";
+}
+
+/* Projects › Single Project › Project Image */
+
 project-image {
-    background: red;
+    border-radius: var(--border-radius);
     margin: 20px 0px;
     width: 100%;
     height: auto;
     display: block;
+    overflow: hidden;
 }
 
 project-image img {
     display: block;
     width: 100%;
     height: auto;
+    pointer-events: none;
+}
+
+/* Projects › Single Project › Year */
+
+year {
+    display: block;
+}
+
+/* Projects › Single Project › Tags */
+
+tag {
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius);
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+/* Projects › Single Project › Description */
+
+project-info p {
+    margin-bottom: 10px;
+}
+
+/* Projects › Single Project › View Project Button */
+
+project a[project-link] {
+    width: 100%;
+    background: var(--color-accent);
+    display: block;
+    padding: 10px 0px;
+    border-radius: var(--border-radius);
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
 }
