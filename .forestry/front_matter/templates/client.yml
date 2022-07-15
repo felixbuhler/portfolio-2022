@@ -7,13 +7,5 @@ fields:
   config:
     required: false
   label: Client Title
-- name: client_projects
-  type: blocks
-  label: Client Projects
-  template_types:
-  - project-per-client
-  config:
-    min: 
-    max: 
 pages:
 - content/clients/alina-kossan.md
