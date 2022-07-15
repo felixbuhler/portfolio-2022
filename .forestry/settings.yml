@@ -5,6 +5,11 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: content/posts
+  label: Projects
+  create: all
+  match: "**/*"
+- type: directory
   path: content/clients
   label: Clients
   create: documents
@@ -14,11 +19,6 @@ sections:
   label: Pages
   create: all
   match: "*"
-- type: directory
-  path: content/posts
-  label: Posts
-  create: all
-  match: "**/*"
 - type: document
   path: content/intro.md
   label: Intro Text
