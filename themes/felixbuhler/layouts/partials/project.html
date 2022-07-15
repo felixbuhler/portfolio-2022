@@ -1,9 +1,6 @@
 <!--  {{ .Title }} -->
 <project>
-    <!-- Project Image -->
-    {{ with .Params.image }}<project-image><img src="{{ . }}">
-    </project-image>{{ end }}
-
+    <fig>Fig. </fig>
     <!-- Title -->
     <h2>
 
@@ -19,6 +16,11 @@
         Personal Work
         {{ end }}
     </h2>
+    <!-- Project Image -->
+    {{ with .Params.image }}<project-image><img src="{{ . }}">
+    </project-image>{{ end }}
+
+    
 
     <!-- Project Info -->
     <project-info>
@@ -41,7 +43,7 @@
         href="{{ . }}"
         alt="{{ $.Title }} on {{ $.Params.projectURLSite }}"
         project-link>
-        <link-content>View {{ $.Title }} on {{ $.Params.projectURLSite }} &rarr;</link-content>
+        <link-content>View {{ $.Title }} on {{ $.Params.projectURLSite }}</link-content>
     </a>
     {{ end }}
 </project>
