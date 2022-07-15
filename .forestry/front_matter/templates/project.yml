@@ -65,6 +65,16 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: projectURL
+  type: text
+  config:
+    required: false
+  label: Project URL
+- name: projectURLSite
+  type: text
+  config:
+    required: false
+  label: Project URL Site
 pages:
 - content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
