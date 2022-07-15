@@ -1,0 +1,47 @@
+<!--  {{ .Title }} -->
+<project>
+    <!-- Project Image -->
+    {{ with .Params.image }}<project-image><img src="{{ . }}">
+    </project-image>{{ end }}
+
+    <!-- Title -->
+    <h2>
+
+        {{ .Title }}
+
+        <!-- Project Type-->
+        {{ if in .Params.projectType "MDRV" }}
+        <mdrv>MDRV</mdrv>
+        {{ else if in .Params.projectType "Client" }}
+        {{ $client := print .Params.client }} {{ with .GetPage $client }}<client>{{.Params.client_title}}</client>
+        {{end}}
+        {{ else if in .Params.projectType "Personal" }}
+        Personal Work
+        {{ end }}
+    </h2>
+
+    <!-- Project Info -->
+    <project-info>
+        <!-- Year -->
+        <year>{{ .Params.year }}</year>
+        <!-- Tags -->
+        <tags>
+            {{ range .Params.tags }}
+            <tag>{{ . }}</tag>
+            {{ end }}
+        </tags>
+        <!-- Description -->
+        {{ .Description | markdownify }}
+    </project-info>
+    {{ with .Params.projectURL }}
+    <a class="marquee3k"
+        data-speed="0.25"
+        data-reverse="bool"
+        data-pausable="bool"
+        href="{{ . }}"
+        alt="{{ $.Title }} on {{ $.Params.projectURLSite }}"
+        project-link>
+        <link-content>View {{ $.Title }} on {{ $.Params.projectURLSite }} &rarr;</link-content>
+    </a>
+    {{ end }}
+</project>
