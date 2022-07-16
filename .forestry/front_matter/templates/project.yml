@@ -61,7 +61,7 @@ fields:
   label: Project Color
   config:
     required: false
-    color_format: RGB
+    color_format: Hex
   default: "#000000"
 - name: description
   type: textarea
