@@ -32,7 +32,7 @@
         {{ .Description | markdownify }}
     </project-info>
     <!-- Project Image -->
-    {{ with .Params.image }}<project-image style="background: url({{ $.Site.BaseURL }}/{{ . }}), {{ $.Params.projectColor }};">
+    {{ with .Params.image }}<project-image style="background: url({{ $.Site.BaseURL }}/{{ . }}), {{ $.Params.projectColor }};" {{ $.Params.imageSize }}>
     </project-image>{{ end }}
     <!-- More Button -->
     {{ with .Params.projectURL }}
