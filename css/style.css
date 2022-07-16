@@ -2,9 +2,10 @@
     --color-black: #1d1d1d;
     --color-white: #ededed;
     --color-accent: #00ff00;
+    --color-shade: rgba(0, 0, 0, 0.05);
 
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
-    --font-serif: 'Ibarra Real Nova', Times, serif;
+    --font-serif: 'Fraunces', Times, serif;
 
     --font-size-base: 10px;
 
@@ -34,26 +35,87 @@ html {
 
 intro {
     width: 100vw;
-    height: 300px;
+    height: 100vh;
+    display: block;
+    padding: var(--projects-gap);
+    display: grid;
+    grid-gap: var(--projects-gap);
+    grid-template-columns: 1fr 1fr;
+
+}
+
+intro content, footer content {
+    border-radius: var(--border-radius);
+    padding: var(--projects-gap);
     background: var(--color-accent);
     display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    line-height: 1.4em;
+    width: 1fr
 }
 
-intro client:after {
-    content: ", ";
+intro content * {
+    font-size: 3rem;
+    line-height: 1.4em;
 }
 
-intro client:last-of-type:after {
+intro content[info] {
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+}
+
+intro content[info] info {
+    width: 75%;
+}
+
+intro content[clients] {
+    font-size: var(--font-size-base);
+}
+
+intro content[clients] clients {
+    column-count: var(--projects-columns);
+    display: block;
+    width: 100%;
+}
+
+intro content[clients] clients client {
+    font-size: var(--font-size-base);
+    line-height: 1rem;
+    display: block;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 5px;
+}
+
+intro content[clients] clients client:after {
+    content: "";
+}
+
+intro content[clients] clients client:last-of-type:after {
     content: " and many more";
 }
 
 /* Helpers */
 
 bubble {
-    border: var(--border);
+    border: 0.08em solid var(--color-black);
     border-radius: 50%;
     display: inline-block;
-    padding: 2px 5px;
+    padding: 0.1em 0.5em;
+    line-height: 1.2em;
+}
+
+serif {
+    font-family: var(--font-serif);
+    font-style: normal;
+    font-size: 1.14em;
+    letter-spacing: -0.01em;
 }
 
 no-no-no-no-dont-phunk-with-my-words {
@@ -73,10 +135,8 @@ projects {
     height: 100vh;
     scroll-snap-type: x mandatory;
     scroll-snap-points-x: repeat(20vw);
-    outline: 1px solid red;
     padding: var(--projects-gap) 0px;
     counter-reset: section;
-
 
 
 }
@@ -106,12 +166,19 @@ fig:after {
 
 /* Projects › Single Project › Headline */
 
+project h2 client,
+project h2 mdrv,
+project h2 personal-work {
+    display: block;
+}
+
 project h2 client:before,
 project h2 mdrv:before {
     font-style: italic;
 
     font-family: var(--font-serif);
-    font-weight: normal; margin-right: 5px;
+    font-weight: normal;
+    margin-right: 5px;
     text-transform: uppercase;
 }
 
@@ -144,6 +211,10 @@ project-image[cover] {
     background-size: cover !important;
 }
 
+project-image[contain] {
+    background-size: contain !important;
+}
+
 /* Projects › Single Project › Year */
 
 year {
@@ -155,13 +226,15 @@ year {
 tags {
     display: block;
     margin: var(--projects-gap) 0;
-    line-height: 1.75rem;
+    line-height: 2.1rem;
+    width: 100%;
+    position: relative;
 }
 
 tag {
     border: 1px solid var(--color-black);
-    border-radius: var(--border-radius);
-    padding: 0 5px;
+    border-radius: 3px;
+    padding: 2px 5px;
     white-space: nowrap;
 }
 
@@ -169,17 +242,11 @@ tag {
 
 project-info {
     display: block;
-}
-
-project-info p,
-project-info {
-    margin-bottom: 10px;
+    margin-bottom: var(--projects-gap);
 }
 
 project-info p {
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    break-inside: avoid;
+
     text-indent: 10px;
 }
 
@@ -191,16 +258,12 @@ project-info p:last-child {
 
 project a[project-link] {
     width: 100%;
-    background: var(--color-accent);
     display: block;
-    padding: 7px 0px;
-    border-radius: var(--border-radius);
     color: inherit;
     text-align: center;
     text-decoration: none;
     overflow: hidden;
     -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-    border: var(--border);
 }
 
 project a[project-link] link-content:after {
@@ -212,8 +275,19 @@ project a[project-link] link-content:after {
 
 footer {
     display: flex;
+    display: block;
+    padding: var(--projects-gap);
+    display: grid;
+    grid-gap: var(--projects-gap);
+    grid-template-columns: 1fr 1fr;
+    font-size: var(--font-size-base);
 }
 
-footer column {
-    flex: 0 0 50%;
+footer * {
+    font-size: var(--font-size-base);
+}
+
+footer content {
+    background: var(--color-shade);
+    font-size: var(--font-size-base);
 }
