@@ -1,4 +1,4 @@
 +++
 
 +++
-Felix Buhler is designer living and working in Berlin. {{< textinbubble lore >}}
+Felix Buhler is designer living and working in Berlin. {{< bubble lore >}}
