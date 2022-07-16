@@ -42,6 +42,20 @@ fields:
   config:
     maxSize: 64
   label: Image
+- name: imageSize
+  type: select
+  default: contain
+  config:
+    required: false
+    options:
+    - contain
+    - cover
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Image Size
 - name: projectColor
   type: color
   label: Project Color
@@ -82,20 +96,6 @@ fields:
   config:
     required: false
   label: Project URL Site
-- name: imageSize
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - contain
-    - cover
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Image Size
 pages:
 - content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
