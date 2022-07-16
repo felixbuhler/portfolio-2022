@@ -23,9 +23,9 @@ sections:
   path: content/intro.md
   label: Intro Text
 upload_dir: static/uploads
-public_path: "/uploads"
+public_path: felix-buhler-portfolio-2022.netlify.app/uploads
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_env:
