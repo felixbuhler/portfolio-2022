@@ -4,6 +4,7 @@
     --color-accent: #00ff00;
 
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
+    --font-serif: 'Ibarra Real Nova', Times, serif;
 
     --font-size-base: 10px;
 
@@ -91,17 +92,27 @@ project {
 
 /* Projects › Single Project › Fig. */
 
+fig {
+    font-family: var(--font-serif);
+    font-style: italic;
+    letter-spacing: 0.02rem;
+}
+
 fig:after {
     counter-increment: section;
     content: counter(section, decimal-leading-zero);
+
 }
 
 /* Projects › Single Project › Headline */
 
 project h2 client:before,
 project h2 mdrv:before {
+    font-style: italic;
 
-    font-family: serif;
+    font-family: var(--font-serif);
+    font-weight: normal; margin-right: 5px;
+    text-transform: uppercase;
 }
 
 project h2 client:before {
@@ -127,6 +138,10 @@ project-image {
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
+}
+
+project-image[cover] {
+    background-size: cover !important;
 }
 
 /* Projects › Single Project › Year */
