@@ -1,7 +1,7 @@
 +++
 client = ""
 description = "Lorem _ipsum_ dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n\n<div>Megaaaa</div>"
-image = "uploads/3f906558956519-5a2cfc403b205.gif"
+image = "uploads/41307858956519-5a62774ee075d.jpg"
 imageSize = "cover"
 projectColor = "#FFFFFF"
 projectType = "MDRV"
