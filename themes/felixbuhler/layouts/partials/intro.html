@@ -1,6 +1,13 @@
-{{ with .Site.GetPage "/intro.md" }}{{ .Content }}{{ end }}
+<content info>
+    <info>
+        {{ with .Site.GetPage "/intro.md" }}{{ .Content }}{{ end }}
 
-I worked for&nbsp;{{- partial "clients.html" . -}}.
 
-<a href="">Instagram</a>
-<a href="">Shop</a>
+
+        <a href="">Instagram</a>
+        <a href="">Shop</a>
+    </info>
+</content>
+<content clients>
+    I worked for&nbsp;{{- partial "clients.html" . -}}.
+</content>

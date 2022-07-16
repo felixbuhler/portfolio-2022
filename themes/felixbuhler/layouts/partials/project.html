@@ -14,7 +14,7 @@
             {{ $client := print .Params.client }} {{ with .GetPage $client }}<client>{{.Params.clientTitle}}</client>
             {{end}}
             {{ else if in .Params.projectType "Personal" }}
-            Personal Work
+            <personal-work>Personal Work</personal-work>
             {{ end }}
         </h2>
     </no-no-no-no-dont-phunk-with-my-words>
