@@ -1,10 +1,12 @@
 +++
-client = []
-description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+client = "clients/eoschamberorchestra.md"
+description = "The eos chamber orchestra develops progressive concepts beyond the traditional concert business: Genre boundaries are overturned, new worlds of sound are created. Formdusche created a branding that translates eos' approach in a visible form. Abstract, fluid forms generate a cosmos of light, color and spatial depth."
 image = ""
 projectType = "Client"
-tags = []
+projectURL = "https://formdusche.de/work/eos-chamber-orchestra/"
+projectURLSite = "formdusche"
+tags = ["Branding", "3D", "UX / UI", "Motion Design"]
 title = "eos chamber orchestra"
-year = 1999
+year = 2020
 
 +++
