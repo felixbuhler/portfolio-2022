@@ -9,6 +9,7 @@ fields:
     required: false
   label: Client Title
 pages:
+- content/clients/Zebrakatz.md
 - content/clients/alina-kossan.md
 - content/clients/cosmiccompositions.md
 - content/clients/ddc.md
