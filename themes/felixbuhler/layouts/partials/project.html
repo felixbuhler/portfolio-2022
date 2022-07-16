@@ -1,21 +1,23 @@
 <!--  {{ .Title }} -->
-<project>
-    <fig>Fig. </fig>
-    <!-- Title -->
-    <h2>
+<project id="{{ .File.TranslationBaseName }}">
+    <no-no-no-no-dont-phunk-with-my-words>
+        <fig>Fig. </fig>
+        <!-- Title -->
+        <h2>
 
-        {{ .Title }}
+            {{ .Title }}
 
-        <!-- Project Type-->
-        {{ if in .Params.projectType "MDRV" }}
-        <mdrv>MDRV</mdrv>
-        {{ else if in .Params.projectType "Client" }}
-        {{ $client := print .Params.client }} {{ with .GetPage $client }}<client>{{.Params.clientTitle}}</client>
-        {{end}}
-        {{ else if in .Params.projectType "Personal" }}
-        Personal Work
-        {{ end }}
-    </h2>
+            <!-- Project Type-->
+            {{ if in .Params.projectType "MDRV" }}
+            <mdrv>MDRV</mdrv>
+            {{ else if in .Params.projectType "Client" }}
+            {{ $client := print .Params.client }} {{ with .GetPage $client }}<client>{{.Params.clientTitle}}</client>
+            {{end}}
+            {{ else if in .Params.projectType "Personal" }}
+            Personal Work
+            {{ end }}
+        </h2>
+    </no-no-no-no-dont-phunk-with-my-words>
     <!-- Project Info -->
     <project-info>
         <!-- Year -->
@@ -30,7 +32,7 @@
         {{ .Description | markdownify }}
     </project-info>
     <!-- Project Image -->
-    {{ with .Params.image }}<project-image><img src="{{ $.Site.BaseURL }}/{{ . }}">
+    {{ with .Params.image }}<project-image style="background: url(https://{{ . }}?nf_resize=fit&h=300), {{ $.Params.projectColor }};">
     </project-image>{{ end }}
     <!-- More Button -->
     {{ with .Params.projectURL }}
