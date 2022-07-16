@@ -22,7 +22,7 @@ sections:
 - type: document
   path: content/intro.md
   label: Intro Text
-upload_dir: ''
+upload_dir: static/uploads
 public_path: ''
 front_matter_path: ''
 use_front_matter_path: 
