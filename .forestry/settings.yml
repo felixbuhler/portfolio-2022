@@ -23,7 +23,7 @@ sections:
   path: content/intro.md
   label: Intro Text
 upload_dir: static/uploads
-public_path: ''
+public_path: uploads
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
