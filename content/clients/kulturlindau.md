@@ -1,0 +1,4 @@
++++
+clientTitle = "Kultur Lindau"
+
++++
