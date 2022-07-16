@@ -46,13 +46,19 @@ intro client:last-of-type:after {
     content: " and many more";
 }
 
-/* Text */
+/* Helpers */
 
 bubble {
     border: var(--border);
     border-radius: 50%;
     display: inline-block;
     padding: 2px 5px;
+}
+
+no-no-no-no-dont-phunk-with-my-words {
+    display: block;
+    width: 100%;
+    position: relative;
 }
 
 /* Projects */
@@ -112,16 +118,15 @@ project-image {
     border-radius: var(--border-radius);
     margin: var(--projects-gap) 0;
     width: 100%;
-    height: auto;
+    aspect-ratio: 16/9;
     display: block;
     overflow: hidden;
-}
-
-project-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    pointer-events: none;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
 }
 
 /* Projects › Single Project › Year */
@@ -147,11 +152,20 @@ tag {
 
 /* Projects › Single Project › Description */
 
-project-info {display: block;}
+project-info {
+    display: block;
+}
 
 project-info p,
 project-info {
     margin-bottom: 10px;
+}
+
+project-info p {
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    text-indent: 10px;
 }
 
 project-info p:last-child {
@@ -177,4 +191,14 @@ project a[project-link] {
 project a[project-link] link-content:after {
     content: "→";
     margin: 0 10px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+}
+
+footer column {
+    flex: 0 0 50%;
 }
