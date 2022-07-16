@@ -16,12 +16,6 @@
         Personal Work
         {{ end }}
     </h2>
-    <!-- Project Image -->
-    {{ with .Params.image }}<project-image><img src="{{ . }}">
-    </project-image>{{ end }}
-
-    
-
     <!-- Project Info -->
     <project-info>
         <!-- Year -->
@@ -35,6 +29,10 @@
         <!-- Description -->
         {{ .Description | markdownify }}
     </project-info>
+    <!-- Project Image -->
+    {{ with .Params.image }}<project-image><img src="{{ $.Site.BaseURL }}/{{ . }}">
+    </project-image>{{ end }}
+    <!-- More Button -->
     {{ with .Params.projectURL }}
     <a class="marquee3k"
         data-speed="0.25"
