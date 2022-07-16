@@ -1,4 +1,19 @@
 ---
 label: Feature
 hide_body: true
-fields: []
+fields:
+- name: featureTitle
+  type: text
+  config:
+    required: false
+  label: Feature Title
+- name: featureYear
+  type: number
+  label: Year
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
