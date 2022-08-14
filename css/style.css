@@ -311,7 +311,10 @@ project-image[contain] {
     background-size: contain !important;
 }
 
-project-info iframe {max-width: 100%;}
+project-info iframe {
+    max-width: 100%;
+    max-height: calc((100vw) / (16/9));
+}
 
 /* Projects › Single Project › Year */
 
