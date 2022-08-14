@@ -15,10 +15,13 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <!-- Fonts Links -->
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Inter:wght@400;600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://use.typekit.net/oiv8rye.css">
+
 
 
   <!-- CSS Files Links -->
@@ -30,11 +33,16 @@
     defer
     type="text/javascript"></script>
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+
   <!-- Site JavaScript -->
   <script src="{{ .Site.BaseURL }}/js/site.js"
     defer
     type="text/javascript"></script>
 
   <!-- Title -->
-  <title>Felix Buhler && Designer + Art Director</title>
+  <title>{{ .Page.Title }}</title>
 </head>

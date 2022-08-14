@@ -1,2 +1,2 @@
 
-<clients>{{ range ( where .Site.Pages "Type" "feautres" ) }}<client>{{ .Params.featureTitle }}</client>{{end}}</clients>
+<clients>{{ range ( where .Site.Pages "Type" "features" ) }}<client>{{ .Params.featureTitle }} ({{ .Params.featureYear }})</client>{{end}}</clients>
