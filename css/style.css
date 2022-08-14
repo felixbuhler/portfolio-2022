@@ -244,7 +244,19 @@ project {
     padding: 0 var(--projects-gap);
     display: block;
     scroll-snap-align: start;
-    margin-bottom: 50px;
+    margin-bottom: 25px; 
+}
+
+project:after {
+    --line-width: 60%;
+    content: "";
+    width: var(--line-width);
+    height: 0px;
+    display: block;
+    left: calc(50% - 0.5 * var(--line-width));
+    position: relative;
+    margin-top: 25px;
+    border-bottom: var(--border);
 }
 
 /* Projects › Single Project › Fig. */
