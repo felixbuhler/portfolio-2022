@@ -31,9 +31,8 @@
         <!-- Description -->
         {{ .Description | markdownify }}
     </project-info>
-    <!-- Project Image 
-    {{ with .Params.image }}<project-image style="background: url({{ $.Site.BaseURL }}/{{ . }}), {{ $.Params.projectColor }};" {{ $.Params.imageSize }}>
-    </project-image>{{ end }}-->
+    <!-- Project Image -->
+    
     <!-- More Button -->
     {{ with .Params.projectURL }}
     <a class="marquee3k"
