@@ -224,7 +224,9 @@ input:checked+.slider:before {
 /* Projects */
 
 projects {
-    display: flex;
+    column-count: var(--projects-columns);
+    column-gap: 0px;
+    display: block;
     width: 100vw;
     overflow-x: auto;
     height: auto;
@@ -232,8 +234,7 @@ projects {
     scroll-snap-points-x: repeat(20vw);
     padding: var(--projects-gap) 0px;
     counter-reset: section;
-    flex-wrap: nowrap;
-    flex-direction: row;
+
 
 }
 
@@ -241,13 +242,9 @@ projects {
 
 project {
     padding: 0 var(--projects-gap);
-    position: relative;
     display: block;
     scroll-snap-align: start;
     margin-bottom: 25px;
-    flex-basis: 20vw;
-    flex: 1 1 20vw;
-    min-width: 20vw;
 }
 
 project:after {
