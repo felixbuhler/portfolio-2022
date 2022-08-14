@@ -29,9 +29,9 @@
             {{ end }}
         </tags>
         <!-- Description -->
-       
+        {{ .Description }}
 
-        {{ with .Description }}{{ . | markdownify }}{{ end }}
+      
     </project-info>
     <!-- Project Image -->
     {{ with .Params.image }}<project-image style="background: url({{ $.Site.BaseURL }}/{{ . }}), {{ $.Params.projectColor }};" {{ $.Params.imageSize }}>
