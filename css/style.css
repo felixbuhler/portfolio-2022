@@ -5,7 +5,8 @@
     --color-shade: rgba(0, 0, 0, 0.05);
 
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
-    --font-serif: 'Fraunces', Times, serif;
+    --font-serif-small: 'Fraunces', Times, serif;
+    --font-serif: beaufort-pro, serif;
 
     --font-size-base: 10px;
 
@@ -14,6 +15,8 @@
 
     --border-radius: 15px;
     --border: 1px solid var(--color-black);
+
+    --switch-height: 20px;
 }
 
 * {
@@ -25,6 +28,30 @@
     line-height: 1.2rem;
 
 }
+
+/* Scrollbar */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-shade) var(--color-white);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-white);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-shade);
+    border-radius: 5px;
+    border: 3px solid var(--color-white);
+}
+
+/* Body */
 
 body,
 html {
@@ -44,7 +71,8 @@ intro {
 
 }
 
-intro content, footer content {
+intro content,
+footer content {
     border-radius: var(--border-radius);
     padding: var(--projects-gap);
     background: var(--color-accent);
@@ -114,7 +142,7 @@ bubble {
 serif {
     font-family: var(--font-serif);
     font-style: normal;
-    font-size: 1.14em;
+    font-size: 1.14em !important;
     letter-spacing: -0.01em;
 }
 
@@ -122,6 +150,74 @@ no-no-no-no-dont-phunk-with-my-words {
     display: block;
     width: 100%;
     position: relative;
+}
+
+/* Switch */
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: calc(2 * var(--switch-height));
+    height: var(--switch-height);
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: calc(var(--switch-height) - 8px);
+    width: calc(var(--switch-height) - 8px);
+    left: 2px;
+    bottom: 2px;
+    background-color: transparent;
+    border: 1px solid var(--color-black);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: transparent;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--color-black);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(var(--switch-height));
+    -ms-transform: translateX(var(--switch-height));
+    transform: translateX(var(--switch-height));
+    background-color: var(--color-black);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 /* Projects */
@@ -153,7 +249,7 @@ project {
 /* Projects › Single Project › Fig. */
 
 fig {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif-small);
     font-style: italic;
     letter-spacing: 0.02rem;
 }
@@ -176,7 +272,7 @@ project h2 client:before,
 project h2 mdrv:before {
     font-style: italic;
 
-    font-family: var(--font-serif);
+    font-family: var(--font-serif-small);
     font-weight: normal;
     margin-right: 5px;
     text-transform: uppercase;
@@ -214,6 +310,8 @@ project-image[cover] {
 project-image[contain] {
     background-size: contain !important;
 }
+
+project-info iframe {max-width: 100%;}
 
 /* Projects › Single Project › Year */
 
