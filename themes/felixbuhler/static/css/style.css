@@ -225,15 +225,13 @@ input:checked+.slider:before {
 
 projects {
     column-count: var(--projects-columns);
-    column-gap: 0px;
+    column-gap: var(--projects-gap);
     display: block;
     width: 100vw;
-    overflow-x: auto;
     height: auto;
-    scroll-snap-type: x proximity;
-    scroll-snap-points-x: repeat(20vw);
     padding: var(--projects-gap) 0px;
     counter-reset: section;
+    padding: 0 var(--projects-gap);
 
 
 }
@@ -241,22 +239,15 @@ projects {
 /* Projects › Single Project */
 
 project {
-    padding: 0 var(--projects-gap);
+    padding: var(--projects-gap);
     display: block;
     scroll-snap-align: start;
-    margin-bottom: 25px;
-}
-
-project:after {
-    --line-width: 60%;
-    content: "";
-    width: var(--line-width);
-    height: 0px;
-    display: block;
-    left: calc(50% - 0.5 * var(--line-width));
-    position: relative;
-    margin-top: 25px;
-    border-bottom: var(--border);
+    margin-bottom: var(--projects-gap);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
 }
 
 /* Projects › Single Project › Fig. */
