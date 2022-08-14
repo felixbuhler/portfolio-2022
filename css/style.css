@@ -38,7 +38,7 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
 }
 
 *::-webkit-scrollbar-track {
@@ -46,7 +46,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--color-shade);
+    background-color: var(--color-black);
     border-radius: 5px;
     border: 3px solid var(--color-white);
 }
@@ -229,7 +229,7 @@ projects {
     width: 100vw;
     overflow-x: auto;
     height: 100vh;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     scroll-snap-points-x: repeat(20vw);
     padding: var(--projects-gap) 0px;
     counter-reset: section;
@@ -313,7 +313,12 @@ project-image[contain] {
 
 project-info iframe {
     max-width: 100%;
-    max-height: calc((100vw) / (16/9));
+    height: auto;
+}
+
+div.embed.video-player {
+    overflow: hidden;
+    border-radius: var(--border-radius);
 }
 
 /* Projects › Single Project › Year */
