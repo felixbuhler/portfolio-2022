@@ -1,10 +1,10 @@
 Marquee3k.init()
 
 // Hide Description
-
+$('project-info').hide(500)
 $('.checkcheck').click(function () {
 
-    this.checked ? $('project-info').hide(500) : $('project-info').show(500);
+    this.checked ? $('project-info').show(500) : $('project-info').hide(500);
 
     this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
 });
@@ -21,10 +21,3 @@ const sortable = new Draggable.Sortable(document.querySelectorAll('projects'), {
     plugins: [Draggable.Plugins.SwapAnimation]
 });
 
-// Switch Follow
-
-$(document).mousemove(function (e) {
-    $('switch').offset({
-        left: e.pageX - 30
-    });
-});
