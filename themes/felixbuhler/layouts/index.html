@@ -1,8 +1,13 @@
 {{ define "main" }}
-<label class="switch">
-    <input type="checkbox" class="checkcheck"> <span class="slider round"></span> </label>
+<switch-wrapper>
+    <switch>
+        <label class="switch">
+            <input type="checkbox" class="checkcheck"> <span class="slider round"></span></label>
+
+    </switch>
+</switch-wrapper>
 <projects>
-    
+
     {{ range ( where .Site.RegularPages "Type" "posts" ) }}
     {{- partial "project.html" . -}}
     {{end}}

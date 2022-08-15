@@ -1,9 +1,9 @@
 <!--  {{ .Title }} -->
 <project id="{{ .File.TranslationBaseName }}">
     <no-no-no-no-dont-phunk-with-my-words>
-        <fig>Fig. </fig>
-        <!-- Title -->
-        <h2>
+        <fig></fig>
+         <!-- Title -->
+         <h2>
 
             {{ .Title }}
 
@@ -17,6 +17,12 @@
             <personal-work>Personal Work</personal-work>
             {{ end }}
         </h2>
+        <!-- Project Image -->
+        {{ with .Params.image }}<project-image
+            style="background: url({{ $.Site.BaseURL }}/{{ . }}), {{ $.Params.projectColor }};" {{ $.Params.imageSize
+            }}>
+        </project-image>{{ end }}
+       
     </no-no-no-no-dont-phunk-with-my-words>
     <!-- Project Info -->
     <project-info>
@@ -31,20 +37,13 @@
         <!-- Description -->
         {{ .Description | markdownify}}
 
-      
+
     </project-info>
-    <!-- Project Image -->
-    {{ with .Params.image }}<project-image style="background: url({{ $.Site.BaseURL }}/{{ . }}), {{ $.Params.projectColor }};" {{ $.Params.imageSize }}>
-    </project-image>{{ end }}
+
     <!-- More Button -->
     {{ with .Params.projectURL }}
-    <a class="marquee3k"
-        data-speed="0.25"
-        data-reverse="bool"
-        data-pausable="bool"
-        href="{{ . }}"
-        alt="{{ $.Title }} on {{ $.Params.projectURLSite }}"
-        project-link>
+    <a class="marquee3k" data-speed="0.25" data-reverse="bool" data-pausable="bool" href="{{ . }}"
+        alt="{{ $.Title }} on {{ $.Params.projectURLSite }}" project-link>
         <link-content>View {{ $.Title }} on {{ $.Params.projectURLSite }}</link-content>
     </a>
     {{ end }}
