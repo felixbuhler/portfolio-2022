@@ -1,7 +1,7 @@
 :root {
     --color-black: #1d1d1d;
     --color-white: #ededed;
-    --color-accent: #00ff00;
+    --color-accent: blue;
     --color-shade: rgba(0, 0, 0, 0.05);
 
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
@@ -248,6 +248,7 @@ project {
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
+    border: var(--border);
 }
 
 /* Projects › Single Project › Fig. */
