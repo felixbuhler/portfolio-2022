@@ -1,8 +1,8 @@
 :root {
     --color-black: #1d1d1d;
-    --color-white: #ededed;
+    --color-white: rgb(240, 240, 240);
     --color-accent: blue;
-    --color-shade: rgba(0, 0, 0, 0.05);
+    --color-shade: rgb(235, 235, 235);
 
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
     --font-serif-small: 'Fraunces', Times, serif;
@@ -239,16 +239,32 @@ projects {
 /* Projects › Single Project */
 
 project {
+    max-width: calc(100vw / 5);
     padding: var(--projects-gap);
     display: block;
     scroll-snap-align: start;
     margin-bottom: var(--projects-gap);
-    background: rgba(0, 0, 0, 0.03);
+    background: var(--color-shade);
     border-radius: 20px;
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
-    border: var(--border);
+    aspect-ratio: 1 / 1;
+}
+
+project:before {
+    --dot-size: 15px;
+    content: '';
+    width: var(--dot-size);
+    height: var(--dot-size);
+    display: block;
+    background: white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+project.draggable-mirror {
+    max-width: 10vw;
 }
 
 /* Projects › Single Project › Fig. */
