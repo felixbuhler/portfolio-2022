@@ -97,6 +97,7 @@ fields:
     required: false
   label: Project URL Site
 pages:
+- content/posts/a-curriculum-in-pictures.md
 - content/posts/chromegan.md
 - content/posts/die-tur-die-wichtigkeit-des-banalen.md
 - content/posts/dj-gran-sport-memphis-house.md
