@@ -1,13 +1,17 @@
 {{ define "main" }}
-<switch-wrapper>
-    <switch>
-        <label class="switch">
-            <input type="checkbox" class="checkcheck"> <span class="slider round"></span></label>
 
-    </switch>
-</switch-wrapper>
 <projects>
+    <switch-wrapper>
+        <switch>
+            <label class="switch">
+                <input type="checkbox"
+                    class="checkcheck"> <span class="slider round"></span></label>
 
+        </switch>
+        <switch-text>
+            <div>Toggle Text</div>
+        </switch-text>
+    </switch-wrapper>
     {{ range ( where .Site.RegularPages "Type" "posts" ) }}
     {{- partial "project.html" . -}}
     {{end}}
