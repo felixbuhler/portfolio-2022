@@ -67,25 +67,24 @@ html {
 intro {
     width: 100vw;
     height: 100vh;
-    display: block;
     padding: var(--projects-gap);
     display: grid;
-    grid-gap: var(--projects-gap);
-    grid-template-columns: 1fr 1fr;
-
+    gap: var(--projects-gap);
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    box-sizing: border-box;
 }
 
 intro content,
 footer content {
+    display: block;
     border-radius: var(--border-radius);
     padding: var(--projects-gap);
     background: var(--color-accent);
-    display: block;
-    width: 100%;
     height: 100%;
     font-size: 3rem;
     line-height: 1.4em;
-    width: 1fr
+    box-sizing: border-box;
 }
 
 intro content * {
@@ -110,9 +109,8 @@ intro content[clients] {
 }
 
 intro content[clients] clients {
-    column-count: var(--projects-columns);
+    column-count: 3;
     display: block;
-    width: 100%;
 }
 
 intro content[clients] clients client {
@@ -176,7 +174,7 @@ switch-text {
     flex: 0 1 100%;
     vertical-align: baseline;
     position: relative;
-    
+
 }
 
 switch-text div {
@@ -499,13 +497,19 @@ footer content {
         grid-template-columns: 1fr 1fr 1fr;
 
     }
- }
+}
 
 /* Responsive › Mobile */
 
 @media (max-width: 767.98px) {
+    intro {
+
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: row;
+
+    }
+
     projects {
         grid-template-columns: 1fr;
-
     }
 }
