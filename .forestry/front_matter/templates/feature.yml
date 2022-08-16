@@ -1,6 +1,7 @@
 ---
 label: Feature
 hide_body: true
+display_field: featureTitle
 fields:
 - name: featureTitle
   type: text
