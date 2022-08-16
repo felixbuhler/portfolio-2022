@@ -1,5 +1,6 @@
 <content info>
     <info>
+        <h1>Felix Buhler</h1>
         {{ with .Site.GetPage "/intro.md" }}{{ .Content }}{{ end }}
 
 
@@ -8,7 +9,8 @@
         <a href="">Shop</a>
     </info>
 </content>
-<content clients>I worked for<br>{{- partial "clients.html" . -}}
+<content clients>
+    <h2>Clients I worked for include</h2>{{- partial "clients.html" . -}}
     <br><br>
-    My work was featured in<br>{{- partial "features.html" . -}}
+    <h2>My work was featured in</h2> {{- partial "features.html" . -}}
 </content>
