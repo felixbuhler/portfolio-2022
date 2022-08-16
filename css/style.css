@@ -232,8 +232,6 @@ switch {
     transition: .4s;
 }
 
-input:checked+.slider {}
-
 input:focus+.slider {
     box-shadow: 0 0 1px var(--color-switch);
 }
@@ -328,11 +326,11 @@ fig:after {
 
 }
 
-project:last-child fig:before {
+project:last-child.draggable-mirror fig:before {
     content: "Release"
 }
 
-project:last-child fig:after {
+project:last-child.draggable-mirror fig:after {
     content: " me!"
 }
 
@@ -461,7 +459,7 @@ project a[project-link] {
 
     border-radius: var(--border-radius);
     -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-
+    mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
 project a[project-link] link-content:after {
