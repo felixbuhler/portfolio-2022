@@ -62,6 +62,25 @@ html {
     overflow-x: hidden;
 }
 
+/* Headlines */
+
+h1 {
+    font-weight: inherit;
+    font-size: 1.14em !important;
+    letter-spacing: -0.01em;
+
+    font-family: var(--font-serif);
+}
+
+intro h2 {
+    font-size: 2em !important;
+    font-family: var(--font-serif);
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* Intro */
 
 intro {
@@ -111,6 +130,7 @@ intro content[clients] {
 intro content[clients] clients {
     column-count: 3;
     display: block;
+    text-align: center;
 }
 
 intro content[clients] clients client {
@@ -120,15 +140,11 @@ intro content[clients] clients client {
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 intro content[clients] clients client:after {
     content: "";
-}
-
-intro content[clients] clients client:last-of-type:after {
-    content: " and many more";
 }
 
 /* Helpers */
@@ -138,7 +154,9 @@ bubble {
     border-radius: 50%;
     display: inline-block;
     padding: 0.1em 0.5em;
-    line-height: 1.2em;
+    line-height: 1.2em !important;
+    font-size: 0.75em !important;
+    transform: translateY(-2px);
 }
 
 serif {
