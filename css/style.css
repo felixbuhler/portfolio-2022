@@ -92,6 +92,7 @@ intro {
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
     box-sizing: border-box;
+    margin-bottom: 0px;
 }
 
 intro content,
@@ -126,6 +127,7 @@ intro content[info] info {
 
 intro content[clients] {
     font-size: var(--font-size-base);
+    background: var(--color-shade);
 }
 
 intro content[clients] clients {
@@ -171,6 +173,19 @@ no-no-no-no-dont-phunk-with-my-words {
     display: block;
     width: 100%;
     position: relative;
+}
+
+/* Contact */
+
+contact {
+    box-sizing: border-box;
+    padding: 100px calc(20vw + var(--projects-gap));
+    width: 100%;
+    display: block;
+    text-align: justify;
+    font-size: 2em;
+    font-family: var(--font-serif);
+    line-height: 1.6em;
 }
 
 /* Switch */
