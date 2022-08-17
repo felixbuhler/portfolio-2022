@@ -1,6 +1,6 @@
 +++
 
 +++
-Designer and art director. 
+Designer and Art Director
 
 Berlin {{< bubble DE >}}
