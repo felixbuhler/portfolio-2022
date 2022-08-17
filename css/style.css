@@ -104,6 +104,7 @@ footer content {
     font-size: 3rem;
     line-height: 1.4em;
     box-sizing: border-box;
+    width: 100%;
 }
 
 intro content * {
