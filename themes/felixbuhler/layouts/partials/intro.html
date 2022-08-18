@@ -1,9 +1,24 @@
 <content info>
-    <info>
+    <ddd>{{- partial "aframe.html" . -}}</ddd>
+    <text>
         <h1>Felix Buhler</h1>
         {{ with .Site.GetPage "/intro.md" }}{{ .Content }}{{ end }}
-    </info>
+    </text>
 </content>
 <content contact>
-    Contact me on Instagram
+    <text>
+        I help you build products in (<art>
+            <p class="tt">Graphic Design</p>
+            <p class="tt">Webdesign</p>
+            <p class="tt">Print Design</p>
+            <p class="tt">User Experience Design</p>
+            <p class="tt">User Interface Design</p>
+            <p class="tt">Editorial</p>
+            <p class="tt">Campaign</p>
+            <p class="tt">Motion Design</p>
+            <p class="tt">AR</p>
+            <p class="tt">Coding</p>
+            <h2 class="ttt"></h2>
+        </art>).<br><br>
+        Contact me on <a href="">Instagram</a></text>
 </content>
