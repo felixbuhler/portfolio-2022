@@ -54,6 +54,7 @@
 body,
 html {
     overflow-x: hidden;
+    cursor: default !important;
 }
 
 /* Headlines */
@@ -77,13 +78,14 @@ clients h2 {
     margin-bottom: 50px;
     text-align: center;
     letter-spacing: 0.015em;
+    line-height: 1.1em;
 }
 
 /* Intro */
 
 intro {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: var(--projects-gap);
     display: grid;
     gap: var(--projects-gap);
@@ -146,6 +148,7 @@ intro content[contact]:before {
 }
 
 intro content[info] {
+    height: calc(100vh - 2* var(--projects-gap));
     border-top-left-radius: var(border-radius);
     border-top-right-radius: var(border-radius);
     border-bottom-left-radius: 50vw;
@@ -154,14 +157,51 @@ intro content[info] {
 }
 
 intro content text {
-
     width: 75%;
     z-index: 2;
+}
+
+intro content[contact] text {
+    width: 50%;
+    text-align: left;
 }
 
 intro content[info] text {
     color: white;
     pointer-events: none;
+}
+
+intro content[contact] {
+    min-height: calc(50vh - 2* var(--projects-gap));
+    cursor: default;
+}
+
+intro content[contact] text a,
+.ttt {
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: inherit;
+}
+
+intro content[contact] text a {
+    border: var(--border);
+}
+
+
+intro content[contact] text a:hover {
+    background: var(--color-black);
+    color: var(--color-purple);
+}
+
+intro content[contact] contact {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-2x);
+}
+
+intro content[contact] contact a {
+    font-size: inherit;
+    font-family: inherit;
 }
 
 /* 3D */
@@ -181,17 +221,26 @@ ddd {
 
 /* Fields Flip */
 
-.tt {
-    display: none;
+art {
+    transform: translateX(-3px);
 }
 
-.ttt::after {
-    content: "|";
-    animation: pulse 0.5s infinite;
-    color: transparent;
-    border-right: 1px solid var(--color-black);
-    margin-left: -4px;
+.tt {
+    display: none;
+
 }
+
+
+.ttt {
+    background: var(--color-black);
+    color: var(--color-purple);
+}
+
+.ttt:before,
+.ttt::after {
+    content: "\00a0"
+}
+
 
 @keyframes pulse {
     0% {
@@ -212,7 +261,7 @@ art {
 }
 
 art,
-art h2{
+art h2 {
     font-size: inherit;
     font-weight: inherit;
     display: inline-block;
@@ -259,7 +308,7 @@ clients client {
     font-family: var(--font-sans);
     break-inside: avoid;
     border: var(--border);
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius);
     margin-right: var(--projects-gap);
     padding: 0 28px 0px 10px;
     display: inline-block;
@@ -417,7 +466,6 @@ projects {
     grid-gap: var(--projects-gap);
     counter-reset: section;
     padding: 0 var(--projects-gap);
-    min-height: 100vh;
 }
 
 /* Projects › Single Project */
@@ -552,11 +600,11 @@ project-image[contain] {
 }
 
 project-info iframe {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
 }
 
 div.embed.video-player {
+    width: 100%;
     overflow: hidden;
     border-radius: var(--border-radius);
 }
@@ -639,8 +687,41 @@ footer * {
 }
 
 footer content {
-    background: var(--color-shade);
+    background: var(--color-accent);
     font-size: var(--font-size-base);
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 50px;
+    text-align: left;
+    align-items: stretch;
+}
+
+footer content a {
+    color: inherit;
+    text-decoration: none;
+    border: var(--border);
+    padding: 2px 5px;
+    border-radius: var(--border-radius-small);
+    margin-right: 2px;
+}
+
+footer content a:hover {
+    background: var(--color-black);
+    color: var(--color-accent)
+}
+
+footer content legal,
+footer content tech {
+    flex-grow: 1;
+}
+footer content legal:nth-child(2) {text-align: center;}
+
+footer content legal:last-of-type {text-align: right;}
+
+footer serif {
+    font-family: var(--font-serif-small);
+    font-style: italic;
 }
 
 /* Responsive › Smaller Screen */
@@ -673,5 +754,10 @@ footer content {
 
     projects {
         grid-template-columns: 1fr;
+    }
+
+    intro content text {
+        width: 90%;
+        z-index: 2;
     }
 }
