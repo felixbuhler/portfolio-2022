@@ -21,3 +21,7 @@ const sortable = new Draggable.Sortable(document.querySelectorAll('projects'), {
     plugins: [Draggable.Plugins.SwapAnimation]
 });
 
+// Fields Flip
+
+let $elements = $("art .tt");
+    $(".ttt").tickerText($elements, 0, 3, 30, 0, 0.5, 2, false, "timerpause", "timerstop");

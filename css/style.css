@@ -12,6 +12,9 @@
     --font-serif: beaufort-pro, serif;
 
     --font-size-base: 12px;
+    --font-size-2x: calc(var(--font-size-base) * 2);
+    --font-size-3x: calc(var(--font-size-base) * 3);
+    --font-size-10x: calc(var(--font-size-base) * 10);
 
     --projects-gap: 10px;
     --projects-columns: 5;
@@ -57,20 +60,21 @@ html {
 
 h1 {
     font-weight: inherit;
-    font-size: 5em !important;
-    line-height: 0.9em !important;
+    font-size: var(--font-size-10x) !important;
     letter-spacing: -0.01em;
     margin-bottom: 30px;
     font-family: var(--font-serif);
+    text-transform: uppercase;
+    line-height: 0.8em !important;
 }
 
 intro h2,
-info-text h2 {
-    font-size: 2em !important;
+clients h2 {
+    font-size: var(--font-size-3x) !important;
     font-family: var(--font-serif);
     font-weight: inherit;
     line-height: inherit;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
     letter-spacing: 0.015em;
 }
@@ -95,14 +99,13 @@ footer content {
     border-radius: var(--border-radius);
     padding: var(--projects-gap);
     height: 100%;
-    font-size: 3rem;
-    line-height: 1.4em;
+    font-size: var(--font-size-3x);
     box-sizing: border-box;
     width: 100%;
 }
 
 intro content * {
-    font-size: 3rem;
+    font-size: var(--font-size-3x);
     line-height: 1.4em;
 }
 
@@ -132,6 +135,12 @@ intro content:before {
     margin-bottom: 10px;
 }
 
+intro content[info]:before {
+    z-index: 3;
+    box-shadow: none;
+    background: var(--color-white);
+}
+
 intro content[contact]:before {
     box-shadow: 0px 0px 0px 5000px var(--color-purple);
 }
@@ -139,19 +148,80 @@ intro content[contact]:before {
 intro content[info] {
     border-top-left-radius: var(border-radius);
     border-top-right-radius: var(border-radius);
-
-    border-bottom-left-radius: 100vw;
-    border-bottom-right-radius: 100vw;
+    border-bottom-left-radius: 50vw;
+    border-bottom-right-radius: 50vw;
+    background: var(--color-accent);
 }
 
-intro content info {
+intro content text {
+
     width: 75%;
+    z-index: 2;
+}
+
+intro content[info] text {
+    color: white;
+    pointer-events: none;
+}
+
+/* 3D */
+
+ddd {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px !important;
+    border-bottom-left-radius: 50vw !important;
+    border-bottom-right-radius: 50vw !important;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Fields Flip */
+
+.tt {
+    display: none;
+}
+
+.ttt::after {
+    content: "|";
+    animation: pulse 0.5s infinite;
+    color: transparent;
+    border-right: 1px solid var(--color-black);
+    margin-left: -4px;
+}
+
+@keyframes pulse {
+    0% {
+        border-right: 1px solid var(--color-black);
+    }
+
+    50% {
+        border-right: 1px solid transparent;
+    }
+
+    100% {
+        border-right: 1px solid var(--color-black);
+    }
+}
+
+art {
+    margin-right: 0px;
+}
+
+art,
+art h2{
+    font-size: inherit;
+    font-weight: inherit;
+    display: inline-block;
 }
 
 /* Helpers */
 
 bubble {
-    border: 0.08em solid var(--color-black);
+    border: 0.08em solid currentColor;
     border-radius: 50%;
     display: inline-block;
     padding: 0.1em 0.5em;
@@ -167,26 +237,23 @@ serif {
     letter-spacing: -0.01em;
 }
 
-/* Contact */
+/* Clients */
 
-info-text {
+clients {
     box-sizing: border-box;
     padding: 200px calc(20vw + var(--projects-gap));
     width: 100%;
-    font-size: 3rem;
+    font-size: var(--font-size-3x);
     font-family: var(--font-sans);
-    line-height: 1.6em;
     text-align: center;
     display: block;
-}
-
-info-text column[clients] {
     white-space: wrap;
     max-width: 100%;
 }
 
-info-text column[clients] client {
-    font-size: 3rem !important;
+
+clients client {
+    font-size: var(--font-size-3x) !important;
     line-height: 1.5em;
     margin-bottom: 10px;
     font-family: var(--font-sans);
@@ -200,21 +267,21 @@ info-text column[clients] client {
 }
 
 
-info-text column[clients] client:hover {
+clients client:hover {
     color: var(--color-white);
     background: var(--color-black);
 }
 
 
 
-info-text column[clients] client a {
+clients client a {
     display: inline;
     font-size: inherit;
     color: inherit;
     text-decoration: none;
 }
 
-info-text column[clients] client:before {
+clients client:before {
     --dot-size: 10px;
     position: absolute;
     top: 8px;
@@ -228,14 +295,19 @@ info-text column[clients] client:before {
     z-index: 1;
     margin-bottom: 10px;
 }
-info-text column[clients] client:hover:before {
+
+clients client:hover:before {
     background: var(--color-white);
 }
 
-info-text column[clients] client:last-of-type {
+clients client:last-of-type {
     display: none !important;
 }
 
+more {
+    display: block;
+    margin-top: 30px;
+}
 
 /* Switch */
 
@@ -569,6 +641,15 @@ footer * {
 footer content {
     background: var(--color-shade);
     font-size: var(--font-size-base);
+}
+
+/* Responsive › Smaller Screen */
+
+@media (max-width: 1600px) {
+    info-text {
+        padding: 150px calc(10vw + var(--projects-gap));
+        width: 100%;
+    }
 }
 
 /* Responsive › Smaller Screen */
