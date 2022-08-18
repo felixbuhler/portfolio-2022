@@ -24,4 +24,26 @@ const sortable = new Draggable.Sortable(document.querySelectorAll('projects'), {
 // Fields Flip
 
 let $elements = $("art .tt");
-    $(".ttt").tickerText($elements, 0, 3, 30, 0, 0.5, 2, false, "timerpause", "timerstop");
+$(".ttt").tickerText($elements, 0, 3, 30, 0, 0.5, 2, false, "timerpause", "timerstop");
+
+// Watch
+
+function startTime() {
+    var e = new Date(),
+      t = e.getHours(),
+      n = e.getMinutes(),
+      s = e.getSeconds(),
+      n = checkTime(n),
+      s = checkTime(s);
+    document.getElementById("time").innerHTML =
+      t +
+      "<span class='time-dots'>:</span>" +
+      n +
+      "<span class='time-dots'>:</span>" +
+      s;
+    setTimeout(startTime, 500);
+  }
+
+  function checkTime(e) {
+    return e < 10 && (e = "0" + e), e;
+  }
