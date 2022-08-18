@@ -8,6 +8,11 @@ fields:
   config:
     required: false
   label: Client Title
+- name: client_url
+  type: text
+  config:
+    required: false
+  label: Client URL
 pages:
 - content/clients/Zebrakatz.md
 - content/clients/alina-kossan.md
