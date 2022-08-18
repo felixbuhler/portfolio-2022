@@ -149,10 +149,11 @@ intro content[contact]:before {
 
 intro content[info] {
     height: calc(100vh - 2* var(--projects-gap));
-    border-top-left-radius: var(border-radius);
-    border-top-right-radius: var(border-radius);
-    border-bottom-left-radius: 50vw;
-    border-bottom-right-radius: 50vw;
+
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     background: var(--color-accent);
 }
 
@@ -212,9 +213,10 @@ ddd {
     z-index: 1;
     width: 100%;
     height: 100%;
-    border-radius: 10px !important;
-    border-bottom-left-radius: 50vw !important;
-    border-bottom-right-radius: 50vw !important;
+    border-bottom-left-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -704,6 +706,7 @@ footer content a {
     padding: 2px 5px;
     border-radius: var(--border-radius-small);
     margin-right: 2px;
+    white-space: nowrap;
 }
 
 footer content a:hover {
@@ -714,10 +717,17 @@ footer content a:hover {
 footer content legal,
 footer content tech {
     flex-grow: 1;
-}
-footer content legal:nth-child(2) {text-align: center;}
+    line-height: 2em !important;
 
-footer content legal:last-of-type {text-align: right;}
+}
+
+footer content legal:nth-child(2) {
+    text-align: center;
+}
+
+footer content legal:last-of-type {
+    text-align: right;
+}
 
 footer serif {
     font-family: var(--font-serif-small);
@@ -736,15 +746,40 @@ footer serif {
 /* Responsive › Smaller Screen */
 
 @media (max-width: 1280px) {
+    :root {
+        --font-size-10x: calc(7 * var(--font-size-base));
+        --font-size-3x: calc(2 * var(--font-size-base));
+
+    }
+
+    intro content[contact] text {
+        width: 80%;
+    }
+
     projects {
         grid-template-columns: 1fr 1fr 1fr;
 
+    }
+
+    project.draggable-mirror {
+        width: calc(100vw / 3 - 1.25 *var(--projects-gap));
+
+    }
+
+    footer content {
+        padding: 25px;
     }
 }
 
 /* Responsive › Mobile */
 
 @media (max-width: 767.98px) {
+    :root {
+        --font-size-10x: calc(4 * var(--font-size-base));
+        --font-size-3x: calc(1.75 * var(--font-size-base));
+        --border-radius: 8px;
+    }
+
     intro {
 
         grid-auto-columns: minmax(0, 1fr);
@@ -756,8 +791,79 @@ footer serif {
         grid-template-columns: 1fr;
     }
 
-    intro content text {
-        width: 90%;
-        z-index: 2;
+    intro content text,
+    intro content[contact] text {
+        width: 100%;
+    }
+
+    intro content[contact] text {
+        padding-top: 50px;
+    }
+
+    intro content[contact] text a {
+        display: table;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    intro content[contact] text a:last-of-type {
+        margin-bottom: 0;
+    }
+
+    ddd, intro content[info] {
+        
+        border-bottom-left-radius: 50vw !important;
+        border-bottom-right-radius: 50vw !important;
+ 
+    }
+
+    clients {
+
+        padding: 100px calc(0vw + var(--projects-gap));
+    }
+
+    clients h2 {
+        margin-bottom: 20px;
+
+    }
+
+
+    clients client {
+        font-size: var(--font-size-base) !important;
+        padding-right: 15px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+
+    }
+
+    clients client:before {
+        --dot-size: 5px;
+        top: 4px;
+        right: 4px;
+        content: '';
+    }
+
+    footer {
+
+        grid-template-columns: 1fr;
+    }
+
+    footer content {
+        flex-wrap: wrap;
+        text-align: left !important;
+    }
+
+    footer content legal,
+    footer content tech,
+    footer content watch {
+        flex: 0 0 100%;
+        text-align: left !important;
+        margin-bottom: 10px;
+    }
+
+    footer content watch {margin-bottom: 15px;}
+
+    footer content legal:last-of-type {
+        margin-bottom: 0px;
     }
 }
