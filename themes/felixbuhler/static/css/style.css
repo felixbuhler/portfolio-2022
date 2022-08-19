@@ -221,6 +221,30 @@ ddd {
     box-sizing: border-box;
 }
 
+.a-dialog {
+    background: blue;
+    z-index: 9999;
+    pointer-events: all !important;
+}
+
+.a-dialog-allow-button,
+.a-dialog-deny-button,
+.a-dialog-ok-button {
+    border-radius: var(--border-radius);
+}
+
+.a-dialog-allow-button {
+    background-color: var(--color-accent);
+}
+
+.a-dialog-deny-button {
+    background-color: var(--color-red);
+}
+
+.a-dialog-ok-button {
+    background-color: var(--color-purple);
+}
+
 /* Fields Flip */
 
 art {
@@ -373,6 +397,11 @@ switch-wrapper {
     padding: var(--projects-gap);
     flex-direction: column;
     flex: 1;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 
 switch-text {
@@ -810,11 +839,12 @@ footer serif {
         margin-bottom: 0;
     }
 
-    ddd, intro content[info] {
+    ddd,
+    intro content[info] {
         pointer-events: none;
         border-bottom-left-radius: 50vw !important;
         border-bottom-right-radius: 50vw !important;
- 
+
     }
 
     clients {
@@ -843,6 +873,10 @@ footer serif {
         content: '';
     }
 
+    switch-text div {
+        margin-top: 20px;
+    }
+
     footer {
 
         grid-template-columns: 1fr;
@@ -861,7 +895,9 @@ footer serif {
         margin-bottom: 10px;
     }
 
-    footer content watch {margin-bottom: 15px;}
+    footer content watch {
+        margin-bottom: 15px;
+    }
 
     footer content legal:last-of-type {
         margin-bottom: 0px;
