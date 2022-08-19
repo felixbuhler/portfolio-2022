@@ -811,7 +811,7 @@ footer serif {
     }
 
     ddd, intro content[info] {
-        
+        pointer-events: none;
         border-bottom-left-radius: 50vw !important;
         border-bottom-right-radius: 50vw !important;
  
