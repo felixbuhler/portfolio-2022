@@ -5,9 +5,9 @@ image = "uploads/3ac06175283517.5cb19096f0f0f.png"
 imageSize = "contain"
 projectColor = "#8F69FF"
 projectType = "Personal"
-projectURL = ""
-projectURLSite = ""
-tags = []
+projectURL = "https://www.behance.net/gallery/75283517/PLAGV3"
+projectURLSite = "Behance"
+tags = ["3D", "Character Design", "Graphic Design"]
 title = "PL—AGV3"
 year = 2019
 
