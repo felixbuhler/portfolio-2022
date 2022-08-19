@@ -21,6 +21,7 @@
 
     --border-radius: 15px;
     --border-radius-small: 3px;
+    --border-radius-intro: 15px 15px 30vw 30vw;
     --border: 1px solid var(--color-black);
 
     --switch-height: 20px;
@@ -150,10 +151,7 @@ intro content[contact]:before {
 intro content[info] {
     height: calc(100vh - 2* var(--projects-gap));
 
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: var(--border-radius-intro);
     background: var(--color-accent);
 }
 
@@ -213,10 +211,8 @@ ddd {
     z-index: 1;
     width: 100%;
     height: 100%;
-    border-bottom-left-radius: 50% !important;
-    border-bottom-right-radius: 50% !important;
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important;
+    border-radius: var(--border-radius-intro) !important;
+
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -296,6 +292,8 @@ art h2 {
 /* Helpers */
 
 bubble {
+    font-family: var(--font-sans);
+    font-style: normal;
     border: 0.08em solid currentColor;
     border-radius: 50%;
     display: inline-block;
@@ -734,7 +732,7 @@ footer content a {
     border: var(--border);
     padding: 2px 5px;
     border-radius: var(--border-radius-small);
-    margin-right: 2px;
+    margin-right: 1px;
     white-space: nowrap;
 }
 
@@ -875,6 +873,10 @@ footer serif {
 
     switch-text div {
         margin-top: 20px;
+    }
+
+    project-image {
+        filter: saturate(1);
     }
 
     footer {
