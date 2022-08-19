@@ -7,7 +7,7 @@ projectColor = "#FF6200"
 projectType = "Client"
 projectURL = "https://formdusche.de/work/ddc-gute-gestaltung-2019/"
 projectURLSite = "formdusche"
-tags = []
+tags = ["Editorial Design"]
 title = "DDC Gute Gestaltung 2019"
 year = 2020
 
