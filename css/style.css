@@ -702,59 +702,45 @@ project a[project-link] link-content:after {
 /* Footer */
 
 footer {
-    display: flex;
-    display: block;
     padding: var(--projects-gap);
     display: grid;
     grid-gap: var(--projects-gap);
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     font-size: var(--font-size-base);
+    align-items: flex-end;
+    align-content: flex-end;
+    text-align: center; height: 100vh;
 }
 
 footer * {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-2x);
+    margin-bottom: 20px;
 }
 
-footer content {
-    background: var(--color-accent);
-    font-size: var(--font-size-base);
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding: 50px;
-    text-align: left;
-    align-items: stretch;
-}
-
-footer content a {
+footer a {
     color: inherit;
     text-decoration: none;
     border: var(--border);
-    padding: 2px 5px;
-    border-radius: var(--border-radius-small);
+    border-color: currentColor;
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
     margin-right: 1px;
     white-space: nowrap;
 }
 
-footer content a:hover {
+footer a:hover {
     background: var(--color-black);
-    color: var(--color-accent)
+    color: var(--color-white);
+    border-color: var(--color-black);
 }
 
-footer content legal,
-footer content tech {
+footer legal,
+footer tech {
     flex-grow: 1;
     line-height: 2em !important;
 
 }
 
-footer content legal:nth-child(2) {
-    text-align: center;
-}
-
-footer content legal:last-of-type {
-    text-align: right;
-}
 
 footer serif {
     font-family: var(--font-serif-small);
@@ -791,10 +777,6 @@ footer serif {
     project.draggable-mirror {
         width: calc(100vw / 3 - 1.25 *var(--projects-gap));
 
-    }
-
-    footer content {
-        padding: 25px;
     }
 }
 
@@ -879,29 +861,5 @@ footer serif {
         filter: saturate(1);
     }
 
-    footer {
-
-        grid-template-columns: 1fr;
-    }
-
-    footer content {
-        flex-wrap: wrap;
-        text-align: left !important;
-    }
-
-    footer content legal,
-    footer content tech,
-    footer content watch {
-        flex: 0 0 100%;
-        text-align: left !important;
-        margin-bottom: 10px;
-    }
-
-    footer content watch {
-        margin-bottom: 15px;
-    }
-
-    footer content legal:last-of-type {
-        margin-bottom: 0px;
-    }
+    
 }
