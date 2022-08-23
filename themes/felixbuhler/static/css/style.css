@@ -93,7 +93,8 @@ intro {
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
     box-sizing: border-box;
-    margin-bottom: 0px; z-index: 10;
+    margin-bottom: 0px;
+    z-index: 10;
 }
 
 intro content,
@@ -223,6 +224,13 @@ ddd {
     pointer-events: all !important;
     border-radius: var(--border-radius) !important;
 
+}
+
+.a-dialog,
+.a-modal,
+.a-enter-vr-modal,
+.a-orientation-modal {
+    z-index: 999 !important;
 }
 
 .a-dialog-allow-button,
