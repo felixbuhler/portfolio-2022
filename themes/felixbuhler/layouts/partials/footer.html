@@ -1,34 +1,26 @@
 <footer>
-    <legal>&copy; Felix Buhler {{ dateFormat "2006" now }} <legal><a href="/imprint"
-                title="Imprint">Imprint</a> <a href=""
-                title="Data Privacy">Data Privacy</a></legal>
+    <legal>&copy; Felix Buhler {{ dateFormat "2006" now }} <legal><a href="/imprint" title="Imprint">Imprint</a> <a
+                href="" title="Data Privacy">Data Privacy</a></legal>
     </legal>
 
     <tech>
-        <serif>Built with</serif> <a href="https://gohugo.io"
-            title="HUGO"
-            target="_blank">HUGO</a>, <a href="https://forestry.io"
-            title="Forestry.io"
-            target="_blank">Forestry.io</a>, <a href="https://shopify.github.io/draggable/"
-            title="Draggable"
-            target="_blank">Draggable</a>, <a href="https://github.com/felixbuhler"
-            title="Felix Buhler on GitHub">GitHub</a>, <a href="https://fonts.google.com/specimen/Inter"
-            title="Inter on Google Fonts"
-            target="_blank">Inter</a> <a href="https://fonts.google.com/specimen/Fraunces"
-            title="Fraunces on Google Fonts"
-            target="_blank"
+        <serif>Built with</serif> <a href="https://gohugo.io" title="HUGO" target="_blank">HUGO</a>, <a
+            href="https://forestry.io" title="Forestry.io" target="_blank">Forestry.io</a>, <a
+            href="https://shopify.github.io/draggable/" title="Draggable" target="_blank">Draggable</a>, <a
+            href="https://github.com/felixbuhler" title="Felix Buhler on GitHub">GitHub</a>, <a
+            href="https://fonts.google.com/specimen/Inter" title="Inter on Google Fonts" target="_blank">Inter</a> <a
+            href="https://fonts.google.com/specimen/Fraunces" title="Fraunces on Google Fonts" target="_blank"
             style="font-family: var(--font-serif-small); font-style: italic;">Fraunces</a> <a
-            href="https://fonts.adobe.com/fonts/beaufort-pro"
-            title="Beaufort Pro on Adobe Fonts"
-            target="_blank"
+            href="https://fonts.adobe.com/fonts/beaufort-pro" title="Beaufort Pro on Adobe Fonts" target="_blank"
             style="font-family: var(--font-serif);">Beaufort Pro</a> &
-        <a href="https://github.com/ezekielaquino/Marquee3000"
-            title="Marquee3000"
-            target="_blank">Marquee3000</a>
+        <a href="https://github.com/ezekielaquino/Marquee3000" title="Marquee3000" target="_blank">Marquee3000</a>
     </tech>
     <tech>
         <serif>Hosted in Dresden, Germany at</serif> <a href="https://all-inkl.com"
             title="ALL-INKL.COM">ALL-INKL.COM</a>.
     </tech>
-    <watch><time id="time"></time></watch>
+    <icons>
+        {{- partial "icons.html" . -}}
+    </icons>
+
 </footer>

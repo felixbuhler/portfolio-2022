@@ -25,6 +25,20 @@
     --border: 1px solid var(--color-black);
 
     --switch-height: 20px;
+
+    /* Analog Watch */
+    --clock-size: 30px;
+    --hand-width: 1px;
+    --hand-length-hour: 25%;
+    --hand-length-minute: 50%;
+    --hand-length-second: 33%;
+
+    --color-clock-background: transparent;
+
+    --color-hour-minute: var(--color-black);
+    --color-second: var(--color-black);
+
+    --border: 1px solid var(--color-hour-minute);
 }
 
 * {
@@ -790,6 +804,144 @@ footer tech {
 footer serif {
     font-family: var(--font-serif-small);
     font-style: italic;
+}
+
+/* Icons */
+
+icons {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+icons>* {
+    margin-right: 20px;
+}
+
+/* Icons › Analog Watch */
+
+watch {
+    display: flex;
+    height: var(--clock-size);
+}
+
+.clock {
+    width: var(--clock-size);
+    height: var(--clock-size);
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+    border: var(--border);
+    display: inline-block;
+}
+
+#time {
+    display: inline-block;
+    line-height: var(--clock-size);
+    margin-left: 10px;
+    font-size: var(--font-size-base) !important;
+    font-family: monospace;
+}
+
+#time * {
+    font-size: var(--font-size-base) !important;
+}
+
+.face {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: var(--color-clock-background);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+
+.hand {
+    width: 50%;
+    right: calc(50% - 1px / 2);
+    height: var(--hand-width);
+    background: var(--color-hour-minute);
+    position: absolute;
+    top: calc(50% - 1px / 2);
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    transform-origin: 100% 50%;
+    transform: rotate(90deg);
+}
+
+.hand.hour-hand {
+    width: var(--hand-length-hour);
+    z-index: 3;
+}
+
+.hand.minute-hand {
+    z-index: 10;
+    width: var(--hand-length-minute);
+}
+
+.hand.second-hand {
+    background: var(--color-second);
+    width: var(--hand-length-second);
+}
+
+/* Icons › QR Code */
+
+qr-code {
+    width: var(--clock-size);
+    height: var(--clock-size);
+    background: url(qrcode.svg);
+    background-size: contain;
+    display: block;
+}
+
+qr-code a {
+    background: transparent !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0;
+    border: none;
+}
+
+globe {
+    width: var(--clock-size);
+    height: var(--clock-size);
+    background: url(world.svg);
+    background-size: contain;
+}
+
+ticket {
+    width: calc(1.5 * var(--clock-size));
+    height: var(--clock-size);
+    background: url(ticket.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat !important;
+    line-height: var(--clock-size);
+    vertical-align: middle;
+    text-align: center;
+    font-size: calc(0.8 * var(--font-size-base));
+}
+
+eightball {
+    width: var(--clock-size);
+    height: var(--clock-size);
+    border-radius: 100%;
+    background: var(--color-black);
+    display: block;
+    color: white;
+    line-height: var(--clock-size);
+    text-align: center;
+    vertical-align: middle;
+    font-size: var(--font-size-base);
 }
 
 /* Responsive › Smaller Screen */
