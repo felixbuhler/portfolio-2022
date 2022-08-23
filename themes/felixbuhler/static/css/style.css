@@ -226,6 +226,13 @@ ddd {
 
 }
 
+.a-modal {
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 999 !important;
+    backdrop-filter: blur(20px);
+}
+
 .a-dialog,
 .a-modal,
 .a-enter-vr-modal,
