@@ -58,3 +58,7 @@ for (const link of links) {
     `mailto:${attrs.part1}@${attrs.part2}.${attrs.part3}?subject=${encodeURIComponent(link.textContent)}`
   );
 }
+
+// A-Frame Mobile UI
+
+$('.a-modal').appendTo('body');
