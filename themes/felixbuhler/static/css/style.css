@@ -3,7 +3,7 @@
     --color-white: rgb(240, 240, 240);
     --color-accent: rgb(0, 255, 0);
     --color-red: rgb(255, 52, 52);
-    --color-purple: rgb(205, 125, 255);
+    --color-purple: #cd7dff;
     --color-switch: var(--color-red);
     --color-shade: rgb(235, 235, 235);
 
@@ -218,33 +218,36 @@ ddd {
 }
 
 .a-dialog {
-    background: blue;
-    z-index: 9999;
+    background: blue !important;
+    z-index: 9999 !important;
     pointer-events: all !important;
+    border-radius: var(--border-radius) !important;
+
 }
 
 .a-dialog-allow-button,
 .a-dialog-deny-button,
 .a-dialog-ok-button {
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) !important;
 }
 
 .a-dialog-allow-button {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent) !important;
 }
 
 .a-dialog-deny-button {
-    background-color: var(--color-red);
+    background-color: var(--color-red) !important;
 }
 
 .a-dialog-ok-button {
-    background-color: var(--color-purple);
+    background-color: var(--color-purple) !important;
 }
 
 /* Fields Flip */
 
 art {
     transform: translateX(-3px);
+
 }
 
 .tt {
@@ -256,11 +259,17 @@ art {
 .ttt {
     background: var(--color-black);
     color: var(--color-purple);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .ttt:before,
 .ttt::after {
-    content: "\00a0"
+    content: "\00a0";
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    display: inline-block;
 }
 
 
@@ -709,7 +718,8 @@ footer {
     font-size: var(--font-size-base);
     align-items: flex-end;
     align-content: flex-end;
-    text-align: center; height: 100vh;
+    text-align: center;
+    height: 100vh;
 }
 
 footer * {
@@ -757,6 +767,29 @@ footer serif {
 }
 
 /* Responsive › Smaller Screen */
+
+
+@media (max-width: 1700px) {
+    :root {
+        --font-size-10x: calc(8 * var(--font-size-base));
+        --font-size-3x: calc(2.75 * var(--font-size-base));
+
+    }
+
+    intro content[contact] text {
+        width: 80%;
+    }
+
+    projects {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    project.draggable-mirror {
+        width: calc(100vw / 3 - 1.25 *var(--projects-gap));
+
+    }
+}
 
 @media (max-width: 1280px) {
     :root {
@@ -861,5 +894,5 @@ footer serif {
         filter: saturate(1);
     }
 
-    
+
 }
