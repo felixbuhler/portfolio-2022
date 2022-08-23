@@ -1,4 +1,5 @@
-<a-scene vr-mode-ui="enabled: false" renderer="colorManagement: true;" zoom="0.1" embedded device-orientation-permission-ui="deviceMotionMessage: Allow Device Motion for the full experience;">
+<a-scene vr-mode-ui="enabled: false" renderer="colorManagement: true;" zoom="0.1" embedded
+    device-orientation-permission-ui="deviceMotionMessage: Allow Device Motion for the full experience;">
     <!-- Camera -->
     <a-entity camera look-controls
         orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; initialPosition: 0 0 2; enableZoom: false; enableRotate: false">
@@ -14,6 +15,17 @@
         animation="property: rotation; to: 10 -260 0; dur: 500000; easing: linear; loop: true">
 
     </a-entity>
-
-    <div class="a-modal" aframe-injected=""><div class="a-dialog" aframe-injected=""><div class="a-dialog-text-container"><div class="a-dialog-text">Allow Device Motion for the full experience</div></div><div class="a-dialog-buttons-container"><button class="a-dialog-button a-dialog-deny-button" aframe-injected="">Deny</button><button class="a-dialog-button a-dialog-allow-button" aframe-injected="">Allow</button></div></div></div>
+    <!--
+    <div class="ddd-wrapper" style="z-index: 999 !important;;">
+        <div class="a-modal" aframe-injected="">
+            <div class="a-dialog" aframe-injected="">
+                <div class="a-dialog-text-container">
+                    <div class="a-dialog-text">Allow Device Motion for the full experience</div>
+                </div>
+                <div class="a-dialog-buttons-container"><button class="a-dialog-button a-dialog-deny-button"
+                        aframe-injected="">Deny</button><button class="a-dialog-button a-dialog-allow-button"
+                        aframe-injected="">Allow</button></div>
+            </div>
+        </div>
+    </div>-->
 </a-scene>
