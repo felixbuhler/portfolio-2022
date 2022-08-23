@@ -157,7 +157,7 @@ intro content[info] {
 
 intro content text {
     width: 75%;
-    z-index: -1;
+    z-index: 2 !important;
 }
 
 intro content[contact] text {
@@ -208,7 +208,6 @@ intro content[contact] contact a {
 ddd {
     display: block;
     position: absolute;
-    z-index: 1;
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-intro) !important;
@@ -218,18 +217,35 @@ ddd {
 }
 
 .a-dialog {
-    background: var(--color-white) !important;
-    z-index: 999 !important;
+    background: transparent !important;
+    z-index: 5 !important;
     pointer-events: all !important;
     border-radius: calc(2* var(--border-radius)) !important;
     padding: 20px !important;
+    overflow: hidden;
 
+}
+
+.a-dialog:before {
+    --dot-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: var(--dot-size);
+    height: var(--dot-size);
+    display: block;
+    background: transparent;
+    box-shadow: 0px 0px 0px 5000px var(--color-white);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    z-index: -1;
 }
 
 .a-modal {
     position: fixed;
-    background: rgba(255,255,255, 0.2) !important;
-    z-index: 999 !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    z-index: 5 !important;
     backdrop-filter: blur(50px) !important;
     -webkit-backdrop-filter: blur(50px) !important;
 }
@@ -238,7 +254,7 @@ ddd {
 .a-modal,
 .a-enter-vr-modal,
 .a-orientation-modal {
-    z-index: 999 !important;
+    z-index: 5 !important;
 }
 
 .a-dialog-allow-button,
@@ -254,7 +270,7 @@ ddd {
 }
 
 .a-dialog-deny-button {
-    background-color: var(--color-red) !important;
+    background-color: var(--color-purple) !important;
 }
 
 .a-dialog-ok-button {
