@@ -93,7 +93,7 @@ intro {
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
     box-sizing: border-box;
-    margin-bottom: 0px;
+    margin-bottom: 0px; z-index: 10;
 }
 
 intro content,
@@ -218,8 +218,8 @@ ddd {
 }
 
 .a-dialog {
-    background: blue !important;
-    z-index: 9999 !important;
+    background: var(--color-white) !important;
+    z-index: 999 !important;
     pointer-events: all !important;
     border-radius: var(--border-radius) !important;
 
