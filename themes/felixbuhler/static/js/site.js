@@ -100,8 +100,12 @@ window.addEventListener('DOMContentLoaded', function () {
   $('.a-modal').prependTo('body');
   alert("DOM")
 });
-
+*/
 function moveAModal() {
   $('.a-modal').prependTo('body');
   console.log("it worked")
-}*/
+}
+
+$( ".a-dialog-button" ).click(function() {
+  $('.a-modal').hide();
+});

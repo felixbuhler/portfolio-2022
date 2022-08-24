@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
+    <body onload="moveAModal()">
         {{- partial "header.html" . -}}
         {{- partial "section_clients.html" . -}}
         {{- block "main" . }}{{- end }}
 
         {{- partial "footer.html" . -}}
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              $('.a-modal').prependTo('body');
-              console.log("it worked")
-            });
-          </script>
+       
     </body>
 </html>
