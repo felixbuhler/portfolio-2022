@@ -91,6 +91,10 @@ setDate();
 
 
 
-$(document).ready(function () {
+/* $(document).ready(function () {
+  $('.a-modal').appendTo('body');
+}); */
+
+window.addEventListener('DOMContentLoaded', function () {
   $('.a-modal').appendTo('body');
 });
