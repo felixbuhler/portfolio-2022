@@ -103,4 +103,5 @@ window.addEventListener('DOMContentLoaded', function () {
 
 function moveAModal() {
   $('.a-modal').prependTo('body');
+  console.log("it worked")
 }
