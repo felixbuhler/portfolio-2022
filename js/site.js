@@ -90,7 +90,7 @@ setDate();
 // A-Frame Mobile UI
 
 
-
+/*
 $(document).ready(function () {
   $('.a-modal').prependTo('body');
   alert("ready")
@@ -99,4 +99,8 @@ $(document).ready(function () {
 window.addEventListener('DOMContentLoaded', function () {
   $('.a-modal').prependTo('body');
   alert("DOM")
-});
+});*/
+
+function moveAModal() {
+  $('.a-modal').prependTo('body');
+}
