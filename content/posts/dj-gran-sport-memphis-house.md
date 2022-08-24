@@ -1,7 +1,8 @@
 +++
 client = "clients/cosmiccompositions.md"
 description = ""
-image = "uploads/8b6d5b105406853-612a80da12eca.jpg"
+image = "uploads/fb_project_djgransport.jpg"
+imageSize = "cover"
 projectColor = "#000000"
 projectType = "Client"
 projectURL = ""
