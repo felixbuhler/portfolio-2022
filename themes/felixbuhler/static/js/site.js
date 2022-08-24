@@ -91,10 +91,10 @@ setDate();
 
 
 
-/* $(document).ready(function () {
-  $('.a-modal').appendTo('body');
-}); */
+$(document).ready(function () {
+  $('.a-modal').prependTo('body');
+});
 
 window.addEventListener('DOMContentLoaded', function () {
-  $('.a-modal').appendTo('body');
+  $('.a-modal').prependTo('body');
 });
