@@ -89,23 +89,12 @@ setDate();
 
 // A-Frame Mobile UI
 
-
-/*
-$(document).ready(function () {
-  $('.a-modal').prependTo('body');
-  alert("ready")
-});
-
-window.addEventListener('DOMContentLoaded', function () {
-  $('.a-modal').prependTo('body');
-  alert("DOM")
-});
-*/
 function moveAModal() {
   $('.a-modal').prependTo('body');
-  console.log("it worked")
+  console.log("it worked");
 }
 
-$( ".a-dialog-button" ).click(function() {
-  $('.a-modal').hide();
+$(".a-dialog-button").click(function () {
+  $('.a-modal').hide(250);
+  console.log("it worked");
 });
