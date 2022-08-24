@@ -93,8 +93,10 @@ setDate();
 
 $(document).ready(function () {
   $('.a-modal').prependTo('body');
+  console.log("ready")
 });
 
 window.addEventListener('DOMContentLoaded', function () {
   $('.a-modal').prependTo('body');
+  console.log("DOM")
 });
