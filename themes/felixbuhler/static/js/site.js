@@ -99,9 +99,9 @@ $(document).ready(function () {
 window.addEventListener('DOMContentLoaded', function () {
   $('.a-modal').prependTo('body');
   alert("DOM")
-});*/
+});
 
 function moveAModal() {
   $('.a-modal').prependTo('body');
   console.log("it worked")
-}
+}*/
