@@ -85,7 +85,5 @@ setInterval(setDate, 1000);
 
 setDate();
 
-// A-Frame Mobile UI
 
-$('.a-modal').appendTo('body');
 
