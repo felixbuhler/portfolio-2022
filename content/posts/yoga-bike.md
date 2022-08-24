@@ -1,8 +1,8 @@
 +++
 client = "clients/dagmar-buhler.md"
 description = ""
-image = ""
-imageSize = "contain"
+image = "uploads/fb_project_yogabike.jpg"
+imageSize = "cover"
 projectColor = "#000000"
 projectType = "Client"
 projectURL = ""
