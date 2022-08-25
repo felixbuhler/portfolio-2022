@@ -1,6 +1,7 @@
 +++
 client = []
 description = ""
+draft = true
 image = ""
 imageSize = "contain"
 projectColor = "#000000"
@@ -9,6 +10,6 @@ projectURL = ""
 projectURLSite = ""
 tags = []
 title = "Applied Freedom"
-year = 0
+year = nil
 
 +++
