@@ -89,3 +89,15 @@ setDate();
 
 // A-Frame Mobile UI
 
+
+window.addEventListener("DOMContentLoaded", function(){
+  var $aframeVisible = $('.a-modal');
+
+  if ( $aframeVisible.length){
+    $('intro text').hide();
+  }
+
+  $(".a-dialog-button").click(function () {
+    $('intro text').show(250);
+  });
+});
