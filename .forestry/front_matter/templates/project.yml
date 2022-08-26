@@ -98,7 +98,7 @@ fields:
   label: Project URL Site
 - name: size
   type: select
-  default: []
+  default: Normal
   config:
     required: false
     options:
