@@ -565,9 +565,12 @@ project {
     position: relative;
     overflow: hidden;
     padding-top: 50px;
-    cursor: grab;
     height: auto;
     align-self: stretch;
+}
+
+project[large]] {
+    grid-column: 1 / span 2;
 }
 
 project:before {

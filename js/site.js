@@ -9,18 +9,6 @@ $('.checkcheck').click(function () {
   this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
 });
 
-// Draggable
-
-const sortable = new Draggable.Sortable(document.querySelectorAll('projects'), {
-  draggable: 'project',
-  swapAnimation: {
-    duration: 200,
-    easingFunction: 'ease-in-out',
-    horizontal: true
-  },
-  plugins: [Draggable.Plugins.SwapAnimation]
-});
-
 // Fields Flip
 
 let $elements = $("art .tt");
@@ -99,9 +87,10 @@ $(document).ready(function () {
     console.log("readyreadyready")
   }
 
+  $(".a-dialog-button").click(function () {
+    $('intro text').show();
+  });
+
 
 });
 
-$(".a-dialog-button").click(function () {
-  $('intro text').show();
-});
