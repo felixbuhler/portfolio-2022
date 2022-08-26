@@ -96,6 +96,7 @@ $(document).ready(function () {
 
   if ($aframeVisible.length) {
     $('intro text').hide();
+    console.log("readyreadyready")
   }
 
   $(".a-dialog-button").click(function () {
