@@ -92,6 +92,11 @@ setDate();
 
 
 $(".a-modal").ready(function () {
+  
+});
+
+
+$(document).on('load', function() {
   var $aframeVisible = $('.a-modal');
 
   if ($aframeVisible.length) {
