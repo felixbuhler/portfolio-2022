@@ -91,7 +91,7 @@ setDate();
 
 
 
-$(document).ready(function () {
+$(".a-modal").ready(function () {
   var $aframeVisible = $('.a-modal');
 
   if ($aframeVisible.length) {
@@ -100,6 +100,6 @@ $(document).ready(function () {
   }
 
   $(".a-dialog-button").click(function () {
-    $('intro text').show(250);
+    $('intro text').show();
   });
 });
