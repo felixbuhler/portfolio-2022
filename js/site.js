@@ -5,7 +5,7 @@ $('project-info').hide(500)
 $('.checkcheck').click(function () {
 
   this.checked ? $('project-info').show(500) : $('project-info').hide(500);
-
+  this.checked ? $('switch-text div').text("🙉") :  $('switch-text div').text("🙈");
   this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
 });
 
