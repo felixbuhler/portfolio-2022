@@ -10,6 +10,6 @@ projectURL = ""
 projectURLSite = ""
 tags = []
 title = "Applied Freedom"
-year = nil
+year = "2018"
 
 +++
