@@ -7,6 +7,7 @@ projectColor = "#000000"
 projectType = "MDRV"
 projectURL = "https://www.behance.net/gallery/56392735/Die-Wichtigkeit-des-Banalen-Die-Tuer"
 projectURLSite = "Behance"
+size = "Large"
 tags = ["Graphic Design", "3D", "Editorial Design"]
 title = "Die Wichtigkeit des Banalen — Die Tür"
 year = 2017
