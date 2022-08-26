@@ -7,8 +7,9 @@ projectColor = "#FF3D3D"
 projectType = "MDRV"
 projectURL = "https://md-rv.de/ltt/civa/"
 projectURLSite = "Mediendesign Ravensburg"
+size = "Large"
 tags = ["3D", "WebVR", "Graphic Design"]
-title = "Dinner Time Tour – CIVA Exhibition Tour"
+title = "Dinner Time Tour — CIVA Exhibition Tour"
 year = 2021
 
 +++
