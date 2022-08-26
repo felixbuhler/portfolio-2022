@@ -463,7 +463,7 @@ switch-wrapper {
 
 switch-text {
     display: flex;
-   margin-left: auto;
+    margin-left: auto;
     vertical-align: top;
     margin-top: -15px;
     filter: saturate(0);
@@ -595,17 +595,6 @@ project:before {
     margin-bottom: 10px;
 }
 
-project.draggable-mirror {
-    cursor: grabbing !important;
-    width: 20vw;
-
-}
-
-project.draggable-original,
-project.draggable-source--is-dragging {
-    filter: blur(30px);
-    opacity: 0.5;
-}
 
 /* Projects › Single Project › Fig. */
 
@@ -648,8 +637,7 @@ project h2 mdrv:before {
 
     font-family: var(--font-serif-small);
     font-weight: normal;
-    margin-right: 5px;
-    text-transform: uppercase;
+    margin-right: 4px;
 }
 
 project h2 client:before {
@@ -1057,6 +1045,11 @@ eightball {
 
     }
 
+    .ttt {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     clients {
 
         padding: 100px calc(0vw + var(--projects-gap));
@@ -1081,6 +1074,14 @@ eightball {
         top: 4px;
         right: 4px;
         content: '';
+    }
+
+    projects {
+        grid-auto-flow: initial;
+    }
+
+    project.Large {
+        grid-column: 1 / span 1 !important;
     }
 
     switch-text div {

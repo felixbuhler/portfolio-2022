@@ -43,7 +43,7 @@
     <!-- More Button -->
     {{ with .Params.projectURL }}
     <a class="marquee3k" data-speed="0.4" data-reverse="bool" data-pausable="bool" href="{{ . }}"
-        alt="{{ $.Title }} on {{ $.Params.projectURLSite }}" project-link>
+        alt="{{ $.Title }} on {{ $.Params.projectURLSite }}" project-link taget="_blank">
         <link-content>View {{ $.Title }} on {{ $.Params.projectURLSite }}</link-content>
     </a>
     {{ end }}
