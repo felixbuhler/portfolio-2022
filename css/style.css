@@ -569,8 +569,8 @@ project {
     align-self: stretch;
 }
 
-project[large]] {
-    grid-column: 1 / span 2;
+project.Large {
+    grid-column: 1 / span 2 !important;
 }
 
 project:before {
@@ -971,7 +971,7 @@ eightball {
     }
 
     projects {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
     }
 
