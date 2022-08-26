@@ -96,6 +96,20 @@ fields:
   config:
     required: false
   label: Project URL Site
+- name: size
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Large
+    - Normal
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
 pages:
 - content/posts/a-curriculum-in-pictures.md
 - content/posts/applied-freedom.md
