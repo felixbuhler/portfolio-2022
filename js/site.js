@@ -90,10 +90,11 @@ setDate();
 // A-Frame Mobile UI
 
 
-window.addEventListener("DOMContentLoaded", function(){
+
+$(document).ready(function () {
   var $aframeVisible = $('.a-modal');
 
-  if ( $aframeVisible.length){
+  if ($aframeVisible.length) {
     $('intro text').hide();
   }
 
