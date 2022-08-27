@@ -1,18 +1,14 @@
 +++
 title = "Imprint"
 type = "page"
+
 +++
 ## Angaben gemäß § 5 TMG
 
 Felix Buhler  
-Designer & Art Director  
-Reichenberger Str. 140  
-10999 Berlin
+Designer & Art Director
 
 ## Kontakt
-
-Telefon: 017664796213  
-E-Mail: hi@felix-buhler.de
 
 ## EU-Streitschlichtung
 
