@@ -27,6 +27,10 @@ sections:
 - type: document
   path: content/intro.md
   label: Intro Text
+- type: document
+  path: content/imprint/imprint.md
+  label: Imprint
+  match: "**/*"
 upload_dir: static/uploads
 public_path: uploads
 front_matter_path: ''
