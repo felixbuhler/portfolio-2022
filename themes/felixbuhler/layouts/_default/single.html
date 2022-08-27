@@ -1,5 +1,11 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<br><br>
-{{ .Content }}
+<back><a href="{{ .Site.BaseURL }}"
+        title="Back Home">Back Home</a></back>
+<main>
+    <content>
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+    </content>
+</main>
+
 {{ end }}

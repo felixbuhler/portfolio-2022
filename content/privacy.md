@@ -1,5 +1,5 @@
 +++
-title = "Imprint"
+title = "Data Privacy"
 type = "page"
 +++
 ## Angaben gemäß § 5 TMG
