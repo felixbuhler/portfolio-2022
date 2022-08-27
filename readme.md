@@ -1,11 +1,5 @@
-My new portfolio built with Hugo and Forestry
+# My new portfolio built with Hugo and Forestry
 
- ____  ____  __    __  _  _         
-(  __)(  __)(  )  (  )( \/ )        
- ) _)  ) _) / (_/\ )(  )  (         
-(__)  (____)\____/(__)(_/\_)        
- ____  _  _  _  _  __    ____  ____ 
-(  _ \/ )( \/ )( \(  )  (  __)(  _ \
- ) _ () \/ () __ (/ (_/\ ) _)  )   /
-(____/\____/\_)(_/\____/(____)(__\_)
+## Tech
 
+HUGO, Forestry
