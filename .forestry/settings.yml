@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: content/imprint/imprint.md
+  path: content/imprint.md
   label: Imprint
 - type: directory
   path: content/posts
