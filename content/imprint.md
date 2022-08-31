@@ -6,7 +6,8 @@ type = "page"
 ## Angaben gemäß § 5 TMG
 
 Felix Buhler  
-Designer & Art Director
+Designer & Art Director  
+{{< obfuscate "Reichenberger Str. 140" >}}
 
 ## Kontakt
 
