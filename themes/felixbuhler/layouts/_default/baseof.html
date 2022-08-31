@@ -3,11 +3,28 @@
 {{- partial "head.html" . -}}
 
 <body>
-   
+
     {{- block "main" . }}{{- end }}
 
     {{- partial "footer.html" . -}}
 
+    <script src="{{ .Site.BaseURL }}/js/baffle.js"
+        type="text/javascript"></script>
+    <script>
+        let b = baffle('whats-that');
+        b.set({
+            characters: '░',
+            speed: 50
+        }).once();
+
+
+
+        $("whats-that").mouseenter(function () {
+            b.reveal(150);
+        }).mouseleave(function () {
+            b.once();
+        });
+    </script>
 </body>
 
 </html>
