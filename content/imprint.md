@@ -12,6 +12,9 @@ Designer & Art Director
 
 ## Kontakt
 
+{{< obfuscate "(+49) 176 64796213" >}}  
+{{< obfuscate "hi@felix-buhler.de" >}}
+
 ## EU-Streitschlichtung
 
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
