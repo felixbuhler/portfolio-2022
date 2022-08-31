@@ -7,7 +7,8 @@ type = "page"
 
 Felix Buhler  
 Designer & Art Director  
-{{< obfuscate "Reichenberger Str. 140" >}}
+{{< obfuscate "Reichenberger Str. 140" >}}  
+{{< obfuscate "10999 Berlin" >}}
 
 ## Kontakt
 
