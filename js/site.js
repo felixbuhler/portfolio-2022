@@ -5,7 +5,7 @@ $('project-info').hide(500)
 $('.checkcheck').click(function () {
 
   this.checked ? $('project-info').show(500) : $('project-info').hide(500);
-  this.checked ? $('switch-text div').text("🙉") :  $('switch-text div').text("🙈");
+  this.checked ? $('switch-text div').text("🙉") : $('switch-text div').text("🙈");
   this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
 });
 
@@ -77,8 +77,6 @@ setDate();
 
 // A-Frame Mobile UI
 
-
-
 $(document).ready(function () {
   var $aframeVisible = $('.a-modal');
 
@@ -91,6 +89,9 @@ $(document).ready(function () {
     $('intro text').show();
   });
 
-
 });
 
+// Hide Text
+$(document).ready(function () {
+ 
+});
