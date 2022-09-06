@@ -95,5 +95,6 @@ $(document).ready(function () {
 
 // Smooth Scroll
 
-var scroll = new SmoothScroll('header a[href*="#"]', { offset: 50, updateURL: false });
-var scrollFooter = new SmoothScroll('header a.footer', { offset: 0, updateURL: false });
+var scroll = new SmoothScroll('header a[href*="#"]', { updateURL: false, header: '[data-scroll-header]' });
+var scrollFooter = new SmoothScroll('header a.footer', { updateURL: false });
+var scrollClients = new SmoothScroll('header a.clients', { updateURL: false, offset: 60 });
