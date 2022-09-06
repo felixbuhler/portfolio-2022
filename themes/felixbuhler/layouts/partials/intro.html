@@ -1,12 +1,14 @@
-<content info>
+<content info >
     <ddd>{{- partial "aframe.html" . -}}</ddd>
     <text>
         <h1>Felix<br>Buhler</h1>
         {{ with .Site.GetPage "/intro.md" }}{{ .Content }}{{ end }}
     </text>
 </content>
+
 <content contact>
-    <text>
+
+    <text data-scroll data-scroll-speed="-2">
         I love to do <br>
         <art>
             <p class="tt">Graphic Design</p>

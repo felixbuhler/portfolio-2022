@@ -1,2 +1,3 @@
+
 {{ range ( where .Site.Pages "Type" "clients" ) }}<client><a href="{{ .Params.client_url }}" target="_blank" title="Go to {{ .Params.clientTitle }} ↗">{{ .Params.clientTitle }}</a></client>
 {{end}}

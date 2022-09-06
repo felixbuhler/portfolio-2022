@@ -89,9 +89,11 @@ $(document).ready(function () {
     $('intro text').show();
   });
 
+
+
 });
 
-// Hide Text
-$(document).ready(function () {
- 
-});
+// Smooth Scroll
+
+var scroll = new SmoothScroll('header a[href*="#"]', { offset: 50, updateURL: false });
+var scrollFooter = new SmoothScroll('header a.footer', { offset: 0, updateURL: false });

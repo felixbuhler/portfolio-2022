@@ -1,82 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google Fonts Pre Connect -->
-  <link rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
-  <link rel="preconnect"
-    href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <!-- Meta Tags -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible"
-    content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Felix Buhler is a Designer and Art Director from Berlin." />
-  <meta name="keywords"
-    content="design art director direction graphic typography" />
-  <meta name="author"
-    content="Felix Buhler" />
-  <meta name="publisher"
-    content="Felix Buhler" />
-  <meta name="copyright"
-    content="Felix Buhler" />
-  <meta name="robots"
-    content="INDEX,FOLLOW" />
-  <meta http-equiv="content-Language"
-    content="en" />
-  <meta name="theme-color"
-    content="#cd7dff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Felix Buhler is a Designer and Art Director from Berlin." />
+  <meta name="keywords" content="design art director direction graphic typography" />
+  <meta name="author" content="Felix Buhler" />
+  <meta name="publisher" content="Felix Buhler" />
+  <meta name="copyright" content="Felix Buhler" />
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <meta http-equiv="content-Language" content="en" />
+  <meta name="theme-color" content="#cd7dff">
   <!-- Favicon -->
-  <link rel="icon"
-    type="image/x-icon"
-    href="{{ .Site.BaseURL }}/css/avicon.ico">
-  <link rel="apple-touch-icon"
-    href="{{ .Site.BaseURL }}/css/apple-touch-icon.png" />
-  <link rel="shortcut icon"
-    href="{{ .Site.BaseURL }}/css/apple-touch-icon.png"
-    sizes="196x196">
+  <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}/css/avicon.ico">
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}/css/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}/css/apple-touch-icon.png" sizes="196x196">
 
 
   <!-- Fonts Links -->
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Inter:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://use.typekit.net/oiv8rye.css">
+  <link rel="stylesheet" href="https://use.typekit.net/oiv8rye.css">
 
 
 
   <!-- CSS Files Links -->
-  <link rel="stylesheet"
-    href="{{ .Site.BaseURL }}/css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/locomotive-scroll.css">
 
   <!-- Marquee 3000 -->
-  <script src="{{ .Site.BaseURL }}/js/marquee3k.min.js"
-    defer
-    type="text/javascript"></script>
+  <script src="{{ .Site.BaseURL }}/js/marquee3k.min.js" defer type="text/javascript"></script>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-    crossorigin="anonymous"></script>
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
   <!-- A-Frame -->
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"
-    crossorigin="anonymous"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
-  <!-- Site JavaScript -->
-  <script src="{{ .Site.BaseURL }}/js/flip.js"
-    defer
-    type="text/javascript"></script>
-  <script src="{{ .Site.BaseURL }}/js/site.js"
-    defer
-    type="text/javascript"></script>
-   
+  <!-- Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <!--Site JavaScript -->
+  <script src="{{ .Site.BaseURL }}/js/flip.js" defer type="text/javascript"></script>
+  <script src="{{ .Site.BaseURL }}/js/site.js" defer type="text/javascript"></script>
+
 
   <!-- Title -->
   <title>{{ .Page.Title }}</title>
