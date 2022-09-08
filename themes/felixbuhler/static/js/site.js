@@ -81,11 +81,11 @@ $(document).ready(function () {
   var $aframeVisible = $('.a-modal');
 
   if ($aframeVisible.length) {
-    $('intro[info] text').hide();
+    $('intro content[info] text').hide();
   }
 
   $(".a-dialog-button").click(function () {
-    $('intro[info] text').show();
+    $('intro content[info] text').show();
   });
 
 
