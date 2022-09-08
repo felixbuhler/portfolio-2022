@@ -81,8 +81,7 @@ $(document).ready(function () {
   var $aframeVisible = $('.a-modal');
 
   if ($aframeVisible.length) {
-    $('intro text').hide();
-    console.log("readyreadyready")
+    $('intro[info] text').hide();
   }
 
   $(".a-dialog-button").click(function () {
