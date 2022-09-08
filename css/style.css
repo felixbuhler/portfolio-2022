@@ -219,8 +219,9 @@ intro content[contact]:before {
 intro content[info] {
 
 
-    border-radius: var(--border-radius-intro);
     background: var(--color-accent);
+    border-radius: var(--border-radius-intro) !important;
+    overflow: hidden !important;
 }
 
 intro content text {
