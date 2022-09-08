@@ -217,7 +217,7 @@ intro content[contact]:before {
 }
 
 intro content[info] {
-   
+
 
     border-radius: var(--border-radius-intro);
     background: var(--color-accent);
@@ -286,6 +286,11 @@ ddd {
     -webkit-filter: saturate(0) brightness(1.2);
 }
 
+.a-scene {
+    border-radius: var(--border-radius-intro) !important;
+    overflow: hidden !important;
+}
+
 .a-dialog {
     background: transparent !important;
     z-index: 5 !important;
@@ -318,8 +323,6 @@ ddd {
     z-index: 5 !important;
     backdrop-filter: blur(50px) !important;
     -webkit-backdrop-filter: blur(50px) !important;
-    border-radius: var(--border-radius-intro) !important;
-    overflow: hidden !important;
 }
 
 .a-dialog,
@@ -1153,12 +1156,17 @@ whats-that:after {
         align-items: flex-start
     }
 
-    header ul li {text-align: right;}
+    header ul li {
+        text-align: right;
+    }
+
     header ul li:first-child {
         text-align: left;
     }
 
-    header ul li:nth-child(2) {display: none;}
+    header ul li:nth-child(2) {
+        display: none;
+    }
 }
 
 /* Responsive › Mobile */
