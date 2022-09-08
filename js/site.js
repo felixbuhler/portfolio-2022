@@ -86,7 +86,7 @@ $(document).ready(function () {
   }
 
   $(".a-dialog-button").click(function () {
-    $('intro text').show();
+    $('intro[info] text').show();
   });
 
 
