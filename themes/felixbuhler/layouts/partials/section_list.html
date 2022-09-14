@@ -2,6 +2,12 @@
         <content>
                 <cv>
                         <h2>CV</h2>
+                        {{ range ( where .Site.Pages "Type" "cv" ) }}<feature>
+                                <h4>{{ .Params.cvTitle }}</h4>
+                                <year>{{ .Params.cvTime }}</year>
+                                <p></p><a href="{{ .Params.client_url }}"
+                                        target="_blank" title="Go to {{ .Params.featureTitle }} ↗">View</a></feature>
+                        {{end}}
                 </cv>
                 <features>
                         <h2>Features</h2>
