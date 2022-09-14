@@ -18,6 +18,15 @@ fields:
     min: 
     max: 
     step: 
+- name: featureDescription
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Feature Description
 pages:
 - content/features/kaltblut.md
 - content/features/the-happy-zine.md
