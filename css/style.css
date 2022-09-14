@@ -85,7 +85,8 @@ h1 {
 }
 
 intro h2,
-clients h2 {
+clients h2,
+list h2 {
     font-size: var(--font-size-3x) !important;
     font-family: var(--font-serif);
     font-weight: inherit;
@@ -222,6 +223,7 @@ intro content[info] {
     background: var(--color-accent);
     border-radius: var(--border-radius-intro) !important;
     overflow: hidden !important;
+
 }
 
 intro content text {
@@ -806,6 +808,63 @@ project a[project-link] link-content:after {
     content: "";
     margin: 0 30px;
 }
+
+/* List */
+
+list {
+    box-sizing: border-box;
+    padding: 200px calc(20vw + var(--projects-gap));
+    width: calc(100% - 2 * var(--projects-gap));
+    margin-left: var(--projects-gap);
+    margin-top: var(--projects-gap);
+    font-size: var(--font-size-3x);
+    font-family: var(--font-sans);
+    text-align: center;
+    display: block;
+    white-space: wrap;
+    max-width: 100%;
+    overflow: hidden !important;
+    position: relative;
+    border-radius: var(--border-radius);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: var(--color-accent);
+}
+
+list content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--projects-gap);
+    text-align: left;
+}
+
+list content>* {
+}
+
+feature {
+    width: 100%;
+    border-top: var(--border);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+feature h4 {
+    flex: 0 0 30%;
+}
+
+feature year {
+    flex: 0 0 10%;
+}
+
+feature a {
+    flex: 0 0 20%;
+}
+
+feature p {
+    flex: 0 0 40%;
+}
+
 
 /* Footer */
 
