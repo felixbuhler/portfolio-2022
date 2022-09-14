@@ -1,0 +1,19 @@
+---
+label: CV
+hide_body: false
+fields:
+- name: cvPlace
+  type: text
+  config:
+    required: false
+  label: CV Place
+- name: cvTime
+  type: number
+  label: CV Time
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
