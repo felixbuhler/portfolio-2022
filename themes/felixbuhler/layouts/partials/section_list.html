@@ -1,0 +1,16 @@
+<list>
+        <content>
+                <cv>
+                        <h2>CV</h2>
+                </cv>
+                <features>
+                        <h2>Features</h2>
+                        {{ range ( where .Site.Pages "Type" "features" ) }}<feature>
+                                <h4>{{ .Params.featureTitle }}</h4>
+                                <year>{{ .Params.featureYear }}</year>
+                                <p></p><a href="{{ .Params.client_url }}"
+                                        target="_blank" title="Go to {{ .Params.featureTitle }} ↗">View</a></feature>
+                        {{end}}
+                </features>
+        </content>
+</list>

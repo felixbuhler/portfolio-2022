@@ -1,23 +1,24 @@
 {{ define "main" }}
-    {{- partial "header.html" . -}}
+{{- partial "header.html" . -}}
 
-    {{- partial "section_clients.html" . -}}
+{{- partial "section_clients.html" . -}}
 
-    <section id="projects">
-        <projects>
-            <switch-wrapper>
-                <switch>
-                    <label class="switch">
-                        <input type="checkbox" class="checkcheck"> <span class="slider round"></span></label>
+<section id="projects">
+    <projects>
+        <switch-wrapper>
+            <switch>
+                <label class="switch">
+                    <input type="checkbox" class="checkcheck"> <span class="slider round"></span></label>
 
-                </switch>
-                <switch-text>
-                    <div>🙈</div>
-                </switch-text>
-            </switch-wrapper>
-            {{ range ( where .Site.RegularPages "Type" "posts" ) }}
-            {{- partial "project.html" . -}}
-            {{end}}
-        </projects>
-    </section>
+            </switch>
+            <switch-text>
+                <div>🙈</div>
+            </switch-text>
+        </switch-wrapper>
+        {{ range ( where .Site.RegularPages "Type" "posts" ) }}
+        {{- partial "project.html" . -}}
+        {{end}}
+    </projects>
+</section>
+{{- partial "section_list.html" . -}}
 {{ end }}
