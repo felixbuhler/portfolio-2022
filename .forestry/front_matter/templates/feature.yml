@@ -38,6 +38,7 @@ fields:
     max: 
     step: 
 pages:
+- content/features/blank-poster-vol1.md
 - content/features/cmde.md
 - content/features/kaltblut.md
 - content/features/the-happy-zine.md
