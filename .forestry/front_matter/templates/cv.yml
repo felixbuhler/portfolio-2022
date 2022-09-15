@@ -18,5 +18,10 @@ fields:
   config:
     required: false
   label: CV Time
+- name: cvUrl
+  type: text
+  config:
+    required: false
+  label: CV URL
 pages:
 - content/cv/formdusche-jad.md
