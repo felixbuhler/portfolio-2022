@@ -17,3 +17,8 @@ fields:
     min: 
     max: 
     step: 
+- name: cvPosition
+  type: text
+  config:
+    required: false
+  label: CV Position
