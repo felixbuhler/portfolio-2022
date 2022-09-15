@@ -813,7 +813,7 @@ project a[project-link] link-content:after {
 
 list {
     box-sizing: border-box;
-    padding: 200px calc(20vw + var(--projects-gap));
+    padding: calc(20vw + var(--projects-gap));
     width: calc(100% - 2 * var(--projects-gap));
     margin-left: var(--projects-gap);
     margin-top: var(--projects-gap);
@@ -829,32 +829,44 @@ list {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: var(--color-accent);
+    background: var(--color-black);
+    color: var(--color-white);
 }
 
 list content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: var(--projects-gap);
+    grid-template-columns: 1fr;
+    grid-column-gap: 40px;
     text-align: left;
 }
 
-list content>* {
-}
+list content>* {}
 
 feature {
     width: 100%;
     border-top: var(--border);
+    border-color: currentColor;
     display: flex;
     flex-wrap: nowrap;
+    padding: 10px 5px;
 }
+
+feature > * {padding-right: 10px;}
 
 feature h4 {
     flex: 0 0 30%;
 }
 
+cv feature h4 {
+    flex: 0 0 27%;
+}
+
 feature year {
     flex: 0 0 10%;
+}
+
+cv feature year {
+    flex: 0 0 15%;
 }
 
 feature a {
@@ -863,6 +875,10 @@ feature a {
 
 feature p {
     flex: 0 0 40%;
+}
+
+cv feature p {
+    flex: 0 0 58%;
 }
 
 
