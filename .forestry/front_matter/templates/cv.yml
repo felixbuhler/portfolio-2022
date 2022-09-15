@@ -22,3 +22,5 @@ fields:
   config:
     required: false
   label: CV Position
+pages:
+- content/cv/formdusche-jad.md
