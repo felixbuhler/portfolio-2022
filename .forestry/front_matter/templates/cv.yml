@@ -1,26 +1,22 @@
 ---
 label: CV
 hide_body: false
+display_field: cvPlace
 fields:
 - name: cvPlace
   type: text
   config:
     required: false
   label: CV Place
-- name: cvTime
-  type: number
-  label: CV Time
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
 - name: cvPosition
   type: text
   config:
     required: false
   label: CV Position
+- name: cvTime
+  type: text
+  config:
+    required: false
+  label: CV Time
 pages:
 - content/cv/formdusche-jad.md
