@@ -1,7 +1,7 @@
 +++
 featureDescription = ""
 featureTitle = "Command E Magazine"
-featureYear = 2016
+featureYear = 2015
 weight = 0
 
 +++
