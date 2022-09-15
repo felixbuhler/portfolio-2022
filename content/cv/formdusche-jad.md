@@ -1,6 +1,7 @@
 +++
 cvPlace = "formdusche — Studio für Gestaltung, Berlin"
 cvPosition = "Junior Art Director "
-cvTime = nil
+cvTime = "2019 — 2021"
+cvUrl = "https://formdusche.de"
 
 +++
