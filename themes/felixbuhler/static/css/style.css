@@ -813,7 +813,7 @@ project a[project-link] link-content:after {
 
 list {
     box-sizing: border-box;
-    padding: calc(20vw + var(--projects-gap));
+    padding: 150px calc(20vw + var(--projects-gap));
     width: calc(100% - 2 * var(--projects-gap));
     margin-left: var(--projects-gap);
     margin-top: var(--projects-gap);
@@ -842,19 +842,29 @@ list content {
 
 list content>* {}
 
+features h2 {
+    margin-top: 50px;
+}
+
 feature {
     width: 100%;
-    border-top: var(--border);
-    border-color: currentColor;
     display: flex;
     flex-wrap: nowrap;
     padding: 10px 5px;
+    border-top: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-feature > * {padding-right: 10px;}
+feature:first-of-type {
+    border-top: none;
+}
+
+feature>* {
+    padding-right: 10px;
+}
 
 feature h4 {
     flex: 0 0 30%;
+
 }
 
 cv feature h4 {
@@ -1300,6 +1310,10 @@ whats-that:after {
     clients {
 
         padding: 100px calc(0vw + var(--projects-gap));
+    }
+
+    list {
+        padding: 50px calc(0vw + 4*var(--projects-gap));
     }
 
     clients h2 {
