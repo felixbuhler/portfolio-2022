@@ -1,7 +1,7 @@
 +++
 featureDescription = ""
-featureTitle = "Command E Magazine"
+featureTitle = "⌘E Magazine"
 featureYear = 2015
-weight = 0
+weight = nil
 
 +++
