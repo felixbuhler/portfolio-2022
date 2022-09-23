@@ -27,16 +27,6 @@ fields:
     schema:
       format: markdown
   label: Feature Description
-- name: weight
-  type: number
-  label: Weight
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
 pages:
 - content/features/blank-poster-vol1.md
 - content/features/cmde.md
