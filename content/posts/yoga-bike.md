@@ -9,7 +9,7 @@ projectURL = "http://dagmar-buhler.de"
 projectURLSite = ""
 size = ""
 tags = ["Web Design", "Coding"]
-title = "Yoga & Bike"
+title = "Yoga & Bike Branding"
 year = 2022
 
 +++
