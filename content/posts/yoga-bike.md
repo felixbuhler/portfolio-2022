@@ -1,12 +1,12 @@
 +++
 client = "clients/dagmar-buhler.md"
-description = "Branding and Webdesign for Dagmar Buhlers yoga practice YOGA & BIKE. "
+description = "Branding and Webdesign for Dagmar Buhlers yoga practice YOGA & BIKE. Built with WordPress. View the [website](http://dagmar-buhler.de \"YOGA & BIKE\")."
 image = "uploads/fb_project_yogabike.jpg"
 imageSize = "cover"
 projectColor = "#F4F1EA"
 projectType = "Client"
-projectURL = "http://dagmar-buhler.de"
-projectURLSite = "her Website"
+projectURL = "https://www.behance.net/gallery/151117885/YOGA-BIKE"
+projectURLSite = "Behance"
 size = ""
 tags = ["Web Design", "Coding"]
 title = "Yoga & Bike Branding"
