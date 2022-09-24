@@ -76,7 +76,7 @@
                         {{ range ( where .Site.Pages "Type" "features" ).Reverse.ByParam "featureYear"}}<feature>
                                 <year>{{ .Params.featureYear }}</year>
                                 <h4><span><a href="{{ .Params.feature_link }}" target="_blank"
-                                                        title="Go to {{ .Params.featureTitle }} ↗">{{
+                                                        title="Go to {{ .Params.featureTitle }}">{{
                                                         .Params.featureTitle }}</a></span></h4>
 
                                 <p>{{ .Params.featureDescription }}</p>

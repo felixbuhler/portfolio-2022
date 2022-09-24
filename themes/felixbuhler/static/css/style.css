@@ -836,9 +836,26 @@ project-info p {
 
 project-info p:has(+ p) {}
 
-project-info p a {
+project-info p a,
+project-info a {
     color: inherit;
+    text-decoration: none;
 }
+
+project-info p a:hover,
+project-info a:hover {
+    border-bottom: var(--border);
+}
+
+project-info p a:after,
+project-info a:after {
+    content: " ↗";
+    font-size: 0.7em;
+    display: inline-block;
+    margin-left: 1px;
+    font-weight: bold;
+}
+
 
 project-info p:last-child {
     margin-bottom: 0px;
