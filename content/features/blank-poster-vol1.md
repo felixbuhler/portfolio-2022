@@ -1,7 +1,8 @@
 +++
-featureDescription = ""
+featureDescription = "The book features a collection of more than 700 posters by 393 designers from 53 countries."
 featureTitle = "Blank Poster Volume 1"
 featureYear = 2019
+feature_link = "http://blankposter.com/blank-poster-book/"
 weight = 0
 
 +++
