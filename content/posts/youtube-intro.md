@@ -1,6 +1,6 @@
 +++
 client = "clients/alina-kossan.md"
-description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+description = "Alina Kossan is a Berlin-based digital content creator. For her YouTube channel I created a logo and 3D animation, that is used as the intro for blogs, hauls and more. View her [YouTube channel](https://www.youtube.com/channel/UCEPKN_6lgmeOdDERgchRo0g/featured \"Alina Kossan on YouTube\")."
 image = "uploads/fb_project_alinakossan.png"
 imageSize = "cover"
 projectColor = "#FFDAFE"
@@ -9,7 +9,7 @@ projectURL = "https://www.behance.net/gallery/137972117/Video-Intro"
 projectURLSite = "Behance"
 size = "Large"
 tags = ["3D", "Animation", "Sound Design", "Type Design"]
-title = "Logo & YouTube Intro Animation"
+title = "Logo, YouTube Intro Animation & Sound Design"
 year = 2022
 
 +++
