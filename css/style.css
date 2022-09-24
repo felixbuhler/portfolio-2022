@@ -256,6 +256,12 @@ intro content[contact] text a,
 
 intro content[contact] text a {
     border: var(--border);
+    --animation: all 0.1s linear;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+    transition: var(--animation);
 }
 
 
@@ -432,6 +438,7 @@ clients {
 
 
 clients client {
+
     font-size: var(--font-size-3x) !important;
     line-height: 1.5em;
     margin-bottom: 10px;
@@ -443,6 +450,12 @@ clients client {
     padding: 0 28px 0px 10px;
     display: inline-block;
     position: relative;
+    --animation: all 0.1s linear;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+    transition: var(--animation);
 }
 
 
@@ -461,6 +474,7 @@ clients client a {
 }
 
 clients client:before {
+    --animation: all 0.1s linear;
     --dot-size: 10px;
     position: absolute;
     top: 8px;
@@ -473,6 +487,11 @@ clients client:before {
     border-radius: 50%;
     z-index: 0;
     margin-bottom: 10px;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+    transition: var(--animation);
 }
 
 clients client:hover:before {
@@ -617,19 +636,30 @@ project {
     scroll-snap-type: y mandatory;
     padding: var(--projects-gap);
     scroll-snap-align: start;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) !important;
     position: relative;
     overflow: hidden;
     padding-top: 50px;
     height: auto;
     align-self: stretch;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+project * {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 }
 
 project.Large {
     grid-column: 1 / span 2 !important;
 }
 
-project:before {
+project-dot {
     --dot-size: 15px;
     position: absolute;
     top: 10px;
@@ -643,6 +673,29 @@ project:before {
     border-radius: 50%;
     z-index: -1;
     margin-bottom: 10px;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+project-dot[colored] {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+project:hover project-dot {
+    opacity: 1;
+}
+
+project:hover project-dot[colored] {
+    opacity: 0;
 }
 
 
@@ -714,15 +767,14 @@ project-image {
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
     filter: saturate(0);
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-project:hover project-image,
-project.draggable-mirror:active project-image {
+project:hover project-image {
     filter: saturate(1);
 }
 
@@ -778,12 +830,11 @@ project-info {
 }
 
 project-info p {
-    display: block;margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
 }
 
-project-info p:has(+ p) {
-    
-}
+project-info p:has(+ p) {}
 
 project-info p a {
     color: inherit;
@@ -817,18 +868,25 @@ project a[project-link] link-content:after {
 
 /* List */
 #show-education-features {
+    --animation-length: 1s;
+    cursor: pointer;
     line-height: 0px;
     vertical-align: top;
     height: 20px;
     transform: translateY(-65px);
     -webkit-appearance: none;
     appearance: none;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 0px rgba(255, 255, 255, 0.6);
     padding: 0px calc(1.5*var(--projects-gap));
     border-radius: var(--border-radius);
     outline: none;
     border: none;
+    -webkit-transition: all var(--animation-length) ease-in-out;
+    -moz-transition: all var(--animation-length) ease-in-out;
+    -ms-transition: all var(--animation-length) ease-in-out;
+    -o-transition: all var(--animation-length) ease-in-out;
+    transition: all var(--animation-length) ease-in-out;
 }
 
 #show-education-features:after {
@@ -863,32 +921,42 @@ list {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: var(--color-black);
+
     color: var(--color-white);
     height: auto;
 }
+
+list project-dot {
+    box-shadow: 0 0 0px 10000px var(--color-black);
+    opacity: 1;
+}
+
 
 list.show {
     padding: 150px calc(10* var(--projects-gap));
 }
 
 list content {
+    --animation: all 0.6s linear;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 40px;
     text-align: left;
     height: 0;
     overflow: hidden;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+    transition: var(--animation);
+    opacity: 0.3;
+    filter: blur(60px);
 }
 
 list content.show {
     height: auto;
-
+    opacity: 1;
+    filter: blur(0);
 }
 
 list content>* {}
@@ -975,6 +1043,18 @@ feature[tablehead]>* {
 
 features feature:last-of-type {
     display: none;
+}
+
+feature *>span a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+feature *>span:hover {
+    background: var(--color-white);
+    color: var(--color-black);
 }
 
 /* Footer */
@@ -1314,11 +1394,6 @@ whats-that:after {
         grid-template-columns: 1fr 1fr 1fr;
 
     }
-
-    project.draggable-mirror {
-        width: calc(100vw / 3 - 1.25 *var(--projects-gap));
-
-    }
 }
 
 @media (max-width: 960px) {
@@ -1421,7 +1496,26 @@ whats-that:after {
 
     list {
         padding: 50px calc(0vw + 4*var(--projects-gap));
+        padding-bottom: 10px;
     }
+
+    list.show {
+        padding: 50px calc(0vw + 4*var(--projects-gap));
+        padding-bottom: 50px;
+    }
+
+    cv {
+        margin-bottom: 20px;
+    }
+
+    #show-education-features {
+
+        transform: translateY(0px);
+        margin-bottom: 40px;
+    }
+
+    #show-education-features.show {}
+
 
     clients h2 {
         margin-bottom: 20px;
