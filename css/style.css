@@ -736,6 +736,9 @@ project-image[contain] {
 
 project-info iframe {
     width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: var(--border-radius);
 }
 
 div.embed.video-player {
@@ -775,8 +778,11 @@ project-info {
 }
 
 project-info p {
+    display: block;margin-bottom: 10px;
+}
 
-    text-indent: 25%;
+project-info p:has(+ p) {
+    
 }
 
 project-info p a {
@@ -810,10 +816,38 @@ project a[project-link] link-content:after {
 }
 
 /* List */
+#show-education-features {
+    line-height: 0px;
+    vertical-align: top;
+    height: 20px;
+    transform: translateY(-65px);
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.6);
+    padding: 0px calc(1.5*var(--projects-gap));
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+}
+
+#show-education-features:after {
+    content: "Show Education and References"
+}
+
+#show-education-features.show:after {
+    content: "Hide Education and References"
+}
+
+#show-education-features.show {
+    background: var(--color-white);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
 
 list {
     box-sizing: border-box;
-    padding: calc(20vw + var(--projects-gap));
+    padding: 150px calc(10* var(--projects-gap));
+    padding-bottom: 25px;
     width: calc(100% - 2 * var(--projects-gap));
     margin-left: var(--projects-gap);
     margin-top: var(--projects-gap);
@@ -831,6 +865,11 @@ list {
     backface-visibility: hidden;
     background: var(--color-black);
     color: var(--color-white);
+    height: auto;
+}
+
+list.show {
+    padding: 150px calc(10* var(--projects-gap));
 }
 
 list content {
@@ -838,34 +877,78 @@ list content {
     grid-template-columns: 1fr;
     grid-column-gap: 40px;
     text-align: left;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+list content.show {
+    height: auto;
+
 }
 
 list content>* {}
 
+list h2 {
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    right: 0px;
+    padding: 20px 30px;
+}
+
+cv {
+    margin-bottom: 100px;
+}
+
+features h2 {
+    margin-top: 50px;
+}
+
 feature {
     width: 100%;
-    border-top: var(--border);
-    border-color: currentColor;
     display: flex;
     flex-wrap: nowrap;
-    padding: 10px 5px;
+    margin-bottom: 30px;
+
 }
 
-feature > * {padding-right: 10px;}
-
-feature h4 {
-    flex: 0 0 30%;
+feature:first-of-type {
+    border-top: none;
 }
 
+feature>* {
+    padding-right: 10px;
+    font-size: var(--font-size-3x);
+    line-height: 1.2em;
+    color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+feature h4,
 cv feature h4 {
-    flex: 0 0 27%;
+    flex: 0 0 30%;
+
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+}
+
+feature *>span {
+    font-size: inherit;
+    border: 1px solid currentColor;
+    padding: 5px 10px;
+    font-family: var(--font-serif);
+    border-radius: var(--border-radius);
 }
 
 feature year {
-    flex: 0 0 10%;
-}
-
-cv feature year {
     flex: 0 0 15%;
 }
 
@@ -875,12 +958,24 @@ feature a {
 
 feature p {
     flex: 0 0 40%;
+
 }
 
 cv feature p {
-    flex: 0 0 58%;
+    flex: 0 0 50%;
 }
 
+feature[tablehead]>* {
+    font-size: var(--font-size-base);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    font-family: var(--font-sans);
+}
+
+features feature:last-of-type {
+    display: none;
+}
 
 /* Footer */
 
@@ -1243,6 +1338,28 @@ whats-that:after {
     header ul li:nth-child(2) {
         display: none;
     }
+
+    feature>* {
+        font-size: var(--font-size-3x);
+    }
+
+    feature {
+        flex-wrap: wrap;
+    }
+
+    feature[tablehead] {
+        display: none;
+    }
+
+    feature>*,
+    cv feature>* {
+        flex: 0 0 100% !important;
+        margin-bottom: 20px;
+    }
+
+    feature p {
+        margin-bottom: 20px;
+    }
 }
 
 /* Responsive › Mobile */
@@ -1300,6 +1417,10 @@ whats-that:after {
     clients {
 
         padding: 100px calc(0vw + var(--projects-gap));
+    }
+
+    list {
+        padding: 50px calc(0vw + 4*var(--projects-gap));
     }
 
     clients h2 {
