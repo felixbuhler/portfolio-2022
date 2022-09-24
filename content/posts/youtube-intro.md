@@ -9,7 +9,7 @@ projectURL = "https://www.behance.net/gallery/137972117/Video-Intro"
 projectURLSite = "Behance"
 size = "Large"
 tags = ["3D", "Animation", "Sound Design", "Type Design"]
-title = "Logo & YouTube Intro Animation"
+title = "Animation for YouTube & Logo"
 year = 2022
 
 +++
