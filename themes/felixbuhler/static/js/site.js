@@ -97,3 +97,12 @@ $(document).ready(function () {
 var scroll = new SmoothScroll('header a[href*="#"]', { updateURL: false, header: '[data-scroll-header]' });
 var scrollFooter = new SmoothScroll('header a.footer', { updateURL: false });
 var scrollClients = new SmoothScroll('header a.clients', { updateURL: false, offset: 60 });
+
+
+// Show / Hide CV
+
+$('#show-education-features').click(function() {
+  $('list content').toggleClass('show');
+  $('list').toggleClass('show');
+  $('#show-education-features').toggleClass('show');
+});
