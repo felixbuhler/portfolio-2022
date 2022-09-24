@@ -1,4 +1,5 @@
 <list>
+        <project-dot></project-dot>
         <button id="show-education-features"></button>
         <content>
                 <cv>
@@ -74,10 +75,11 @@
                         </feature>
                         {{ range ( where .Site.Pages "Type" "features" ).Reverse.ByParam "featureYear"}}<feature>
                                 <year>{{ .Params.featureYear }}</year>
-                                <h4><span>{{ .Params.featureTitle }}</span></h4>
+                                <h4><span><a href="{{ .Params.feature_link }}" target="_blank"
+                                                        title="Go to {{ .Params.featureTitle }} ↗">{{
+                                                        .Params.featureTitle }}</a></span></h4>
 
-                                <p>{{ .Params.featureDescription }}</p><a href="{{ .Params.client_url }}"
-                                        target="_blank" title="Go to {{ .Params.featureTitle }} ↗">View</a>
+                                <p>{{ .Params.featureDescription }}</p>
                         </feature>
                         {{end}}
                 </features>

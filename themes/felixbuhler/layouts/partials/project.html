@@ -1,9 +1,11 @@
 <!--  {{ .Title }} -->
 <project id="{{ .File.TranslationBaseName }}" class="{{ .Params.size }}">
+    <project-dot></project-dot>
+   <project-dot colored style="box-shadow: 0px 0px 0px 2000px {{ $.Params.projectColor }};"></project-dot>
     <no-no-no-no-dont-phunk-with-my-words>
-        
-         <!-- Title -->
-         <h2>
+
+        <!-- Title -->
+        <h2>
 
             {{ .Title }}
 
@@ -22,7 +24,7 @@
             style="background: url({{ $.Site.BaseURL }}/{{ . }}), {{ $.Params.projectColor }};" {{ $.Params.imageSize
             }}>
         </project-image>{{ end }}
-       
+
     </no-no-no-no-dont-phunk-with-my-words>
     <!-- Project Info -->
     <project-info>
@@ -43,7 +45,7 @@
     <!-- More Button -->
     {{ with .Params.projectURL }}
     <a class="marquee3k" data-speed="0.4" data-reverse="bool" data-pausable="bool" href="{{ . }}"
-        alt="{{ $.Title }} on {{ $.Params.projectURLSite }}" project-link taget="_blank">
+        alt="{{ $.Title }} on {{ $.Params.projectURLSite }}" project-link target="_blank">
         <link-content>View {{ $.Title }} on {{ $.Params.projectURLSite }}</link-content>
     </a>
     {{ end }}

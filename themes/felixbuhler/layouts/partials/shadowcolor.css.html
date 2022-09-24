@@ -1,0 +1,19 @@
+{{ with .Params.image }}
+<style>
+    project:before {
+        --dot-size: 15px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        content: '';
+        width: var(--dot-size);
+        height: var(--dot-size);
+        display: block;
+        background: transparent;
+        box-shadow: 0px 0px 0px 2000px {{ $.Params.projectColor }};
+        border-radius: 50%;
+        z-index: -1;
+        margin-bottom: 10px;
+    }
+</style>
+{{ end }}
