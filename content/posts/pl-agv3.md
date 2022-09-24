@@ -7,6 +7,7 @@ projectColor = "#8F69FF"
 projectType = "Personal"
 projectURL = "https://www.behance.net/gallery/75283517/PLAGV3"
 projectURLSite = "Behance"
+size = "Large"
 tags = ["3D", "Character Design", "Graphic Design"]
 title = "PL—AGV3"
 year = 2019
