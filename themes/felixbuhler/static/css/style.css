@@ -900,6 +900,7 @@ project a[project-link] link-content:after {
     border-radius: var(--border-radius);
     outline: none;
     border: none;
+    color: var(--color-black) !important;
     -webkit-transition: all var(--animation-length) ease-in-out;
     -moz-transition: all var(--animation-length) ease-in-out;
     -ms-transition: all var(--animation-length) ease-in-out;
