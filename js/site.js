@@ -106,3 +106,9 @@ $('#show-education-features').click(function() {
   $('list').toggleClass('show');
   $('#show-education-features').toggleClass('show');
 });
+
+// Add target="_blank" to p Links 
+
+$(document).ready(function(){
+  $('project-info p a').attr('target', '_blank');
+});
