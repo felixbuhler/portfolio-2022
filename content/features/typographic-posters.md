@@ -1,5 +1,4 @@
 +++
-draft = true
 featureDescription = "Various posters for Lunchtime Talk."
 featureTitle = "typo/graphic posters"
 featureYear = 2020
