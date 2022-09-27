@@ -1,7 +1,7 @@
 +++
 client = []
-description = ""
-image = ""
+description = "A easy to use Gewinnkarte for a famous game. "
+image = "uploads/fb_project_fiffel.png"
 imageSize = "cover"
 projectColor = "#00FF78"
 projectType = "Personal"
