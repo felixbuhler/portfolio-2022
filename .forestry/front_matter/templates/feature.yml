@@ -34,9 +34,11 @@ fields:
   label: Feature Link
 pages:
 - content/features/blank-poster-vol1.md
+- content/features/brutalist-websites.md
 - content/features/cmde.md
 - content/features/cruel-letter.md
 - content/features/die-tuer-mdrv.md
 - content/features/kaltblut.md
 - content/features/the-happy-zine.md
 - content/features/typographic-posters.md
+- content/features/zwischenablage.md
