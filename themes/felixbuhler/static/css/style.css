@@ -647,6 +647,11 @@ project {
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+project:hover {
+    color: var(--color-black);
 }
 
 project * {
@@ -690,6 +695,8 @@ project-dot[colored] {
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 }
+
+
 
 project:hover project-dot {
     opacity: 1;
@@ -828,6 +835,7 @@ tag {
 project-info {
     display: block;
     margin-bottom: var(--projects-gap);
+
 }
 
 project-info p {
@@ -957,9 +965,7 @@ list.show {
 
 list content {
     --animation: all 0.6s linear;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 40px;
+    display: block;
     text-align: left;
     height: 0;
     overflow: hidden;
@@ -978,7 +984,9 @@ list content.show {
     filter: blur(0);
 }
 
-list content>* {}
+list content>* {
+    width: calc(100% - 4 * var(--projects-gap));
+}
 
 list h2 {
     border: 1px solid currentColor;
@@ -1581,6 +1589,10 @@ whats-that:after {
 
     project.Large {
         grid-column: 1 / span 1 !important;
+    }
+
+    project {
+        color: var(--color-black);
     }
 
     switch-text div {
