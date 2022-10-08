@@ -7,6 +7,11 @@ $('.checkcheck').click(function () {
   this.checked ? $('project-info').show(500) : $('project-info').hide(500);
   this.checked ? $('switch-text div').text("🙉") : $('switch-text div').text("🙈");
   this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
+  this.checked ? $('project-info').css('opacity', '1') : $('project-info').css('opacity', '0');
+  this.checked ? $('project project-info>*').css('opacity', '1') : $('project project-info>*').css('opacity', '0');
+  this.checked ? $('project h2').css('opacity', '1') : $('project h2').css('opacity', '0');
+  this.checked ? $('project a[project-link]').css('opacity', '1') : $('project a[project-link]').css('opacity', '0');
+
 });
 
 // Fields Flip
@@ -111,4 +116,14 @@ $('#show-education-features').click(function() {
 
 $(document).ready(function(){
   $('project-info p a').attr('target', '_blank');
+});
+
+
+// Mouse
+
+$(document).on('mousemove', function(e){
+  $('mouse').css({
+     left:  e.pageX,
+     top:   e.pageY
+  });
 });

@@ -113,8 +113,8 @@ header ul {
     display: flex;
     list-style: none;
     background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
@@ -147,6 +147,32 @@ header ul li a:hover {
 header ul li a.footer {
     filter: saturate(0);
     -webkit-filter: saturate(0);
+}
+
+/* Mouse */
+
+mouse {
+    --size: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px) saturate(1.2);
+    -webkit-backdrop-filter: blur(10px) saturate(1.2);
+    display: block;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    z-index: 9999;
+    left: calc(-1 * var(--size));
+    top: calc(-1 * var(--size));
+    margin-left: calc(-0.5 * var(--size));
+    margin-top: calc(-0.5 * var(--size));
+    pointer-events: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    mouse {
+        display: none;
+    }
 }
 
 /* Intro */
@@ -647,11 +673,6 @@ project {
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
-    color: rgba(255, 255, 255, 0.3);
-}
-
-project:hover {
-    color: var(--color-black);
 }
 
 project * {
@@ -824,7 +845,7 @@ tags {
 }
 
 tag {
-    border: 1px solid var(--color-black);
+    border: 1px solid currentColor;
     border-radius: var(--border-radius-small);
     padding: 2px 5px;
     white-space: nowrap;
@@ -836,6 +857,37 @@ project-info {
     display: block;
     margin-bottom: var(--projects-gap);
 
+
+}
+
+
+project project-info>*,
+project project-info,
+project h2,
+project a[project-link] {
+    opacity: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+project:hover project-info>*,
+project:hover project-info,
+project:hover h2,
+project:hover a[project-link] {
+    opacity: 1;
+}
+
+@media (hover: none) and (pointer: coarse) {
+
+    project project-info>*,
+    project project-info,
+    project h2,
+    project a[project-link] {
+        opacity: 1;
+    }
 }
 
 project-info p {
@@ -894,7 +946,7 @@ project a[project-link] link-content:after {
 
 /* List */
 #show-education-features {
-    --animation-length: 1s;
+    --animation-length: 0.5s;
     cursor: pointer;
     line-height: 0px;
     vertical-align: top;
@@ -1603,5 +1655,22 @@ whats-that:after {
         filter: saturate(1);
     }
 
+    mouse {
+        --size: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px) saturate(1.2);
+        -webkit-backdrop-filter: blur(10px) saturate(1.2);
+        display: block;
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        z-index: 9999;
+        left: calc(-1 * var(--size));
+        top: calc(-1 * var(--size));
+        margin-left: calc(-0.5 * var(--size));
+        margin-top: calc(-0.5 * var(--size));
+        pointer-events: none;
+    }
 
 }
