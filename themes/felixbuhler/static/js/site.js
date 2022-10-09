@@ -106,7 +106,7 @@ var scrollClients = new SmoothScroll('header a.clients', { updateURL: false, off
 
 // Show / Hide CV
 
-$('#show-education-features').click(function() {
+$('#show-education-features').click(function () {
   $('list content').toggleClass('show');
   $('list').toggleClass('show');
   $('#show-education-features').toggleClass('show');
@@ -114,16 +114,24 @@ $('#show-education-features').click(function() {
 
 // Add target="_blank" to p Links 
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('project-info p a').attr('target', '_blank');
 });
 
 
 // Mouse
 
-$(document).on('mousemove', function(e){
+$(document).on('mousemove', function (e) {
   $('mouse').css({
-     left:  e.pageX,
-     top:   e.pageY
+    left: e.pageX,
+    top: e.pageY
+  });
+});
+
+$(function () {
+  $('a').hover(function () {
+    $('mouse').toggleClass("mouse-see-something");
+  }, function () {
+    $('mouse').toggleClass("mouse-see-something");
   });
 });
