@@ -153,9 +153,10 @@ header ul li a.footer {
 
 mouse {
     --size: 80px;
+    --transition: backdrop-filter 0.2s ease-in-out, -webkit-backdrop-filter 0.2s ease-in-out, transform 0.2s ease-in-out, filter 0.2s ease-in-out;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px) saturate(1.2);
-    -webkit-backdrop-filter: blur(10px) saturate(1.2);
+    backdrop-filter: blur(10px) saturate(1.1);
+    -webkit-backdrop-filter: blur(10px) saturate(1.1);
     display: block;
     position: absolute;
     width: var(--size);
@@ -167,11 +168,24 @@ mouse {
     margin-left: calc(-0.5 * var(--size));
     margin-top: calc(-0.5 * var(--size));
     pointer-events: none;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    filter: blur(0);
+
+}
+
+mouse.mouse-see-something {
+    transform: scale(0);
+    filter: blur(30px);
 }
 
 @media (hover: none) and (pointer: coarse) {
     mouse {
-        display: none;
+        display: none !important;
+        opacity: 0 !important;
     }
 }
 
