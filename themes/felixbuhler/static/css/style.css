@@ -955,13 +955,15 @@ project a[project-link] link-content:after {
 }
 
 /* List */
+/* List */
 #show-education-features {
-    --animation-length: 0.5s;
+    --animation-length: 0.35s;
     cursor: pointer;
     line-height: 0px;
     vertical-align: top;
-    height: 20px;
-    transform: translateY(-65px);
+    height: 50px;
+    font-size: var(--font-size-2x);
+    transform: translateX(-50%) scale(1);
     -webkit-appearance: none;
     appearance: none;
     background: rgba(255, 255, 255, 0.5);
@@ -970,12 +972,21 @@ project a[project-link] link-content:after {
     border-radius: var(--border-radius);
     outline: none;
     border: none;
+    position: absolute;
+    z-index: 9;
     color: var(--color-black) !important;
     -webkit-transition: all var(--animation-length) ease-in-out;
     -moz-transition: all var(--animation-length) ease-in-out;
     -ms-transition: all var(--animation-length) ease-in-out;
     -o-transition: all var(--animation-length) ease-in-out;
     transition: all var(--animation-length) ease-in-out;
+    margin-top: 100px;
+
+}
+
+#show-education-features:hover {
+    transform: translateX(-50%) scale(1.025);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 #show-education-features:after {
@@ -993,7 +1004,7 @@ project a[project-link] link-content:after {
 
 list {
     box-sizing: border-box;
-    padding: 150px calc(10* var(--projects-gap));
+    padding: 0 calc(10* var(--projects-gap));
     padding-bottom: 25px;
     width: calc(100% - 2 * var(--projects-gap));
     margin-left: var(--projects-gap);
@@ -1010,9 +1021,16 @@ list {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-
-    color: var(--color-white);
     height: auto;
+    color: var(--color-white);
+    min-height: 250px;
+
+    --animation: padding 0.2s linear;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+    transition: var(--animation);
 }
 
 list project-dot {
@@ -1021,33 +1039,47 @@ list project-dot {
 }
 
 
-list.show {
-    padding: 150px calc(10* var(--projects-gap));
-}
+list.show {}
 
 list content {
-    --animation: all 0.6s linear;
+    --animation: all 0.75s ease-in-out;
+    position: relative;
     display: block;
     text-align: left;
-    height: 0;
+    height: auto;
+    transform-origin: bottom center;
     overflow: hidden;
+    opacity: 0;
+    filter: blur(60px);
     -webkit-transition: var(--animation);
     -moz-transition: var(--animation);
     -ms-transition: var(--animation);
     -o-transition: var(--animation);
-    transition: var(--animation);
-    opacity: 0.3;
-    filter: blur(60px);
+    transform: scale(0.6);
 }
 
 list content.show {
+    margin-top: 0px !important;
     height: auto;
     opacity: 1;
     filter: blur(0);
+    transform: scale(1);
+    position: relative;
 }
 
 list content>* {
     width: calc(100% - 4 * var(--projects-gap));
+    display: block;
+    transform: translateY(-10vh);
+    --animation: transform 0.75s ease-in-out;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+}
+
+list content.show>* {
+    transform: translateY(0px);
 }
 
 list h2 {
@@ -1062,6 +1094,10 @@ list h2 {
 
 cv {
     margin-bottom: 100px;
+}
+
+cv:first-of-type {
+    margin-top: 250px;
 }
 
 features h2 {
@@ -1486,40 +1522,6 @@ whats-that:after {
 }
 
 @media (max-width: 960px) {
-
-    /* header ul {
-        flex-wrap: nowrap;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    header ul li {
-        text-align: right;
-        flex: 0 0 calc(50% / 3);
-    }
-
-    header ul li a {
-        margin-right: -10px;
-    }
-
-    header ul li:first-child,
-    header ul li:nth-child(2) {
-        flex: 0 0 25%;
-        text-align: left;
-    }
-
-    header ul li:first-child a,
-    header ul li:nth-child(2) a {
-        margin-left: -10px;
-    }
-
-    header ul li:last-child {
-        text-align: right;
-    }
-
-    header ul li:nth-child(3) {
-        display: none;
-    }*/
 
     header ul {
         width: 100%;
