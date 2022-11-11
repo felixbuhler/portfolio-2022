@@ -1609,26 +1609,21 @@ whats-that:after {
     }
 
     list {
-        padding: 50px calc(0vw + 4*var(--projects-gap));
-        padding-bottom: 10px;
+        padding: inherit;
+        padding-left: calc(3*var(--projects-gap));
+        padding-right: calc(3*var(--projects-gap));
+
     }
 
-    list.show {
-        padding: 50px calc(0vw + 4*var(--projects-gap));
-        padding-bottom: 50px;
-    }
 
     cv {
         margin-bottom: 20px;
     }
 
     #show-education-features {
-
-        transform: translateY(0px);
-        margin-bottom: 40px;
+        font-size: var(--font-size-base);
     }
 
-    #show-education-features.show {}
 
 
     clients h2 {
