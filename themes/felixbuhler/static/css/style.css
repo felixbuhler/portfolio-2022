@@ -115,6 +115,7 @@ header {
 
 header ul {
     width: calc(50vw - var(--projects-gap));
+    float: left;
     display: flex;
     list-style: none;
     justify-content: space-between;
