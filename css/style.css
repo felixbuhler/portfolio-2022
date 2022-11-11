@@ -119,7 +119,6 @@ header ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    width: 50vw;
     padding: calc(0.75 * var(--projects-gap));
 }
 
