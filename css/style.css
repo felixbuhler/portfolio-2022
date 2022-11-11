@@ -154,7 +154,7 @@ header ul li a.footer {
 mouse {
     --size: 80px;
     --transition: backdrop-filter 0.2s ease-in-out, -webkit-backdrop-filter 0.2s ease-in-out, transform 0.2s ease-in-out, filter 0.2s ease-in-out;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px) saturate(1.1);
     -webkit-backdrop-filter: blur(10px) saturate(1.1);
     display: block;
@@ -182,12 +182,6 @@ mouse.mouse-see-something {
     filter: blur(30px);
 }
 
-@media (hover: none) and (pointer: coarse) {
-    mouse {
-        display: none !important;
-        opacity: 0 !important;
-    }
-}
 
 /* Intro */
 
@@ -960,12 +954,13 @@ project a[project-link] link-content:after {
 
 /* List */
 #show-education-features {
-    --animation-length: 0.5s;
+    --animation-length: 0.35s;
     cursor: pointer;
     line-height: 0px;
     vertical-align: top;
-    height: 20px;
-    transform: translateY(-65px);
+    height: 50px;
+    font-size: var(--font-size-2x);
+    transform: translateX(-50%) scale(1);
     -webkit-appearance: none;
     appearance: none;
     background: rgba(255, 255, 255, 0.5);
@@ -974,12 +969,21 @@ project a[project-link] link-content:after {
     border-radius: var(--border-radius);
     outline: none;
     border: none;
+    position: absolute;
+    z-index: 9;
     color: var(--color-black) !important;
     -webkit-transition: all var(--animation-length) ease-in-out;
     -moz-transition: all var(--animation-length) ease-in-out;
     -ms-transition: all var(--animation-length) ease-in-out;
     -o-transition: all var(--animation-length) ease-in-out;
     transition: all var(--animation-length) ease-in-out;
+    margin-top: 100px;
+
+}
+
+#show-education-features:hover {
+    transform: translateX(-50%) scale(1.025);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 #show-education-features:after {
@@ -997,7 +1001,7 @@ project a[project-link] link-content:after {
 
 list {
     box-sizing: border-box;
-    padding: 150px calc(10* var(--projects-gap));
+    padding: 0 calc(10* var(--projects-gap));
     padding-bottom: 25px;
     width: calc(100% - 2 * var(--projects-gap));
     margin-left: var(--projects-gap);
@@ -1014,9 +1018,16 @@ list {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-
-    color: var(--color-white);
     height: auto;
+    color: var(--color-white);
+    min-height: 250px;
+
+    --animation: padding 0.2s linear;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+    transition: var(--animation);
 }
 
 list project-dot {
@@ -1025,33 +1036,47 @@ list project-dot {
 }
 
 
-list.show {
-    padding: 150px calc(10* var(--projects-gap));
-}
+list.show {}
 
 list content {
-    --animation: all 0.6s linear;
+    --animation: all 0.75s ease-in-out;
+    position: relative;
     display: block;
     text-align: left;
-    height: 0;
+    height: auto;
+    transform-origin: bottom center;
     overflow: hidden;
+    opacity: 0;
+    filter: blur(60px);
     -webkit-transition: var(--animation);
     -moz-transition: var(--animation);
     -ms-transition: var(--animation);
     -o-transition: var(--animation);
-    transition: var(--animation);
-    opacity: 0.3;
-    filter: blur(60px);
+    transform: scale(0.6);
 }
 
 list content.show {
+    margin-top: 0px !important;
     height: auto;
     opacity: 1;
     filter: blur(0);
+    transform: scale(1);
+    position: relative;
 }
 
 list content>* {
     width: calc(100% - 4 * var(--projects-gap));
+    display: block;
+    transform: translateY(-10vh);
+    --animation: transform 0.75s ease-in-out;
+    -webkit-transition: var(--animation);
+    -moz-transition: var(--animation);
+    -ms-transition: var(--animation);
+    -o-transition: var(--animation);
+}
+
+list content.show>* {
+    transform: translateY(0px);
 }
 
 list h2 {
@@ -1066,6 +1091,10 @@ list h2 {
 
 cv {
     margin-bottom: 100px;
+}
+
+cv:first-of-type {
+    margin-top: 250px;
 }
 
 features h2 {
@@ -1145,7 +1174,7 @@ feature *>span a {
     font-family: inherit;
 }
 
-feature *>span:hover {
+feature *>span:has(a):hover {
     background: var(--color-white);
     color: var(--color-black);
 }
@@ -1606,26 +1635,20 @@ whats-that:after {
     }
 
     list {
-        padding: 50px calc(0vw + 4*var(--projects-gap));
-        padding-bottom: 10px;
+        padding: inherit;
+        padding-left: calc(3*var(--projects-gap));
+        padding-right: calc(3*var(--projects-gap));
+
     }
 
-    list.show {
-        padding: 50px calc(0vw + 4*var(--projects-gap));
-        padding-bottom: 50px;
-    }
 
     cv {
         margin-bottom: 20px;
     }
 
     #show-education-features {
-
-        transform: translateY(0px);
-        margin-bottom: 40px;
+        font-size: var(--font-size-base);
     }
-
-    #show-education-features.show {}
 
 
     clients h2 {
@@ -1687,4 +1710,12 @@ whats-that:after {
         pointer-events: none;
     }
 
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+    mouse {
+        display: none !important;
+        opacity: 0 !important;
+    }
 }

@@ -134,4 +134,22 @@ $(function () {
   }, function () {
     $('mouse').toggleClass("mouse-see-something");
   });
+
+  $('#show-education-features').hover(function () {
+    $('mouse').toggleClass("mouse-see-something");
+  }, function () {
+    $('mouse').toggleClass("mouse-see-something");
+  });
+
+
+});
+
+
+
+$(document).ready(function () {
+  $(window).resize(function () {
+    let eduHeight = $("list content").height() * -1;
+
+    $("list content").css("margin-top", eduHeight);
+  }).resize();
 });
