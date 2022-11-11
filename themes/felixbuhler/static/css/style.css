@@ -1488,7 +1488,7 @@ whats-that:after {
 
 @media (max-width: 960px) {
 
-    header ul {
+   /* header ul {
         flex-wrap: nowrap;
         width: 100%;
         align-items: flex-start;
@@ -1520,7 +1520,7 @@ whats-that:after {
 
     header ul li:nth-child(3) {
         display: none;
-    }
+    }*/
 
     feature>* {
         font-size: var(--font-size-3x);
