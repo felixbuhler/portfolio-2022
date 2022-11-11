@@ -1,9 +1,9 @@
 +++
 client = "clients/pylon.md"
 description = ""
-image = ""
+image = "uploads/fb_project_collateralextinction.jpg"
 imageSize = "contain"
-projectColor = "#000000"
+projectColor = "#FF94C7"
 projectType = "Client"
 projectURL = "https://pylon-hub.com/hub"
 projectURLSite = "Pylon Hub"
