@@ -1,9 +1,9 @@
 +++
 client = "clients/how.md"
 description = ""
-image = ""
+image = "uploads/fb_project_as17.jpg"
 imageSize = "contain"
-projectColor = "#000000"
+projectColor = "#00AD98"
 projectType = "Client"
 projectURL = "https://issuu.com/newplays/docs/hsw_as_17_issuu_rz_291020"
 projectURLSite = "ISSUU"
