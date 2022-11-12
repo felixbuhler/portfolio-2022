@@ -1,7 +1,7 @@
 +++
 client = "clients/how.md"
 description = ""
-image = "uploads/fb_project_as17.jpg"
+image = "uploads/fb_project_as17-1.jpg"
 imageSize = "contain"
 projectColor = "#00AD98"
 projectType = "Client"
