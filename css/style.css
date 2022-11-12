@@ -896,7 +896,7 @@ project:hover a[project-link] {
     project project-info,
     project h2,
     project a[project-link] {
-        opacity: 1;
+        opacity: 1 !important;
     }
 }
 
