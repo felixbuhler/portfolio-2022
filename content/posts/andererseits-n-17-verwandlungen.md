@@ -1,7 +1,6 @@
 +++
 client = "clients/how.md"
 description = ""
-draft = true
 image = ""
 imageSize = "contain"
 projectColor = "#000000"
