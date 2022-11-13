@@ -9,7 +9,7 @@ projectURL = "https://issuu.com/newplays/docs/hsw_as_17_issuu_rz_291020"
 projectURLSite = "ISSUU"
 size = "Normal"
 tags = ["Art Direction", "Editorial", "AI"]
-title = "Andererseits N° 17 »Verwandlungen«"
+title = "Verwandlungen — Andererseits N° 17"
 year = 2021
 
 +++
