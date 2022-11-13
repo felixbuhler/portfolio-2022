@@ -9,7 +9,7 @@ projectURL = "https://issuu.com/newplays/docs/hsw_as_19_it_digital_issuu_rz_2210
 projectURLSite = "ISSUU"
 size = "Normal"
 tags = ["Editorial", "Art Direction", "3D"]
-title = "Andererseits N° 19 »Freiheit«"
+title = "Freiheit — Andererseits N° 19"
 year = 2022
 
 +++
