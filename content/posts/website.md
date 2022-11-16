@@ -1,7 +1,7 @@
 +++
 client = "clients/yes.md"
 description = ""
-image = ""
+image = "uploads/fb_project_yes.jpg"
 imageSize = "contain"
 projectColor = "#E30613"
 projectType = "Client"
