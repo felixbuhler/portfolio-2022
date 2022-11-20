@@ -1,4 +1,0 @@
-+++
-clientTitle = "Leipzig Region"
-
-+++
