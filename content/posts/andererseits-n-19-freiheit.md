@@ -1,6 +1,6 @@
 +++
 client = "clients/how.md"
-description = ""
+description = "»Andererseits« is the magazine of the Hessisches Staatstheater Wiesbaden and explores the sideshows of the theater. Each issue is dedicated to one topic and presents its various facets.\n\nCreated as Art Director at formdusche."
 image = "uploads/fb_project_as19.jpg"
 imageSize = "contain"
 projectColor = "#00E6CA"
