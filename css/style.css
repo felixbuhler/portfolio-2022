@@ -996,6 +996,13 @@ project a[project-link] {
     mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
+project a.marquee3k,
+project div.marquee3k__wrapper,
+project .marquee3k__copy {
+    font-size: var(--font-size-base) !important;
+}
+
+
 project a[project-link] link-content:after {
     content: "";
     margin: 0 30px;
