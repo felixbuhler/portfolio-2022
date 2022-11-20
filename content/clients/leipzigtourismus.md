@@ -1,4 +1,5 @@
 +++
-clientTitle = "Leipzig Tourismus"
+clientTitle = "Leipzig Tourismus & Region"
+client_url = "https://www.leipzig.travel"
 
 +++
