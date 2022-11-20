@@ -1608,6 +1608,9 @@ whats-that:after {
 /* Responsive › Mobile */
 
 @media (max-width: 767.98px) {
+    body{
+        -webkit-text-size-adjust: none;
+      }
     :root {
         --font-size-10x: calc(4 * var(--font-size-base));
         --font-size-3x: calc(1.75 * var(--font-size-base));
