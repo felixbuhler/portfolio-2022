@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("fonts/Fraunces/static/Fraunces_72pt/Fraunces_72pt-LightItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
 :root {
     --color-black: #1d1d1d;
     --color-white: rgb(240, 240, 240);
@@ -96,6 +115,8 @@ list h2 {
     letter-spacing: 0.015em;
     line-height: 1.1em;
 }
+
+h2#clients {padding-top: 40px;}
 
 /* Header */
 
@@ -943,7 +964,7 @@ project a[project-link] {
     text-decoration: none;
     overflow: hidden;
     padding: 4px 0px;
-font-size: inherit;
+    font-size: inherit;
     border-radius: var(--border-radius);
     -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
     mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
@@ -1559,14 +1580,20 @@ whats-that:after {
         --font-size-3x: calc(1.75 * var(--font-size-base));
         --border-radius: 8px;
     }
-    
-    header {padding: 0;}
-    
-    header ul:first-child {padding-bottom: 0px; }
-        
-    header ul:nth-child(2) {padding-top: 0px;}
-    
-    header ul:nth-child(2) city {display: none;}
+
+    header {
+        padding: 0;
+    }
+
+   
+
+    header ul:nth-child(2) {
+        padding-top: 0px;
+    }
+
+    header ul:nth-child(2) city {
+        display: none;
+    }
 
     intro {
 
