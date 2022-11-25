@@ -37,7 +37,6 @@ var klaroConfig = {
     want to get consent once for multiple matching domains. By default, Klaro will
     use the current domain. Only relevant if 'storageMethod' is set to 'cookie'.
     */
-    cookieDomain: '.example.com',
 
     /*
     You can also set a custom expiration time for the Klaro cookie. By default, it
@@ -81,7 +80,7 @@ var klaroConfig = {
     the consent notice. We strongly advise against using this under most
     circumstances, as it keeps the user from customizing his/her consent choices.
     */
-    hideLearnMore: false,
+    hideLearnMore: true,
 
     /*
     You can overwrite existing translations and add translations for your service
@@ -116,20 +115,17 @@ var klaroConfig = {
             */
             translations: {
                 zz: {
-                    title: 'Matomo/Piwik'
+                    title: 'Adobe Fonts'
                 },
                 en: {
                     description: 'Matomo is a simple, self-hosted analytics service.'
-                },
-                de: {
-                    description: 'Matomo ist ein einfacher, selbstgehosteter Analytics-Service.'
-                },
+                }
             },
             /*
             The purpose(s) of this service that will be listed on the consent notice. Do not
             forget to add translations for all purposes you list here.
             */
-            purposes: ['analytics'],
+            purposes: ['design'],
 
             cookies: [
                 /*
