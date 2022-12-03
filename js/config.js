@@ -118,14 +118,14 @@ var klaroConfig = {
                     title: 'Adobe Fonts'
                 },
                 en: {
-                    description: 'Matomo is a simple, self-hosted analytics service.'
+                    description: 'Adobe Fonts'
                 }
             },
             /*
             The purpose(s) of this service that will be listed on the consent notice. Do not
             forget to add translations for all purposes you list here.
             */
-            purposes: ['design'],
+            purposes: ['Adobe Fonts › Beaufort Pro'],
 
             cookies: [
                 /*
