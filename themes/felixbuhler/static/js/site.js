@@ -141,6 +141,12 @@ $(function () {
     $('mouse').toggleClass("mouse-see-something");
   });
 
+  $('.cm-btn').hover(function () {
+    $('mouse').toggleClass("mouse-see-something");
+  }, function () {
+    $('mouse').toggleClass("mouse-see-something");
+  });
+
 
 });
 
