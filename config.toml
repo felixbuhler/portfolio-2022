@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://felixbuhler.github.io/portfolio-2022/'
 languageCode = 'en-us'
 title = 'Felix Buhler'
 theme = "felixbuhler"
