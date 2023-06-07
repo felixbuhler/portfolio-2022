@@ -1,3 +1,7 @@
+---
+_template: project
+---
+
 +++
 client = []
 description = ""

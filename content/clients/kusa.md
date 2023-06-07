@@ -1,5 +1,5 @@
-+++
-clientTitle = "KunstSalon Köln"
-client_url = "https://www.kunstsalon.de"
+---
+clientTitle: KunstSalon Köln
+client_url: 'https://www.kunstsalon.de'
+---
 
-+++

@@ -1,5 +1,5 @@
-+++
-clientTitle = "JUST Wiesbaden"
-client_url = "https://www.staatstheater-wiesbaden.de/just/"
+---
+clientTitle: JUST Wiesbaden
+client_url: 'https://www.staatstheater-wiesbaden.de/just/'
+---
 
-+++

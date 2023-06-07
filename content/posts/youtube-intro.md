@@ -1,3 +1,7 @@
+---
+_template: project
+---
+
 +++
 client = "clients/alina-kossan.md"
 description = "Alina Kossan is a Berlin-based digital content creator. For her YouTube channel I created a logo and 3D animation, that is used as the intro for blogs, hauls and more. View her [YouTube channel](https://www.youtube.com/channel/UCEPKN_6lgmeOdDERgchRo0g/featured \"Alina Kossan on YouTube\")."

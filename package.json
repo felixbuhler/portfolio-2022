@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-2022",
+  "version": "1.0.0",
+  "description": "## Tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixbuhler/portfolio-2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixbuhler/portfolio-2022/issues"
+  },
+  "homepage": "https://github.com/felixbuhler/portfolio-2022#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.14",
+    "tinacms": "^1.5.6"
+  }
+}

@@ -1,5 +1,4 @@
-+++
-clientTitle = "Young Entrepreneurs In Science"
-client_url = "https://youngentrepreneursinscience.com"
-
-+++
+---
+clientTitle: Young Entrepreneurs In Science
+client_url: 'https://youngentrepreneursinscience.com'
+---

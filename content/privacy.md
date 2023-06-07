@@ -1,8 +1,10 @@
+
 +++
 title = "Data Privacy"
 type = "page"
 
 +++
+
 # Datenschutz­erklärung
 
 ## 1. Datenschutz auf einen Blick
@@ -47,7 +49,7 @@ Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ern
 
 ### Hinweis zur verantwortlichen Stelle
 
-Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Felix Buhler Reichenberger Str. 140 10999 Berlin Telefon: \[Telefonnummer der verantwortlichen Stelle\] E-Mail: \[E-Mail-Adresse der verantwortlichen Stelle\] Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
+Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Felix Buhler Reichenberger Str. 140 10999 Berlin Telefon: \[Telefonnummer der verantwortlichen Stelle] E-Mail: \[E-Mail-Adresse der verantwortlichen Stelle] Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 
 ### Speicherdauer
 
@@ -86,13 +88,13 @@ Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen
 * Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
 * Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.
 
-  ### SSL- bzw. TLS-Verschlüsselung
+  SSL- bzw. TLS-Verschlüsselung
 
   Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
 
-  ## 4. Datenerfassung auf dieser Website
+  4\. Datenerfassung auf dieser Website
 
-  ### Server-Log-Dateien
+  Server-Log-Dateien
 
   Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
 * Browsertyp und Browserversion

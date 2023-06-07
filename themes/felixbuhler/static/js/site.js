@@ -1,16 +1,21 @@
 Marquee3k.init()
 
 // Hide Description
-$('project-info').hide(500)
 $('.checkcheck').click(function () {
 
-  this.checked ? $('project-info').show(500) : $('project-info').hide(500);
+  this.checked ? $('projects').addClass('fullInfo') : $('projects').removeClass('fullInfo');
+  this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
   this.checked ? $('switch-text div').text("🙉") : $('switch-text div').text("🙈");
+
+  /*
+  this.checked ? $('project-info').show(500) : $('project-info').hide(500);
+  
   this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
   this.checked ? $('project-info').css('opacity', '1') : $('project-info').css('opacity', '0');
   this.checked ? $('project project-info>*').css('opacity', '1') : $('project project-info>*').css('opacity', '0');
   this.checked ? $('project h2').css('opacity', '1') : $('project h2').css('opacity', '0');
   this.checked ? $('project a[project-link]').css('opacity', '1') : $('project a[project-link]').css('opacity', '0');
+  */
 
 });
 

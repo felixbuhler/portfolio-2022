@@ -1,3 +1,7 @@
+---
+_template: feature
+---
+
 +++
 featureDescription = "My Bachelors project »Die Tür« was featured on MDRV."
 featureTitle = "MDRV"

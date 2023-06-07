@@ -1,5 +1,5 @@
-+++
-clientTitle = "Van Hoecke"
-client_url = "https://www.vanhoecke.be/de"
+---
+clientTitle: Van Hoecke
+client_url: 'https://www.vanhoecke.be/de'
+---
 
-+++

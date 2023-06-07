@@ -1,5 +1,4 @@
-+++
-clientTitle = "Sinner Storage"
-draft = true
+---
+clientTitle: Sinner Storage
+---
 
-+++

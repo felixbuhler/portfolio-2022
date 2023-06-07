@@ -1,5 +1,5 @@
-+++
-clientTitle = "Kultur Lindau"
-client_url = "https://www.kultur-lindau.de"
+---
+clientTitle: Kultur Lindau
+client_url: 'https://www.kultur-lindau.de'
+---
 
-+++

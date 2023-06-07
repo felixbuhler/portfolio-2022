@@ -1,3 +1,7 @@
+---
+_template: project
+---
+
 +++
 client = "clients/tl.md"
 description = ""

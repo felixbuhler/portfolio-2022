@@ -17,6 +17,9 @@
             <switch-text>
                 <div>🙈</div>
             </switch-text>
+
+            <input type="range" id="volume" name="volume" min="1" max="7">
+            <label for="volume">Volume</label>
         </switch-wrapper>
         {{ range ( where .Site.RegularPages "Type" "posts" ) }}
         {{- partial "project.html" . -}}

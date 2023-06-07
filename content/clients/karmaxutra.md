@@ -1,5 +1,5 @@
-+++
-clientTitle = "KarmaXutra"
-client_url = "https://www.instagram.com/karmaxutra"
+---
+clientTitle: KarmaXutra
+client_url: 'https://www.instagram.com/karmaxutra'
+---
 
-+++

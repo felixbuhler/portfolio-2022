@@ -1,3 +1,7 @@
+---
+_template: project
+---
+
 +++
 client = "clients/how.md"
 description = "»Andererseits« is the magazine of the Hessisches Staatstheater Wiesbaden and explores the sideshows of the theatre. Each issue is dedicated to one topic and presents its various facets.\n\nCreated as Art Director at formdusche."

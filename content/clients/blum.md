@@ -1,5 +1,7 @@
-+++
-clientTitle = "blum"
-client_url = "https://www.blum.com/de/de/"
+---
+clientTitle: blum
+client_url: 'https://www.blum.com/de/de/'
+hideFromList: false
+---
 
-+++
+

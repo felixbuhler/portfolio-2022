@@ -218,6 +218,7 @@ mouse {
     transition: var(--transition);
     filter: blur(0);
 
+    display: none;
 }
 
 mouse.mouse-see-something {
@@ -751,6 +752,13 @@ project {
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
+
+    --image-translate-animation: height 0.2s ease-in-out;
+    -webkit-transition: var(--image-translate-animation);
+    -moz-transition: var(--image-translate-animation);
+    -ms-transition: var(--image-translate-animation);
+    -o-transition: var(--image-translate-animation);
+    transition: var(--image-translate-animation);
 }
 
 project * {
@@ -834,11 +842,19 @@ project:last-child.draggable-mirror fig:after {
 }
 
 /* Projects › Single Project › Headline */
+project h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 project h2 client,
 project h2 mdrv,
 project h2 personal-work {
     display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 project h2 client:before,
@@ -865,6 +881,8 @@ project-image {
     margin: var(--projects-gap) 0;
     width: 100%;
     aspect-ratio: 16/9;
+    z-index: 99 !important;
+    position: relative;
     display: block;
     overflow: hidden;
     background-size: contain !important;
@@ -873,16 +891,26 @@ project-image {
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
-    filter: saturate(0);
+
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    --image-translate-animation: transform 0.2s ease-in-out;
+    -webkit-transition: var(--image-translate-animation);
+    -moz-transition: var(--image-translate-animation);
+    -ms-transition: var(--image-translate-animation);
+    -o-transition: var(--image-translate-animation);
+    transition: var(--image-translate-animation);
+    transform: translateY(calc(3*var(--projects-gap) + 4px));
+    border-radius: calc(var(--border-radius) - 5px);
 }
 
 project:hover project-image {
     filter: saturate(1);
+    transform: translateY(calc(0*var(--projects-gap)));
+    border-radius: var(--border-radius);
 }
 
 project-image[cover] {
@@ -932,10 +960,8 @@ tag {
 /* Projects › Single Project › Description */
 
 project-info {
-    display: block;
+    display: none;
     margin-bottom: var(--projects-gap);
-
-
 }
 
 
@@ -944,11 +970,38 @@ project project-info,
 project h2,
 project a[project-link] {
     opacity: 0;
+    --margin-animation: margin 0.2s ease-out;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+    -webkit-transition: var(--margin-animation);
+    -moz-transition: var(--margin-animation);
+    -ms-transition: var(--margin-animation);
+    -o-transition: var(--margin-animation);
+    transition: var(--margin-animation);
+}
+
+project h2 {
+    --image-translate-animation: transform 0.2s ease-in-out;
+    -webkit-transition: var(--image-translate-animation);
+    -moz-transition: var(--image-translate-animation);
+    -ms-transition: var(--image-translate-animation);
+    -o-transition: var(--image-translate-animation);
+    transition: var(--image-translate-animation);
+    transform: translateY(calc(7*var(--projects-gap) + 5px));
+}
+
+project a[project-link] {
+    font-size: inherit !important;
+    --image-translate-animation: transform 0.2s ease-in-out;
+    -webkit-transition: var(--image-translate-animation);
+    -moz-transition: var(--image-translate-animation);
+    -ms-transition: var(--image-translate-animation);
+    -o-transition: var(--image-translate-animation);
+    transition: var(--image-translate-animation);
+    transform: translateY(calc(-3*var(--projects-gap) + 5px));
 }
 
 project:hover project-info>*,
@@ -958,9 +1011,29 @@ project:hover a[project-link] {
     opacity: 1 !important;
 }
 
-project a[project-link] {
-    font-size: inherit !important;
+project:hover h2,
+project:hover a[project-link] {
+    transform: translateY(calc(0*var(--projects-gap) + 0px));
 }
+
+projects.fullInfo project project-info {
+    display: block;
+}
+
+projects.fullInfo project project-info>*,
+projects.fullInfo project project-info,
+projects.fullInfo project h2,
+projects.fullInfo project project-image,
+projects.fullInfo project a[project-link] {
+    opacity: 1;
+    transform: translateY(calc(0*var(--projects-gap) + 0px));
+}
+
+
+projects.fullInfo project project-image {
+    border-radius: var(--border-radius);
+}
+
 
 @media (hover: none) and (pointer: coarse) {
 
@@ -1272,7 +1345,7 @@ footer {
     align-items: flex-end;
     align-content: flex-end;
     text-align: center;
-     min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 150px);
     padding-top: 150px;
 }
 

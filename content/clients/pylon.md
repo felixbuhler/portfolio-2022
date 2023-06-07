@@ -1,5 +1,10 @@
+---
+clientTitle: Pylon Lab
+client_url: 'https://pylon-hub.com/'
+---
+
 +++
 clientTitle = "Pylon Lab"
-client_url = "https://pylon-hub.com/"
+client\_url = "https://pylon-hub.com/"
 
 +++
