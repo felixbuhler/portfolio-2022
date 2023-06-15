@@ -3,7 +3,7 @@ description: "*PYLON-Lab*\_is founded by Julia Schmelzer and Thomas Schmelzer an
 title: Collateral Extinction
 projectType: Client
 client: content/clients/pylon.md
-image: /Projects/fb_project_collateralextinction.jpg
+image: /projects/fb_project_collateralextinction.jpg
 imageSize: contain
 projectColor: '#FF94C7'
 year: 2022
@@ -14,5 +14,4 @@ projectURL: 'https://pylon-hub.com/hub'
 projectURLSite: Pylon Hub
 size: Normal
 ---
-
 

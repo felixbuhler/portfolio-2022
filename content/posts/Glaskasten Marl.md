@@ -1,7 +1,7 @@
 ---
 title: Glaskasten Marl
 projectType: MDRV
-image: /Projects/fb_project_glaskasten.gif
+image: /projects/fb_project_glaskasten.gif
 imageSize: cover
 projectColor: '#F4F3F2'
 description: >

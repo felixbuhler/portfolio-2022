@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UI on Felix Buhler</title>
-    <link>https://felixbuhler.github.io/portfolio-2022/tags/ui/</link>
+    <link>/tags/ui/</link>
     <description>Recent content in UI on Felix Buhler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://felixbuhler.github.io/portfolio-2022/tags/ui/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/ui/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fiffel</title>
-      <link>https://felixbuhler.github.io/portfolio-2022/posts/fiffel/</link>
+      <title>Website</title>
+      <link>/posts/website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/posts/fiffel/</guid>
+      <guid>/posts/website/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Website</title>
-      <link>https://felixbuhler.github.io/portfolio-2022/posts/website/</link>
+      <title>Yoga &amp; Bike Branding</title>
+      <link>/posts/yoga-bike/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/posts/website/</guid>
+      <guid>/posts/yoga-bike/</guid>
       <description></description>
     </item>
     

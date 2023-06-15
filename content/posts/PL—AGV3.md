@@ -1,7 +1,7 @@
 ---
 title: PL—AGV3
 projectType: Personal
-image: /Projects/3ac06175283517.5cb19096f0f0f.png
+image: /projects/3ac06175283517.5cb19096f0f0f.png
 imageSize: contain
 projectColor: '#8F69FF'
 description: >
@@ -40,5 +40,4 @@ projectURL: 'https://www.behance.net/gallery/75283517/PLAGV3'
 projectURLSite: Behance
 size: Normal
 ---
-
 

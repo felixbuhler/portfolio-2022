@@ -2,7 +2,7 @@
 title: eos chamber orchestra
 projectType: Client
 client: content/clients/eoschamberorchestra.md
-image: /Projects/fb_project_eos-1.png
+image: /projects/fb_project_eos-1.png
 imageSize: cover
 projectColor: '#FF8600'
 description: >
@@ -21,5 +21,4 @@ projectURL: 'https://formdusche.de/work/eos-chamber-orchestra/'
 projectURLSite: eos chamber orchestra
 size: Normal
 ---
-
 

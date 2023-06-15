@@ -33,6 +33,6 @@ tags:
 projectURL: 'https://www.behance.net/gallery/105406853/DJ-Gran-Sport-Memphis-House'
 projectURLSite: Behance
 size: Normal
-image: /Projects/fb_project_djgransport.jpg
+image: /projects/fb_project_djgransport.jpg
 ---
 

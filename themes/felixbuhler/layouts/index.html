@@ -7,7 +7,7 @@
 {{- partial "section_clients.html" . -}}
 
 <section id="projects">
-    <projects>
+    <projects class="grid-default">
         <switch-wrapper>
             <switch>
                 <label class="switch">
@@ -18,8 +18,11 @@
                 <div>🙈</div>
             </switch-text>
 
-            <input type="range" id="volume" name="volume" min="1" max="7">
-            <label for="volume">Volume</label>
+            <grid-slider>
+                <slider-ui>
+                    <input type="range" name="volume" min="1" max="7" id="gridColumns"></slider-ui>
+                <label for="gridColumns" id="slider_value"></label>
+            </grid-slider>
         </switch-wrapper>
         {{ range ( where .Site.RegularPages "Type" "posts" ) }}
         {{- partial "project.html" . -}}

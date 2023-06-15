@@ -1,17 +1,88 @@
 Marquee3k.init()
 
 // Hide Description
-$('project-info').hide(500)
 $('.checkcheck').click(function () {
 
-  this.checked ? $('project-info').show(500) : $('project-info').hide(500);
+  this.checked ? $('projects').addClass('fullInfo') : $('projects').removeClass('fullInfo');
+  this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
   this.checked ? $('switch-text div').text("🙉") : $('switch-text div').text("🙈");
+
+  /*
+  this.checked ? $('project-info').show(500) : $('project-info').hide(500);
+  
   this.checked ? $("body").get(0).style.setProperty("--color-switch", "var(--color-accent)") : $("body").get(0).style.setProperty("--color-switch", "var(--color-red)")
   this.checked ? $('project-info').css('opacity', '1') : $('project-info').css('opacity', '0');
   this.checked ? $('project project-info>*').css('opacity', '1') : $('project project-info>*').css('opacity', '0');
   this.checked ? $('project h2').css('opacity', '1') : $('project h2').css('opacity', '0');
   this.checked ? $('project a[project-link]').css('opacity', '1') : $('project a[project-link]').css('opacity', '0');
+  */
 
+});
+
+// Projects Slider 
+
+
+
+$(document).ready(function () {
+
+  if ($(window).innerWidth() >= 1280) {
+    // Set default value
+    $("#gridColumns").val(5);
+    console.log("Grid Medium Screen")
+  } else if ($(window).innerWidth() <= 767.98) {
+    // Set default value
+    $("#gridColumns").val(1);
+    console.log("Grid Small Screen")
+  } else {
+    // Set default value
+    $("#gridColumns").val(3);
+    console.log("Grid Big Screen")
+  }
+
+  // Put in Variable
+  $initialColumnValue = $("#gridColumns").val();
+
+  // Set Text
+  $("#slider_value").html($initialColumnValue + " Columns")
+
+});
+
+$(window).on('resize', function () {
+  if ($(window).innerWidth() >= 1280) {
+    // Set default value
+    $("#gridColumns").val(5);
+    console.log("Grid Medium Screen")
+  } else if ($(window).innerWidth() <= 767.98) {
+    // Set default value
+    $("#gridColumns").val(1);
+    console.log("Grid Small Screen")
+  } else {
+    // Set default value
+    $("#gridColumns").val(3);
+    console.log("Grid Big Screen")
+  }
+
+  // Put in Variable
+  $initialColumnValue = $("#gridColumns").val();
+
+  // Set Text
+  $("#slider_value").html($initialColumnValue + " Columns")
+});
+
+$(document).on('input change', '#gridColumns', function () {
+  $gridValue = $(this).val();
+  if ($gridValue == 1) {
+    $("projects").css("grid-template-columns", "1fr");
+    $("#slider_value").html(this.value + " Column")
+
+  } else if ($gridValue == 2) { $("projects").css("grid-template-columns", "1fr 1fr"); $("#slider_value").html(this.value + " Columns") }
+  else if ($gridValue == 3) { $("projects").css("grid-template-columns", "1fr 1fr 1fr"); $("#slider_value").html(this.value + " Columns") }
+  else if ($gridValue == 4) { $("projects").css("grid-template-columns", "1fr 1fr 1fr 1fr"); $("#slider_value").html(this.value + " Columns") }
+  else if ($gridValue == 5) { $("projects").css("grid-template-columns", "1fr 1fr 1fr 1fr 1fr"); $("#slider_value").html(this.value + " Columns") }
+  else if ($gridValue == 6) { $("projects").css("grid-template-columns", "1fr 1fr 1fr 1fr 1fr 1fr"); $("#slider_value").html(this.value + " Columns") }
+  else if ($gridValue == 7) { $("projects").css("grid-template-columns", "1fr 1fr  1fr 1fr 1fr 1fr 1fr"); $("#slider_value").html(this.value + " Columns") };
+
+  
 });
 
 // Fields Flip
@@ -100,17 +171,9 @@ $(document).ready(function () {
 // Smooth Scroll
 
 var scroll = new SmoothScroll('header a[href*="#"]', { updateURL: false, header: '[data-scroll-header]' });
-var scrollFooter = new SmoothScroll('header a.footer', { updateURL: false, header: ''  });
+var scrollFooter = new SmoothScroll('header a.footer', { updateURL: false, header: '' });
 var scrollClients = new SmoothScroll('header a.clients', { updateURL: false, offset: 100 });
 
-
-// Show / Hide CV
-
-$('#show-education-features').click(function () {
-  $('list content').toggleClass('show');
-  $('list').toggleClass('show');
-  $('#show-education-features').toggleClass('show');
-});
 
 // Add target="_blank" to p Links 
 
@@ -151,11 +214,3 @@ $(function () {
 });
 
 
-
-$(document).ready(function () {
-  $(window).resize(function () {
-    let eduHeight = $("list content").height() * -1;
-
-    $("list content").css("margin-top", eduHeight);
-  }).resize();
-});

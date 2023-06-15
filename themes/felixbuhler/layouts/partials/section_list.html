@@ -1,87 +1,81 @@
-<list>
-        <project-dot></project-dot>
-        <button id="show-education-features"></button>
-        <content>
-                <cv>
-                        <h2>Experience</h2>
-                        <feature tablehead>
+<work-info>
+        <list>
+                <list-section>
+                        <list-headline>Experience</list-headline>
+                        <list-item tablehead>
                                 <year>Year</year>
                                 <h4>Position</h4>
                                 <p>Place</p>
-                        </feature>
-                        <feature>
+                        </list-item>
+                        <list-item>
                                 <year>Ongoing</year>
                                 <h4><span>Teaching & Input</span></h4>
 
                                 <p>MDRV (DHBW Ravensburg)<br>Kapuziner Kreativzentrum</p>
-                        </feature>
-                        <feature>
-                                <year>Since ’21</year>
+                        </list-item>
+                        <list-item>
+                                <year>Ongoing</year>
                                 <h4><span>Art Direction</span></h4>
 
                                 <p>formdusche — Studio für Gestaltung (Berlin)</p>
-                        </feature>
+                        </list-item>
 
-                        <feature>
+                        <list-item>
                                 <year>2019 — 21</year>
                                 <h4><span>Junior Art Direction</span></h4>
 
                                 <p>formdusche — Studio für Gestaltung (Berlin)</p>
-                        </feature>
-                        <feature>
+                        </list-item>
+                        <list-item>
                                 <year>2018 — 19</year>
                                 <h4><span>Art Direction</span></h4>
 
                                 <p>Militzer & Kollegen (Leipzig)</p>
-                        </feature>
-                        <feature>
+                        </list-item>
+                        <list-item>
                                 <year>2017 — 18</year>
                                 <h4><span>Junior Art Direction</span></h4>
                                 <p>LIGHTHOUSE (Lindau)</p>
-                        </feature>
+                        </list-item>
 
-
-                </cv>
-                <cv>
-                        <h2>Education</h2>
-                        <feature tablehead>
+                        <list-headline education>Education</list-headline>
+                        <list-item tablehead>
                                 <year>Year</year>
                                 <h4>Position</h4>
                                 <p>Place</p>
-                        </feature>
-                        <feature>
+                        </list-item>
+                        <list-item>
                                 <year>2017</year>
                                 <h4><span>Bachelor of Arts</span></h4>
                                 <p>»Die Wichtigkeit Des Banalen — Die Tür«<br>MDRV (DHBW Ravensburg)</p>
-                        </feature>
-                        <feature>
+                        </list-item>
+                        <list-item>
                                 <year>2014 — 17</year>
                                 <h4><span>Dual Studies</span></h4>
                                 <p>LIGHTHOUSE (Lindau)<br>MDRV (DHBW Ravensburg)</p>
-                        </feature>
-                        <feature>
+                        </list-item>
+                        <list-item>
                                 <year>2014</year>
                                 <h4><span>Internship</span></h4>
                                 <p>LIGHTHOUSE (Lindau)</p>
-                        </feature>
-
-                </cv>
-                <features>
-                        <h2>Features</h2>
-                        <feature tablehead>
+                        </list-item>
+                </list-section>
+                <list-section>
+                        <list-headline>Features</list-headline>
+                        <list-item tablehead>
                                 <year>Year</year>
                                 <h4>Publication</h4>
                                 <p>Description</p>
-                        </feature>
-                        {{ range ( where .Site.Pages "Type" "features" ).Reverse.ByParam "featureYear"}}<feature>
+                        </list-item>
+                        {{ range ( where .Site.Pages "Type" "features" ).Reverse.ByParam "featureYear"}}<list-item>
                                 <year>{{ .Params.featureYear }}</year>
                                 <h4><span><a href="{{ .Params.feature_link }}" target="_blank"
                                                         title="Go to {{ .Params.featureTitle }}">{{
                                                         .Params.featureTitle }}</a></span></h4>
 
                                 <p>{{ .Params.featureDescription }}</p>
-                        </feature>
+                        </list-item>
                         {{end}}
-                </features>
-        </content>
-</list>
+                </list-section>
+        </list>
+</work-info>

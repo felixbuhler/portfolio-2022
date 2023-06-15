@@ -16,7 +16,7 @@ description: >
   have we survived? Certainly more than strict teachers, heavy homework and
   school days.
 year: 2049
-image: /Projects/fb_project_abitur.jpg
+image: /projects/fb_project_abitur.jpg
 projectURL: 'https://www.behance.net/gallery/126298189/Abitur-2049'
 projectURLSite: Behance
 draft: false

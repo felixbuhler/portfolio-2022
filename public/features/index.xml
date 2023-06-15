@@ -2,88 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Features on Felix Buhler</title>
-    <link>https://felixbuhler.github.io/portfolio-2022/features/</link>
+    <link>/features/</link>
     <description>Recent content in Features on Felix Buhler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://felixbuhler.github.io/portfolio-2022/features/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/features/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/kaltblut/</link>
+      <link>/features/blank-poster-vol1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/kaltblut/</guid>
+      <guid>/features/blank-poster-vol1/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/blank-poster-vol1/</link>
+      <link>/features/brutalist-websites/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/blank-poster-vol1/</guid>
+      <guid>/features/brutalist-websites/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/brutalist-websites/</link>
+      <link>/features/cmde/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/brutalist-websites/</guid>
+      <guid>/features/cmde/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/cmde/</link>
+      <link>/features/cruel-letter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/cmde/</guid>
+      <guid>/features/cruel-letter/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/cruel-letter/</link>
+      <link>/features/die-tuer-mdrv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/cruel-letter/</guid>
+      <guid>/features/die-tuer-mdrv/</guid>
+      <description>+++ featureDescription = &amp;ldquo;My Bachelors project »Die Tür« was featured on MDRV.&amp;rdquo; featureTitle = &amp;ldquo;MDRV&amp;rdquo; featureYear = 2017 feature_link = &amp;ldquo;https://www.mediendesign-ravensburg.de/study_project/die-tuer-2/&amp;quot;
++++</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/features/kaltblut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/kaltblut/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/die-tuer-mdrv/</link>
+      <link>/features/the-happy-zine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/die-tuer-mdrv/</guid>
+      <guid>/features/the-happy-zine/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/the-happy-zine/</link>
+      <link>/features/typographic-posters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/the-happy-zine/</guid>
+      <guid>/features/typographic-posters/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/typographic-posters/</link>
+      <link>/features/zwischenablage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/typographic-posters/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://felixbuhler.github.io/portfolio-2022/features/zwischenablage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://felixbuhler.github.io/portfolio-2022/features/zwischenablage/</guid>
+      <guid>/features/zwischenablage/</guid>
       <description></description>
     </item>
     

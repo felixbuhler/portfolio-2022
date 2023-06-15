@@ -1,7 +1,7 @@
 ---
 title: Die Wichtigkeit des Banalen — Die Tür
 projectType: MDRV
-image: /Projects/fb_project_die_tuer.jpg
+image: /projects/fb_project_die_tuer.jpg
 imageSize: cover
 projectColor: '#0076FF'
 description: >
@@ -41,5 +41,4 @@ projectURL: 'https://www.behance.net/gallery/56392735/Die-Wichtigkeit-des-Banale
 projectURLSite: Behance
 size: Normal
 ---
-
 

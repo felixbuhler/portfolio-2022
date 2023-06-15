@@ -2,7 +2,7 @@
 title: DDC Gute Gestaltung 19
 projectType: Client
 client: content/clients/ddc.md
-image: /Projects/fb_project_ddc19.jpg
+image: /projects/fb_project_ddc19.jpg
 imageSize: cover
 projectColor: '#00ED92'
 description: >
