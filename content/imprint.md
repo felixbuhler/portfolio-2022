@@ -9,13 +9,13 @@ type = "page"
 
 Felix Buhler\
 Designer & Art Director\
-{{\< obfuscate "Reichenberger Str. 140" >}}\
-{{\< obfuscate "10999 Berlin" >}}
+{{< obfuscate "Reichenberger Str. 140" >}}\
+{{< obfuscate "10999 Berlin" >}}
 
 ## Kontakt
 
-{{\< obfuscate "(+49) 176 64796213" >}}\
-{{\< obfuscate "hi@felix-buhler.de" >}}
+{{< obfuscate "(+49) 176 64796213" >}}\
+{{< obfuscate "hi@felix-buhler.de" >}}
 
 ## EU-Streitschlichtung
 

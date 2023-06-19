@@ -392,8 +392,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/features/die-tuer-mdrv/</guid>
-      <description>+++ featureDescription = &amp;ldquo;My Bachelors project »Die Tür« was featured on MDRV.&amp;rdquo; featureTitle = &amp;ldquo;MDRV&amp;rdquo; featureYear = 2017 feature_link = &amp;ldquo;https://www.mediendesign-ravensburg.de/study_project/die-tuer-2/&amp;quot;
-+++</description>
+      <description></description>
     </item>
     
     <item>
@@ -568,10 +567,10 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
       <guid>/imprint/</guid>
       <description>Angaben gemäß § 5 TMG Felix Buhler
 Designer &amp;amp; Art Director
-{{&amp;lt; obfuscate &amp;ldquo;Reichenberger Str. 140&amp;rdquo; &amp;gt;}}
-{{&amp;lt; obfuscate &amp;ldquo;10999 Berlin&amp;rdquo; &amp;gt;}}
-Kontakt {{&amp;lt; obfuscate &amp;ldquo;(+49) 176 64796213&amp;rdquo; &amp;gt;}}
-{{&amp;lt; obfuscate &amp;ldquo;hi@felix-buhler.de&amp;rdquo; &amp;gt;}}
+Reichenberger Str. 140
+10999 Berlin
+Kontakt (&amp;#43;49) 176 64796213
+hi@felix-buhler.de
 EU-Streitschlichtung Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
 https://ec.europa.eu/consumers/odr/.
 Unsere E-Mail-Adresse finden Sie oben im Impressum.

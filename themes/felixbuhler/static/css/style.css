@@ -64,6 +64,8 @@
     --border: 1px solid var(--color-hour-minute);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -358,6 +360,7 @@ intro content[contact] text a,
 
 intro content[contact] text a {
     border: var(--border);
+    border-color: currentColor;
     transition: var(--easing-bounce);
     display: inline-block;
 }
@@ -379,8 +382,6 @@ intro content[contact] contact a {
     font-size: inherit;
     font-family: inherit;
 }
-
-intro content[contact] contact a:hover {}
 
 /* 3D */
 
@@ -958,8 +959,8 @@ project-image {
     break-inside: avoid;
     transition: var(--easing-bounce);
     transform-origin: center center;
-    transform: translateY(-8%) scale(0.85);
-    border-radius: calc(var(--border-radius) - 5px);
+    transform: translateY(-6%) scale(0.85);
+    border-radius: var(--border-radius);
 }
 
 project:hover project-image {
@@ -1286,6 +1287,10 @@ list-section:hover:before {
     scale: 1;
 }
 
+list-section[features] list-item:last-child {
+    display: none;
+}
+
 list-item:last-child {
     border-bottom: none;
 }
@@ -1433,7 +1438,7 @@ ticket {
     line-height: var(--clock-size);
     vertical-align: middle;
     text-align: center;
-    font-size: calc(0.5 * var(--font-size-base)) !important;
+    font-size: calc(0.8 * var(--font-size-base)) !important;
 }
 
 eightball {
@@ -1723,24 +1728,6 @@ whats-that:after {
         padding: 100px calc(0vw + var(--projects-gap));
     }
 
-    list {
-        padding: inherit;
-        padding-left: calc(3*var(--projects-gap));
-        padding-right: calc(3*var(--projects-gap));
-
-    }
-
-
-    cv {
-        margin-bottom: 20px;
-    }
-
-    #show-education-features {
-        font-size: var(--font-size-base);
-        width: 75%;
-    }
-
-
 
     clients h2 {
         margin-bottom: 20px;
@@ -1801,4 +1788,61 @@ whats-that:after {
         pointer-events: none;
     }
 
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-black: #ededed;
+        --color-white: rgb(40, 40, 40);
+        --color-shade: rgb(50, 50, 50);
+    }
+
+    body {
+        background: var(--color-white);
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    header ul li a {
+        color: var(--color-black);
+    }
+
+    header ul li a:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    intro {
+        --color-black: #1d1d1d;
+        ;
+    }
+
+    clients,
+    footer {
+        --color-black: #ededed;
+        color: var(--color-black);
+    }
+
+    list-item:before,
+    list-section:before {
+
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    list-section:before {
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    globe,
+    qr-code,
+    ticket {
+        filter: invert(1);
+        color: black;
+    }
+
+    eightball {
+        color: var(--color-white);
+    }
 }
