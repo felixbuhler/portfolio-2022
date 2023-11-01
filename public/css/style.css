@@ -1899,6 +1899,12 @@ whats-that:after {
         color: var(--color-black);
     }
 
+    project:hover project-info,
+    project:hover a[project-link],
+    project:hover h2 {
+        color: var(--color-black);
+    }
+
     list-item:before,
     list-section:before {
 
