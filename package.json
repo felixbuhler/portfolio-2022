@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/felixbuhler/portfolio-2022#readme",
   "dependencies": {
-    "@tinacms/cli": "^1.5.14",
     "tinacms": "^1.5.6"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.31"
   }
 }
