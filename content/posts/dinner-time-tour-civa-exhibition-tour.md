@@ -31,7 +31,10 @@ description: >
   which is 100% online and virtual in its first year of existence. In 2020 she
   founded the virtual exhibition platform »Area for Virtual Art« together with a
   team of artists, designers and cultural managers (a cooperation of sound:frame
-  and Pausanio).\n\nI created an interactive WebVR video for the event.
+  and Pausanio).
+
+
+  I created an interactive WebVR video for the event.
 year: 2021
 tags:
   - Graphic Design

@@ -14,8 +14,8 @@ year: 2019
 tags:
   - 3D
   - Editorial
-projectURL: formdusche
-projectURLSite: 'https://formdusche.de/work/ddc-19/'
+projectURL: 'https://formdusche.de/work/ddc-19/'
+projectURLSite: formdusche
 size: Normal
 ---
 
