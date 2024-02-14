@@ -306,6 +306,15 @@
     
     <item>
       <title></title>
+      <link>/clients/ten995/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/clients/ten995/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/clients/tl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -328,6 +337,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clients/vanpey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/clients/weltformen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/clients/weltformen/</guid>
       <description></description>
     </item>
     
@@ -406,6 +424,24 @@
     
     <item>
       <title></title>
+      <link>/features/icma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/icma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/features/if-grips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/if-grips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/features/kaltblut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -474,6 +510,15 @@ Berlin DE</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/abitur-2049/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BÄM MAG Website</title>
+      <link>/posts/b%C3%A4m-mag-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/b%C3%A4m-mag-website/</guid>
       <description></description>
     </item>
     
@@ -647,6 +692,16 @@ Verbraucherstreitbeilegung / Universalschlichtungsstelle Wir sind nicht bereit o
       
       <guid>/posts/website/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Weltformen</title>
+      <link>/posts/weltformen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weltformen/</guid>
+      <description>Weltformen is a studio for design and freelance work,
+and mobile art workshop with workshops by Michael Herrmann. Weltformen creates strong visual designs for actors in the fields of art, culture, social affairs, education and sustainability.</description>
     </item>
     
     <item>
