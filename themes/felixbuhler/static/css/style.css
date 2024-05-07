@@ -1776,6 +1776,7 @@ whats-that:after {
     clients client {
         font-size: var(--font-size-base) !important;
         padding-right: 15px;
+        padding-left: 5px;
         margin-right: 0px;
         margin-bottom: 5px;
 
