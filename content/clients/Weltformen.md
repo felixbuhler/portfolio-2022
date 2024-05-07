@@ -1,6 +1,6 @@
 ---
 clientTitle: Weltformen
-clientURL: 'http://weltformen.de'
+clientURL: 'https://weltformen.de'
 hideFromList: false
 ---
 
