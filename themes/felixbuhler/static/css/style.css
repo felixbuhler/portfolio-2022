@@ -1500,7 +1500,6 @@ main {
     box-sizing: border-box;
     padding: var(--projects-gap);
     display: block;
-    background: var(--color-purple);
     min-height: calc(100vh + var(--border-radius));
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
@@ -1511,8 +1510,8 @@ main content {
     z-index: 5;
     display: block;
     border-radius: var(--border-radius);
-    padding: 50px;
-    padding-top: 100px;
+
+    padding-top: 60px;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
@@ -1564,8 +1563,7 @@ back {
     position: fixed;
     margin-left: auto;
     width: 100px;
-    left: 50%;
-    margin-left: -50px;
+    left: var(--projects-gap);
     text-align: center;
     z-index: 999;
     display: block;
