@@ -1,6 +1,6 @@
 ---
 clientTitle: QuoTec
-client_url: 'https://quojob.de'
+clientURL: 'https://quojob.de'
 hideFromList: false
 ---
 

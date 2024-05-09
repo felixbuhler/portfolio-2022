@@ -1,6 +1,6 @@
 ---
 clientTitle: Echt Bodensee
-client_url: 'https://www.echt-bodensee.de'
+clientURL: 'https://www.echt-bodensee.de'
 hideFromList: false
 ---
 

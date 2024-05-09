@@ -1,5 +1,5 @@
 ---
 clientTitle: Dagmar Buhler
-client_url: 'http://dagmar-buhler.de'
+clientURL: 'http://dagmar-buhler.de'
 ---
 

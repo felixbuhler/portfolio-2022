@@ -1,6 +1,6 @@
 ---
 clientTitle: Staatstheater Cottbus
-client_url: 'https://www.staatstheater-cottbus.de'
+clientURL: 'https://www.staatstheater-cottbus.de'
 hideFromList: true
 ---
 

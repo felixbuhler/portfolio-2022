@@ -1,6 +1,6 @@
 ---
 clientTitle: Pylon Lab
-client_url: 'https://pylon-hub.com/'
+clientURL: 'https://pylon-hub.com/'
 ---
 
 +++

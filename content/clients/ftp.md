@@ -1,5 +1,5 @@
 ---
 clientTitle: Frau Tonis Parfum
-client_url: 'https://www.frau-tonis-parfum.com'
+clientURL: 'https://www.frau-tonis-parfum.com'
 ---
 

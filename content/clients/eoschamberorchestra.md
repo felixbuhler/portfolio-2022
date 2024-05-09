@@ -1,6 +1,6 @@
 ---
 clientTitle: eos chamber orchestra
-client_url: 'https://www.facebook.com/EOSChamberOrchestra/'
+clientURL: 'https://www.facebook.com/EOSChamberOrchestra/'
 hideFromList: false
 ---
 

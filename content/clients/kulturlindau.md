@@ -1,6 +1,6 @@
 ---
 clientTitle: Kultur Lindau
-client_url: 'https://www.kultur-lindau.de'
+clientURL: 'https://www.kultur-lindau.de'
 hideFromList: false
 ---
 

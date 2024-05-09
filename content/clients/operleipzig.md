@@ -1,6 +1,6 @@
 ---
 clientTitle: Oper Leipzig
-client_url: 'https://www.oper-leipzig.de/de'
+clientURL: 'https://www.oper-leipzig.de/de'
 hideFromList: false
 ---
 

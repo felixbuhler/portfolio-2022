@@ -1,6 +1,6 @@
 ---
 clientTitle: Schauspielhaus Graz
-client_url: 'https://schauspielhaus-graz.buehnen-graz.com'
+clientURL: 'https://schauspielhaus-graz.buehnen-graz.com'
 hideFromList: false
 ---
 
