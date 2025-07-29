@@ -20,9 +20,13 @@
   </url><url>
     <loc>/clients/eoschamberorchestra/</loc>
   </url><url>
+    <loc>/clients/femtech/</loc>
+  </url><url>
     <loc>/clients/foreverbroke/</loc>
   </url><url>
     <loc>/clients/ftp/</loc>
+  </url><url>
+    <loc>/clients/gabriela-lukenda/</loc>
   </url><url>
     <loc>/clients/grips/</loc>
   </url><url>
@@ -51,6 +55,8 @@
     <loc>/clients/leipzigtourismus/</loc>
   </url><url>
     <loc>/clients/mdrv/</loc>
+  </url><url>
+    <loc>/clients/medialabel/</loc>
   </url><url>
     <loc>/clients/mhp/</loc>
   </url><url>
@@ -106,6 +112,8 @@
   </url><url>
     <loc>/features/typographic-posters/</loc>
   </url><url>
+    <loc>/features/wissensbuch-des-jahres-2025/</loc>
+  </url><url>
     <loc>/features/zwischenablage-10/</loc>
   </url><url>
     <loc>/features/zwischenablage/</loc>
@@ -124,9 +132,9 @@
   </url><url>
     <loc>/tags/art-direction/</loc>
   </url><url>
-    <loc>/posts/b%C3%A4m-mag-website/</loc>
+    <loc>/tags/book/</loc>
   </url><url>
-    <loc>/posts/ten995/</loc>
+    <loc>/posts/femtech-germany/</loc>
   </url><url>
     <loc>/tags/branding/</loc>
   </url><url>
@@ -192,7 +200,13 @@
   </url><url>
     <loc>/posts/plagv3/</loc>
   </url><url>
+    <loc>/posts/gabriela-lukenda-portfolio/</loc>
+  </url><url>
     <loc>/posts/</loc>
+  </url><url>
+    <loc>/tags/print/</loc>
+  </url><url>
+    <loc>/posts/richtig-anders-anders-richtig/</loc>
   </url><url>
     <loc>/posts/sag-meister/</loc>
   </url><url>
@@ -212,9 +226,9 @@
   </url><url>
     <loc>/posts/website/</loc>
   </url><url>
-    <loc>/tags/webvr/</loc>
-  </url><url>
     <loc>/posts/weltformen/</loc>
+  </url><url>
+    <loc>/tags/webvr/</loc>
   </url><url>
     <loc>/posts/wylam/</loc>
   </url><url>

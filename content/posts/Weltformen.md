@@ -1,5 +1,5 @@
 ---
-title: Weltformen
+title: Website
 draft: false
 projectType: Client
 client: content/clients/Weltformen.md
@@ -14,7 +14,7 @@ year: 2024
 tags:
   - Development
   - UI
-projectURL: 'https://weltformen.de'
-projectURLSite: their site
+projectURL: ''
+projectURLSite: ''
 ---
 

@@ -20,9 +20,9 @@
 :root {
     --color-black: #1d1d1d;
     --color-white: rgb(240, 240, 240);
-    --color-accent: rgb(0, 255, 0);
+    --color-accent: rgb(162, 255, 0);
     --color-red: rgb(255, 52, 52);
-    --color-purple: #cd7dff;
+    --color-purple: #eb7dff;
     --color-switch: var(--color-red);
     --color-shade: rgb(235, 235, 235);
 
@@ -1125,15 +1125,16 @@ project-info p:has(+ p) {}
 project-info p a,
 project-info a {
     color: inherit;
-    text-decoration: none;transition: var(--easing-bounce);
+    text-decoration: none;
+    transition: var(--easing-bounce);
 }
 
 project-info p a:hover,
 project-info a:hover {
     padding: 3px;
     border-radius: var(--border-radius-small);
-    
-    background: rgba(0,0,0,0.1);
+
+    background: rgba(0, 0, 0, 0.1);
 }
 
 project-info p a:after,
@@ -1500,7 +1501,6 @@ main {
     box-sizing: border-box;
     padding: var(--projects-gap);
     display: block;
-    background: var(--color-purple);
     min-height: calc(100vh + var(--border-radius));
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
@@ -1511,8 +1511,9 @@ main content {
     z-index: 5;
     display: block;
     border-radius: var(--border-radius);
-    padding: 50px;
-    padding-top: 100px;
+    padding: 30px;
+    padding-bottom: 20px;
+    padding-top: 60px;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
@@ -1564,8 +1565,7 @@ back {
     position: fixed;
     margin-left: auto;
     width: 100px;
-    left: 50%;
-    margin-left: -50px;
+    right: calc(2*var(--projects-gap));
     text-align: center;
     z-index: 999;
     display: block;
@@ -1579,7 +1579,7 @@ back {
 
 back:hover {
     background: var(--color-black);
-    color: white;
+    color: var(--color-white);
 }
 
 back a {
@@ -1778,6 +1778,7 @@ whats-that:after {
     clients client {
         font-size: var(--font-size-base) !important;
         padding-right: 15px;
+        padding-left: 5px;
         margin-right: 0px;
         margin-bottom: 5px;
 

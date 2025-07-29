@@ -89,6 +89,15 @@
     
     <item>
       <title></title>
+      <link>/clients/femtech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/clients/femtech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/clients/foreverbroke/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -102,6 +111,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clients/ftp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/clients/gabriela-lukenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/clients/gabriela-lukenda/</guid>
       <description></description>
     </item>
     
@@ -228,6 +246,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/clients/mdrv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/clients/medialabel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/clients/medialabel/</guid>
       <description></description>
     </item>
     
@@ -478,6 +505,15 @@
     
     <item>
       <title></title>
+      <link>/features/wissensbuch-des-jahres-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/wissensbuch-des-jahres-2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/features/zwischenablage-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -523,20 +559,11 @@ Berlin DE</description>
     </item>
     
     <item>
-      <title>BÄM MAG Website</title>
-      <link>/posts/b%C3%A4m-mag-website/</link>
+      <title>Brand &amp; Website</title>
+      <link>/posts/femtech-germany/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/b%C3%A4m-mag-website/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Brand &#43; Website</title>
-      <link>/posts/ten995/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ten995/</guid>
+      <guid>/posts/femtech-germany/</guid>
       <description></description>
     </item>
     
@@ -648,8 +675,8 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
       <guid>/imprint/</guid>
       <description>Angaben gemäß § 5 TMG Felix Buhler
 Designer &amp;amp; Art Director
-Reichenberger Str. 140
-10999 Berlin
+Siemensstr. 21
+12459 Berlin
 Kontakt (&amp;#43;49) 176 64796213
 hi@felix-buhler.de
 EU-Streitschlichtung Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
@@ -673,6 +700,24 @@ Verbraucherstreitbeilegung / Universalschlichtungsstelle Wir sind nicht bereit o
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/plagv3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portfolio Website</title>
+      <link>/posts/gabriela-lukenda-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gabriela-lukenda-portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richtig Anders — Anders Richtig</title>
+      <link>/posts/richtig-anders-anders-richtig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/richtig-anders-anders-richtig/</guid>
       <description></description>
     </item>
     
@@ -713,13 +758,12 @@ Verbraucherstreitbeilegung / Universalschlichtungsstelle Wir sind nicht bereit o
     </item>
     
     <item>
-      <title>Weltformen</title>
+      <title>Website</title>
       <link>/posts/weltformen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/weltformen/</guid>
-      <description>Weltformen is a studio for design and freelance work,
-and mobile art workshop with workshops by Michael Herrmann. Weltformen creates strong visual designs for actors in the fields of art, culture, social affairs, education and sustainability.</description>
+      <description></description>
     </item>
     
     <item>
