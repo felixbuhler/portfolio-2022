@@ -2,7 +2,7 @@
 title: Freiheit — Andererseits N° 19
 projectType: Client
 client: content/clients/Hessisches Staatstheater Wiesbaden.md
-image: /projects/fb_project_as19.jpg
+image: /uploads/fb_project_as19.jpg
 imageSize: contain
 projectColor: '#00E6CA'
 description: >

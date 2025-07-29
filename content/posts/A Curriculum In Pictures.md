@@ -30,7 +30,7 @@ projectURL: >-
   https://www.behance.net/gallery/49661939/Lunchtime-Talk-A-Curriculum-In-Pictures
 projectURLSite: Behance
 size: Normal
-image: /projects/ac058849661939-58c557d06590c.jpg
+image: /uploads/ac058849661939-58c557d06590c.jpg
 published: true
 ---
 

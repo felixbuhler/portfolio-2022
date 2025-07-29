@@ -2,7 +2,7 @@
 title: Yoga & Bike Branding
 projectType: Client
 client: content/clients/dagmar-buhler.md
-image: /projects/fb_project_yogabike.jpg
+image: /uploads/fb_project_yogabike.jpg
 imageSize: cover
 projectColor: '#F4F1EA'
 description: >

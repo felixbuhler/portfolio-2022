@@ -2,7 +2,7 @@
 title: Verwandlungen — Andererseits N° 17
 projectType: Client
 client: content/clients/Hessisches Staatstheater Wiesbaden.md
-image: /projects/fb_project_as17-1.jpg
+image: /uploads/fb_project_as17-1.jpg
 imageSize: cover
 projectColor: '#00E6CA'
 description: >

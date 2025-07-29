@@ -2,7 +2,7 @@
 title: YouTube Intro
 projectType: Client
 client: content/clients/alina-kossan.md
-image: /projects/fb_project_alinakossan.png
+image: /uploads/fb_project_alinakossan.png
 description: >
   Alina Kossan is a Berlin-based digital content creator. For her YouTube
   channel I created a logo and 3D animation, that is used as the intro for

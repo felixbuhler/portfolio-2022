@@ -1,7 +1,7 @@
 ---
 title: Die Wichtigkeit des Banalen — Die Tür
 projectType: MDRV
-image: /projects/fb_project_die_tuer.jpg
+image: /uploads/fb_project_die_tuer.jpg
 imageSize: cover
 projectColor: '#0076FF'
 description: >

@@ -2,7 +2,7 @@
 title: Website
 projectType: Client
 client: content/clients/yes.md
-image: /projects/fb_project_yes.jpg
+image: /uploads/fb_project_yes.jpg
 imageSize: contain
 projectColor: '#E30613'
 description: >

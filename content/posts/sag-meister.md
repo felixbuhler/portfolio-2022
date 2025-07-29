@@ -1,7 +1,7 @@
 ---
 title: 'Sag, Meister'
 projectType: MDRV
-image: /projects/fb_project_sagmeister.jpg
+image: /uploads/fb_project_sagmeister.jpg
 imageSize: cover
 projectColor: '#FF667B'
 description: >

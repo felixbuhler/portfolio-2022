@@ -1,7 +1,7 @@
 ---
 title: Dinner Time Tour — CIVA Exhibition Tour
 projectType: MDRV
-image: /projects/fb_project_civa.jpg
+image: /uploads/fb_project_civa.jpg
 imageSize: cover
 projectColor: '#FF3D3D'
 description: >

@@ -1,7 +1,7 @@
 ---
 title: Good Die My Friend
 projectType: MDRV
-image: /projects/a4e53843394767-58dc15d6c4b28.gif
+image: /uploads/a4e53843394767-58dc15d6c4b28.gif
 imageSize: contain
 projectColor: '#D5FDFE'
 description: >

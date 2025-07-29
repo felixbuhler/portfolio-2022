@@ -2,7 +2,7 @@
 title: DDC Gute Gestaltung 2019
 projectType: Client
 client: content/clients/ddc.md
-image: /projects/fb_project_ddc2019.jpg
+image: /uploads/fb_project_ddc2019.jpg
 projectColor: '#FF3E00'
 description: >
   For the 2019 edition of the DDC MAG, the aim was not »be different«, but »fit

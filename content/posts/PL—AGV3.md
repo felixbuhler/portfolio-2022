@@ -1,7 +1,7 @@
 ---
 title: PL—AGV3
 projectType: Personal
-image: /projects/3ac06175283517.5cb19096f0f0f.png
+image: /uploads/3ac06175283517.5cb19096f0f0f.png
 imageSize: contain
 projectColor: '#8F69FF'
 description: >

@@ -1,7 +1,7 @@
 ---
 title: Let’s Get Physical
 projectType: MDRV
-image: /projects/fb_project_physical.jpg
+image: /uploads/fb_project_physical.jpg
 imageSize: cover
 projectColor: '#D1DDEB'
 description: >

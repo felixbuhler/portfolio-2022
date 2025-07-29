@@ -2,7 +2,7 @@
 title: eos chamber orchestra
 projectType: Client
 client: content/clients/eoschamberorchestra.md
-image: /projects/fb_project_eos-1.png
+image: /uploads/fb_project_eos-1.png
 imageSize: cover
 projectColor: '#FF8600'
 description: >
